@@ -1,0 +1,20 @@
+{
+    "Home": {
+        "title": "Story of a whistleblower",
+        "subtitle": "an adventure game to start exploring Web3",
+        "buttonName": "Enter the adventure"
+    },
+    "Info": {
+        "title": "an interactive novel to onboard Web2 users to Web3",
+        "subtitle": "is an open source project. If you want to support us, you can make a donation at:",
+        "deck": "Discover our Pitch Deck",
+        "online": "Online",
+        "download": "Download",
+        "close": "close"
+    },
+    "Progression": {
+        "title": "Select where you want to go",
+        "chapter": "chapter",
+        "close": "close"
+    }
+}

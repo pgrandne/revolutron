@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply bg-[#0f1216] text-white;
+    }
+
+    .btnHero {
+        @apply flex bg-white text-gray-800 font-semibold py-2 px-4 border-2 border-gray-400 rounded z-20;
+    }
+
+    .btnHero:hover {
+        @apply bg-red-800 text-white;
+    }
+
+    .btnClose {
+        @apply bg-red-500 px-7 py-2 mt-4 rounded-md text-white font-semibold;
+    }
+
+    .btnClose:Hover {
+        @apply bg-red-700;
+    }
+
+    .btnProgression {
+        @apply basis-1 border-4 border-white rounded-md text-4xl px-2 py-1 opacity-70;
+    }
+
+    .btnProgression:hover {
+        @apply opacity-100;
+    }
+}

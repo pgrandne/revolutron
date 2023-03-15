@@ -1,0 +1,20 @@
+{
+    "Home": {
+        "title": "Histoire d'un lanceur d'alerte",
+        "subtitle": "Une fiction interactive pour explorer le Web3",
+        "buttonName": "Entrer dans l'aventure"
+    },
+    "Info": {
+        "title": "une fiction interactive pour embarquer les utilisateurs du Web2 vers le Web3",
+        "subtitle": "est un projet opensource. Vous pouvez nous aider en faisant une donation à :",
+        "deck": "Découvrir notre présentation",
+        "online": "En ligne",
+        "download": "Télécharger",
+        "close": "fermer"
+    },
+    "Progression": {
+        "title": "Sélectionner où vous souhaitez aller",
+        "chapter": "chapitre",
+        "close": "fermer"
+    }
+}

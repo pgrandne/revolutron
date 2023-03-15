@@ -104,7 +104,7 @@ export const MotionFooter = ({ setModalInfo, setDeck }: {
             transition={{ delay: 4, duration: 1 }}
         >
             <div className="fixed bottom-3 left-3 flex gap-1">
-                <a className="" href="https://github.com/pgrandne/revolte" target="_blank" rel="noreferrer">
+                <a className="" href="https://github.com/pgrandne/revolutron" target="_blank" rel="noreferrer">
                     <Image
                         className="h-8 w-8 object-contain cursor-pointer opacity-70 hover:opacity-100"
                         src={github}

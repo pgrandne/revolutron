@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import { perm_marker } from '@/utils/font'
-import roadmap from "@/public/img/roadmap.png"
+// import roadmap from "@/public/img/roadmap.png"
 
 
 export const ModalInfo = ({ tInfo, setModalInfo, deck }: {
@@ -26,11 +26,11 @@ export const ModalInfo = ({ tInfo, setModalInfo, deck }: {
                 {!deck &&
                     <p className="font-sans sm:block justify-center text-xs md:text-base mb-4 font-bold ">0x94b9420F65fB3ec966d96BB034b35AF86487D929</p>
                 }
-                <Image
+                {/* <Image
                     className="object-contain transform md:scale-75"
                     src={roadmap}
                     alt="roadmap"
-                />
+                /> */}
                 <button
                     className="btnClose"
                     onClick={() => setModalInfo(false)}

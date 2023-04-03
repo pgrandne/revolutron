@@ -21,7 +21,7 @@ const Sequence = ({ stage, setStage }: { stage: number, setStage: Dispatch<SetSt
                             <AnimatedText size={"text-xl"} content={t('narration')} speed={0.05} delay={3} />
                             <AnimatedText size={"text-base"} content={t('hour')} speed={0.05} delay={4.7} />
                         </div>
-                        <MotionSlideY className="absolute bottom-0 right-0 flex h-full">
+                        <MotionSlideY>
                             <div className="flex justify-end pl-[32%] pt-[13%] pb-[0%]">
                                 <Image className="object-contain" src={friendsPic} alt="friends" />
                             </div>

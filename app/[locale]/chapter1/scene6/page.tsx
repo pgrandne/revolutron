@@ -1,10 +1,9 @@
 'use client';
 
-import { motion } from "framer-motion"
 import { useEffect, useState } from 'react'
 import Discussion from './Discussion'
 import Sequence from './Sequence'
-import { ArrowButton, LinkLocale, ModalFeedback } from "@/app/components";
+import { ModalFeedback, MotionOp } from "@/app/components";
 
 const Chap1s6 = () => {
     const [stage, setStage] = useState(0)
@@ -27,13 +26,9 @@ const Chap1s6 = () => {
                 <Discussion stage={stage} setStage={setStage} />
             </div>
             {modalFeedback &&
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 1, duration: 1 }}
-                >
+                <MotionOp>
                     < ModalFeedback setModalFeedback={setModalFeedback} />
-                </motion.div>
+                </MotionOp>
             }
         </div >
     )

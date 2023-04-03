@@ -2,10 +2,10 @@
 
 import { perm_marker } from '@/utils/font';
 import { useTranslations } from 'next-intl';
-import { LocaleSwitcher, ModalInfo, ModalProgression, MotionFooter, MotionHero, MotionHeroButton, MotionOp } from '../components';
+import { LocaleSwitcher, ModalInfo, ModalSelectChapter, MotionFooter, MotionHero, MotionHeroButton, MotionOp } from '../components';
 import Image from 'next/image';
 import equipmentPic from '@/public/img/equipment.jpg'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import TronLink from '../components/TronLink';
 // import TronWeb from '@/utils/tronweb'
 
@@ -22,7 +22,7 @@ export default function Index() {
   const [wallet, setWallet] = useState(false)
   const [modalInfo, setModalInfo] = useState(false)
   const [deck, setDeck] = useState(false)
-  const [modalProgression, setModalProgression] = useState(false)
+  const [modalSelectChapter, setModalSelectChapter] = useState(false)
 
   // const mainchain = new TronWeb({
   //   fullHost: 'https://api.trongrid.io',
@@ -64,15 +64,15 @@ export default function Index() {
         </MotionOp>
         <div className="absolute top-0 pt-6 sm:pt-36 h-full w-full overflow-hidden">
           <MotionHero title={tHome('title')} subtitle={tHome('subtitle')} />
-          <MotionHeroButton buttonName={tHome('buttonName')} setModalProgression={setModalProgression} />
+          <MotionHeroButton buttonName={tHome('buttonName')} setModalSelectChapter={setModalSelectChapter} />
         </div>
         <MotionFooter setModalInfo={setModalInfo} setDeck={setDeck} />
       </div >
       {modalInfo &&
-        <ModalInfo tInfo={tInfo} setModalInfo={setModalInfo} deck={deck} />
+        <ModalInfo setModalInfo={setModalInfo} deck={deck} />
       }
-      {modalProgression &&
-        <ModalProgression setModalProgression={setModalProgression} tProgression={tProgression} />
+      {modalSelectChapter &&
+        <ModalSelectChapter setModalSelectChapter={setModalSelectChapter} wallet={wallet} />
       }
     </main>
   )

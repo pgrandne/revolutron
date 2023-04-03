@@ -1,7 +1,7 @@
 {
     "Home": {
         "title": "Story of a whistleblower",
-        "subtitle": "an adventure game to start exploring Web3",
+        "subtitle": "An adventure game to start exploring Web3",
         "buttonName": "Enter the adventure"
     },
     "Info": {
@@ -10,11 +10,273 @@
         "deck": "Discover our Pitch Deck",
         "online": "Online",
         "download": "Download",
-        "close": "close"
+        "close": "Close"
     },
     "Progression": {
         "title": "Select where you want to go",
-        "chapter": "chapter",
-        "close": "close"
+        "chapter": "Chapter",
+        "resume": "Resume last session",
+        "connect": "Please connect wallet",
+        "close": "Close"
+    },
+    "Chap1s1": {
+        "narration": "Lurenberg, Listenbourg",
+        "day": "October 18, 2023",
+        "title": "Chapter 1",
+        "subtitle": "Nothing can be taken for granted"
+    },
+    "Chap1s2": {
+        "narration": "The Lurenberg Post, Newsroom",
+        "hour1": "8:50 am",
+        "hour2": "2:45 pm",
+        "dialogue": {
+            "d1": "Hey Azad, did you watch the news?",
+            "d2": "Billions of fake money discovered!!! It's 15% of our GDP!",
+            "d3": "Everyone will work on it during the next weeks! I have meetings all day, we'll talk tonight.",
+            "d4": "Hello Azad, a trusted person gave me your contact",
+            "d5": "I have some documents about a very sensitive case",
+            "d6": "Are you interested?",
+            "d7": "I can't say more at the moment, I'll get back to you very soon"
+        },
+        "choices": {
+            "c1": {
+                "choice1": "Yes it's insane!",
+                "choice2": "About what?"
+            },
+            "c2": {
+                "choice1": "No one could have imagined that",
+                "choice2": "Hard to believe"
+            },
+            "c3": {
+                "choice1": "Sure",
+                "choice2": "(say nothing)"
+            },
+            "c4": {
+                "choice1": "Maybe! But first tell me more",
+                "choice2": "Yes, I am"
+            }
+        }
+    },
+    "Chap1s3": {
+        "narration": "The Optimistic Brewery",
+        "hour": "In the evening",
+        "dialogue": {
+            "d1": "Hey Azad, can you please buy some food? Rob is coming with Jessy after all...",
+            "d2": "What can I get you, sir ?",
+            "d3": "That will be 12 LIS, sir",
+            "d4": "Your card has been declined, sir",
+            "d5": "It's still not working. Do you have any other means of payment?",
+            "d6": "I hope it's not fake money...",
+            "d7": "This counterfeit money story is terrible!",
+            "d8": "Since this morning, I'm afraid that every time a customer pays in cash at the restaurant, it might be fake bills...",
+            "d9": "Yeah, it's going to be a complete disaster for our country.",
+            "d10": "Apparently, there are several billion in circulation as we speak."
+        },
+        "choices": {
+            "c1": {
+                "choice1": "No problem, I'm walking towards the Lebanese food truck you like.",
+                "choice2": "Yes, sure"
+            },
+            "c2": {
+                "choice1": "Can I have 5 falafels please?",
+                "choice2": "A medium meze"
+            },
+            "c3": {
+                "choice1": "By card, please.",
+                "choice2": "Do you have contactless?"
+            },
+            "c4": {
+                "choice1": "Let me try with the PIN.",
+                "choice2": "I'm going to insert it."
+            },
+            "c5": {
+                "choice1": "I have 20 LIS in cash...",
+                "choice2": "Let me check."
+            },
+            "c6": {
+                "choice1": "People might lose all confidence in our currency.",
+                "choice2": "I don't see how the government could solve the problem."
+            },
+            "c7": {
+                "choice1": "Of all the times for my card to stop working, it had to choose now...",
+                "choice2": "I can't believe this is happening just when i'm having issues with my bank."
+            }
+        }
+    },
+    "Chap1s4": {
+        "narration": "October 30, 2023",
+        "narration1": "The Lurenberg Post, Newsroom",
+        "narration2": "The Lurenberg Post, Skyler's office",
+        "hour": "11:10 am",
+        "dialogue": {
+            "d1": "Hello Azad",
+            "d2": "I contacted you last week about a touchy matter",
+            "d3": "Before I tell you, I need to make sure that our discussions remain private. The matter is extremely sensitive",
+            "d4": "At this stage, I can only give you its code name: ClearPath",
+            "d5": "Do not speak to anyone about our exchanges, I will never contact you anywhere other than on this encrypted app",
+            "d6": "There is a locker, number 29, at Central Street Station. The code is 091031. I have put a first sample of documents, you will realize the extent of the matter",
+            "d7": "It sounded urgent, is there a problem?",
+            "d8": "It costs nothing to see where it takes you",
+            "d9": "What is it?"
+        },
+        "choices": {
+            "c1": {
+                "choice1": "Hi. Yes, I remember very well",
+                "choice2": "Hello “Cincinnatus”, I still have no clue of what you're talking about"
+            },
+            "c2": {
+                "choice1": "I understand, can you at least tell me what it's about?",
+                "choice2": "Of course"
+            },
+            "c3": {
+                "choice1": "What do you want me to do?",
+                "choice2": "OK, fine"
+            },
+            "c4": {
+                "choice1": "Count on me",
+                "choice2": "Sounds like a spy thriller!"
+            },
+            "c5": {
+                "choice1": "Not really, but I have some doubts about a source who just contacted me.",
+                "choice2": "Someone contacted me, I don't know if I can trust him."
+            },
+            "c6": {
+                "choice1": "ClearPath, does it mean anything to you?",
+                "choice2": "He spoke about ClearPath."
+            },
+            "c7": {
+                "choice1": "I'm not sure yet, I have to go.",
+                "choice2": "Never mind, I'll keep you posted."
+            }
+        }
+    },
+    "Chap1s5": {
+        "narration": "Central Street Station",
+        "narration2": "Azad's place",
+        "hour": "5:40 pm"
+    },
+    "Chap1s6": {
+        "hour": "October 31, 2023",
+        "narration": "Government announces the end of cash",
+        "hour1": "8:55 am",
+        "hour2": "9:30 am",
+        "narration2": "The Lurenberg Post, Newsroom",
+        "dialogue": {
+            "d1": "This is insane. Are we in an Orwellian novel or what? They've banned cash!",
+            "d2": "Really? Who is he? An inside man?",
+            "d3": "Why would he take such a risk just before it goes public? That doesn't make sense...",
+            "d4": "Hi Azad, I assume you're following the news live",
+            "d5": "The situation has escalated. I didn't think they would move this quickly",
+            "d6": "You have no idea what we're about to reveal. This is only the tip of the iceberg...",
+            "d7": "Damn! Bad timing... Listen I'm willing to send you some money to assist you and keep up with the investigation",
+            "d8": "You have no idea what we're getting into. We need to see this through now",
+            "d9": "Let's just say money is not an issue, and I really need you to bring this story to light",
+            "d10": "You need to install a wallet",
+            "d11": "It's like your physical wallet, but digital. It's not managed by a bank or central authority, and no one can stop you from using it. It's digital cash.",
+            "d12": "I have to go now. Just install TronLink and send me your address and I'll send you money"
+        },
+        "choices": {
+            "c1": {
+                "choice1": "Remember the source I mentioned yesterday? He knew about it.",
+                "choice2": "My source warned me yesterday."
+            },
+            "c2": {
+                "choice1": "I don't know yet. He sent me classified documents I collected last night.",
+                "choice2": "He sent me classified documents about the ClearPath operation."
+            },
+            "c3": {
+                "choice1": "You're right. I need to find out.",
+                "choice2": "I need to get in touch with my source."
+            },
+            "c4": {
+                "choice1": "How did you find out?",
+                "choice2": "Yes, we're in front of the TV"
+            },
+            "c5": {
+                "choice1": "I had a hard time believing it when I was going through the documents yesterday",
+                "choice2": "(say nothing)"
+            },
+            "c6": {
+                "choice1": "Do you know something else? My credit card is blocked so it's a terrible situation for me",
+                "choice2": "The ironic part of this story is that my card doesn't work anymore"
+            },
+            "c7": {
+                "choice1": "Why would you do this?",
+                "choice2": "(say nothing)"
+            },
+            "c8": {
+                "choice1": "Lucky you",
+                "choice2": "(say nothing)"
+            },
+            "c9": {
+                "choice1": "Install a wallet?",
+                "choice2": "What is it?"
+            }
+        }
+    },
+    "Chap1s7": {
+        "narration": "Azad's place",
+        "hour": "8:00 pm",
+        "dialogue": {
+            "d1": "Your source is probably right. If you want to follow through with this investigation, you need funds. Your account being frozen for “suspicious activity“ is likely an attempt to intimidate you.",
+            "d2": "It is a strange coincidence.",
+            "d3": "Anyway, you also need money for living, you can't keep borrowing money from colleagues like you've been doing for a week.",
+            "d4": "Remember the SBFTX investigation earlier this year? I learnt a lot from it... a wallet is not a bad idea to solve your problem, especially if it allows you to receive money.",
+            "d5": "Actually, it's quite simple. It's like a digital safe, or digital mailbox if you prefer, where anyone can deposit money, but no one can open it except for you.",
+            "d6": "And most importantly, no one can ever stop you from accessing it. Never.",
+            "d7": "Real money, you mean the one in your bank account that you can no longer use since they froze it?",
+            "d8": "Even if they are digital currencies, they are real, many stores accept cryptocurrencies.",
+            "d9": "Okay, first you need to install a digital wallet like Tron Wallet.",
+            "d10": "About 30 million of people use it, plus it's just a browser extension.",
+            "d11": "I'll guide you, we'll do it together.",
+            "d12": "So when TronLink will be added to your browser a new tab will open and ask you to create a new wallet ",
+            "d13": "First you will have to set up a password to access the extension on your device.",
+            "d14": "Then, comes the most important step. TronLink will generate randomly 12 words. This is what we call the master key.",
+            "d15": "This is the only key to open your mailbox if we come back to the previous metaphor.",
+            "d16": "If you lose it, your wallet will be locked forever.",
+            "d17": "And if someone can access these words, he will have access to everything that is stored inside.",
+            "d18": "That's why keeping those 12 words in a safe place is essential.",
+            "d19": "Come back to me once you have completed all the steps I just described to you."
+        },
+        "choices": {
+            "c1": {
+                "choice1": "What are you saying? I haven't started anything.",
+                "choice2": "Please don't be paranoid, it doesn't help..."
+            },
+            "c2": {
+                "choice1": "You're right! And with the new events, my issue will not be the priority of the bank.",
+                "choice2": "I should have fixed the problem last week."
+            },
+            "c3": {
+                "choice1": "I didn't get this digital wallet thing...",
+                "choice2": "Is it related to Bitcoin and cryptocurrencies?"
+            },
+            "c4": {
+                "choice1": "But it's still “virtual“ money compared to real LIS money.",
+                "choice2": "I would prefer real money."
+            },
+            "c5": {
+                "choice1": "That's what Cincinnatus told me to install.",
+                "choice2": "(say nothing)"
+            },
+            "c6": {
+                "choice1": "Yes please!",
+                "choice2": "Thanks a lot!"
+            },
+            "c7": {
+                "choice1": "What happens if I lose it?",
+                "choice2": "OK"
+            },
+            "c8": {
+                "choice1": "All right!",
+                "choice2": "(say nothing)"
+            },
+            "c9": {
+                "choice1": "Okay, I'm done.",
+                "choice2": "It gave me hard time but I finally made it"
+            }
+        },
+        "text1": "Go to",
+        "text2": "and download the extension."
     }
 }

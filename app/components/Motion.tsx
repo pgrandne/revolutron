@@ -3,11 +3,9 @@ import { Dispatch, SetStateAction } from "react";
 import { isMobile } from 'react-device-detect';
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
-import github from "@/public/svg/github-white.svg";
-import linkedin from "@/public/svg/linkedin-white.svg";
-import twitter from "@/public/svg/twitter-white.svg";
-import donation from "@/public/svg/donation2.svg"
-import info from "@/public/svg/info.svg"
+import { donation, github, info, linkedin, twitter } from "@/public/svg";
+import { useLocale } from "next-intl";
+
 
 export const MotionOp = ({ children, opacity = 1, delay, duration }: {
     children: React.ReactNode
@@ -62,11 +60,12 @@ export const MotionHero = ({ title, subtitle }: {
     )
 }
 
-export const MotionHeroButton = ({ buttonName, setModalProgression }: {
+export const MotionHeroButton = ({ buttonName, setModalSelectChapter }: {
     buttonName: string
-    setModalProgression: Dispatch<SetStateAction<boolean>>
+    setModalSelectChapter: Dispatch<SetStateAction<boolean>>
 }) => {
     const router = useRouter()
+    const locale = useLocale()
 
     return (
 
@@ -80,7 +79,7 @@ export const MotionHeroButton = ({ buttonName, setModalProgression }: {
                 className="btnHero"
                 whileHover={{ rotate: 7, scale: 1.5, transition: { duration: 0.1 } }}
                 onClick={() => {
-                    !isMobile ? setModalProgression(true) : router.push("/mobile")
+                    !isMobile ? setModalSelectChapter(true) : router.push(`${locale}/mobile`)
                 }
                 }
             >

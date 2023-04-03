@@ -1,20 +1,282 @@
 {
     "Home": {
-        "title": "Story of a whistleblower",
-        "subtitle": "an adventure game to start exploring Web3",
-        "buttonName": "Enter the adventure"
+        "title": "Historia de un denunciante",
+        "subtitle": "Una aventura para empezar a explorar el Web3",
+        "buttonName": "Empezar la aventura"
     },
     "Info": {
-        "title": "an interactive novel to onboard Web2 users to Web3",
-        "subtitle": "is an open source project. If you want to support us, you can make a donation at:",
-        "deck": "Discover our Pitch Deck",
-        "online": "Online",
-        "download": "Download",
-        "close": "close"
+        "title": "una novela interactiva para incorporar a los usuarios de Web2 a Web3",
+        "subtitle": "es un proyecto open source. Si desea apoyarnos, puede hacer una donación en:",
+        "deck": "Descubre nuestro Deck",
+        "online": "En línea",
+        "download": "Descargar",
+        "close": "Cerrar"
     },
     "Progression": {
-        "title": "Select where you want to go",
-        "chapter": "chapter",
-        "close": "close"
+        "title": "Selecciona a dónde quieres ir",
+        "chapter": "Capítulo",
+        "resume": "Continuar la última sesión",
+        "connect": "Conectar su wallet",
+        "close": "Cerrar"
+    },
+    "Chap1s1": {
+        "narration": "Lurenberg, Listenbourg",
+        "day": "18 de Octubre, 2023",
+        "title": "Capítulo 1",
+        "subtitle": "Nada es nunca seguro"
+    },
+    "Chap1s2": {
+        "narration": "The Lurenberg Post, Redacción",
+        "hour1": "8:50 am",
+        "hour2": "2:45 pm",
+        "dialogue": {
+            "d1": "Hey Azad, ¿viste las noticias?",
+            "d2": "¡Se descubrieron miles de millones en moneda falsa! ¡Esto representa el 15% de nuestro PIB!",
+            "d3": "Todo el mundo trabajará en ello en las próximas semanas. Tengo reuniones durante todo el día, hablamos esta noche.",
+            "d4": "Hola Azad, alguien de confianza me dio su contacto.",
+            "d5": "Tengo documentos relacionados con un asunto muy delicado.",
+            "d6": "¿Estás interesado?",
+            "d7": "No puedo decir más por el momento, volveré a contactarte muy pronto."
+        },
+        "choices": {
+            "c1": {
+                "choice1": "Sí, ¡es increíble!",
+                "choice2": "¿De qué se trata?"
+            },
+            "c2": {
+                "choice1": "Nadie lo hubiera imaginado.",
+                "choice2": "Es difícil de creer."
+            },
+            "c3": {
+                "choice1": "De acuerdo.",
+                "choice2": "(no decir nada)"
+            },
+            "c4": {
+                "choice1": "Tal vez, pero necesitas decirme más...",
+                "choice2": "Sí, por supuesto."
+            }
+        }
+    },
+    "Chap1s3": {
+        "narration": "The Optimistic Brewery",
+        "hour": "Por la noche",
+        "dialogue": {
+            "d1": "Hey Azad, ¿podrías comprar algo de comida, por favor? Rob está llegando con Jessy y no lo conté...",
+            "d2": "¿Qué le gustaría, señor?",
+            "d3": "Serán 12 LIS, señor.",
+            "d4": "Su tarjeta ha sido rechazada.",
+            "d5": "Todavía no funciona. ¿Tiene otro medio de pago?",
+            "d6": "Espero que no sea moneda falsa...",
+            "d7": "¡Esta historia de moneda falsa es terrible!",
+            "d8": "Desde esta mañana, cada vez que un cliente paga en efectivo en el restaurante, tengo miedo de que sean billetes falsos...",
+            "d9": "Sí, es una catástrofe para nuestro país...",
+            "d10": "Aparentemente, hay miles de millones en circulación en este momento."
+        },
+        "choices": {
+            "c1": {
+                "choice1": "No hay problema, estoy justo al lado del camión de comida libanesa.",
+                "choice2": "Sí, por supuesto."
+            },
+            "c2": {
+                "choice1": "Tomaré 5 falafels, por favor.",
+                "choice2": "Un mezze mediano."
+            },
+            "c3": {
+                "choice1": "Por favor, con tarjeta.",
+                "choice2": "¿Tienes pago sin contacto?"
+            },
+            "c4": {
+                "choice1": "Voy a intentar con el código.",
+                "choice2": "Lo insertaré."
+            },
+            "c5": {
+                "choice1": "Tengo 20 LIS en efectivo...",
+                "choice2": "Dejame ver."
+            },
+            "c6": {
+                "choice1": "La gente podría perder toda confianza en nuestra moneda.",
+                "choice2": "No veo cómo el gobierno podría resolver el problema."
+            },
+            "c7": {
+                "choice1": "Los problemas con mi tarjeta bancaria no podrían haber llegado en peor momento.",
+                "choice2": "No puedo creer que esto pasa justo cuando tengo problemas con mi banco."
+            }
+        }
+    },
+    "Chap1s4": {
+        "narration": "30 de Octubre, 2023",
+        "narration1": "The Lurenberg Post, Redacción",
+        "narration2": "The Lurenberg Post, Oficina de Skyler",
+        "hour": "11:10 am",
+        "dialogue": {
+            "d1": "Hola Azad",
+            "d2": "Te contacté la semana pasada sobre un asunto delicado",
+            "d3": "Antes de hablarte de eso, debo asegurarme de que nuestros intercambios sean privados. El asunto es extremadamente delicado.",
+            "d4": "En este punto, solo puedo darte su nombre en clave: ClearPath",
+            "d5": "No hables con nadie sobre nuestros intercambios, nunca te contactaré en otra aplicación que no sea esta aplicación cifrada.",
+            "d6": "Hay un casillero, el número 29, en la estación de Central Street. El código es 311009. Puse una muestra inicial de documentos allí, te darás cuenta de la magnitud de la situación.",
+            "d7": "Parecía urgente, ¿hay un problema?",
+            "d8": "No cuesta nada ver a dónde nos lleva.",
+            "d9": "¿Qué es eso?"
+        },
+        "choices": {
+            "c1": {
+                "choice1": "Hola. Sí, lo recuerdo muy bien.",
+                "choice2": "Hola “Cincinnatus”, todavía no tengo idea de lo que estás hablando..."
+            },
+            "c2": {
+                "choice1": "Entiendo, ¿puedes al menos decirme de qué se trata?",
+                "choice2": "Por supuesto"
+            },
+            "c3": {
+                "choice1": "¿Qué quieres que haga?",
+                "choice2": "De acuerdo, entendido"
+            },
+            "c4": {
+                "choice1": "Cuenta conmigo",
+                "choice2": "¡Es como una película de espías!"
+            },
+            "c5": {
+                "choice1": "No realmente, pero tengo dudas sobre un informante que me contactó.",
+                "choice2": "Alguien me contactó, no sé si puedo confiar en él."
+            },
+            "c6": {
+                "choice1": "ClearPath, ¿te suena de algo?",
+                "choice2": "Mencionó la operación ClearPath."
+            },
+            "c7": {
+                "choice1": "Todavía no estoy seguro, tengo que irme.",
+                "choice2": "Olvídalo, te mantendré informado."
+            }
+        }
+    },
+    "Chap1s5": {
+        "narration": "Central Street Station",
+        "narration2": "En casa de Azad",
+        "hour": "5:40 pm"
+    },
+    "Chap1s6": {
+        "hour": "31 de Octubre, 2023",
+        "narration": "El gobierno anuncia el fin del efectivo",
+        "hour1": "8:55 am",
+        "hour2": "9:30 am",
+        "narration2": "The Lurenberg Post, Redacción",
+        "dialogue": {
+            "d1": "Es absurdo. ¿Estamos en una novela de Orwell o qué? ¡Han prohibido el efectivo!",
+            "d2": "¿De verdad? ¿Quién es? ¿Un informante interno?",
+            "d3": "¿Por qué tomaría un riesgo así justo antes de que se haga público? No tiene sentido...",
+            "d4": "Hola Azad, supongo que estás siguiendo las noticias en vivo.",
+            "d5": "Todo se ha acelerado. No pensé que actuarían tan rápido.",
+            "d6": "No tienes idea de lo que vamos a revelar. Esto es solo la punta del iceberg...",
+            "d7": "¡Vaya! Mal momento... Escucha, estoy dispuesto a enviarte dinero para ayudarte y seguir con la investigación.",
+            "d8": "No tienes idea en lo que nos estamos metiendo. Tenemos que llegar hasta el final ahora.",
+            "d9": "Digamos simplemente que el dinero no es un problema, y realmente necesito que saques a la luz esta historia.",
+            "d10": "Tienes que instalar un wallet.",
+            "d11": "Es como tu monedero físico, pero digital. No está controlada por un banco o una autoridad central, y nadie puede impedir que la uses. Es dinero digital.",
+            "d12": "Tengo que irme ahora. Instala TronLink y envíame tu dirección y te enviaré dinero."
+        },
+        "choices": {
+            "c1": {
+                "choice1": "¿Recuerdas el informante del que hablé ayer? Sabía sobre esto.",
+                "choice2": "Mi informante me advirtió ayer."
+            },
+            "c2": {
+                "choice1": "Todavía no lo sé. Me envió documentos clasificados que recopilé anoche.",
+                "choice2": "Recibí documentos sobre la operación ClearPath."
+            },
+            "c3": {
+                "choice1": "Tienes razón. Tengo que investigar.",
+                "choice2": "Tengo que contactar a mi informante."
+            },
+            "c4": {
+                "choice1": "¿Cómo te enteraste?",
+                "choice2": "Sí, estamos viendo la televisión."
+            },
+            "c5": {
+                "choice1": "Me costó creerlo cuando examiné los documentos ayer.",
+                "choice2": "(no decir nada)"
+            },
+            "c6": {
+                "choice1": "¿Sabes algo más? Mi tarjeta bancaria está bloqueada, así que esto es terrible para mí.",
+                "choice2": "Lo irónico de esto es que mi tarjeta bancaria está bloqueada."
+            },
+            "c7": {
+                "choice1": "¿Por qué harías eso?",
+                "choice2": "(no decir nada)"
+            },
+            "c8": {
+                "choice1": "Eres afortunado.",
+                "choice2": "(no decir nada)"
+            },
+            "c9": {
+                "choice1": "¿Instalar un wallet?",
+                "choice2": "¿Qué es eso?"
+            }
+        }
+    },
+    "Chap1s7": {
+        "narration": "En casa de Azad",
+        "hour": "8:00 pm",
+        "dialogue": {
+            "d1": "Tu informante probablemente tenga razón. Si quieres llevar a cabo esta investigación, necesitas dinero. El bloqueo de tu cuenta por “actividad sospechosa“ probablemente es un intento de intimidación.",
+            "d2": "Es una extraña coincidencia.",
+            "d3": "De todas formas, también necesitas dinero para vivir, no puedes seguir pidiendo prestado dinero a todo el mundo como lo has estado haciendo durante una semana.",
+            "d4": "¿Recuerdas la investigación SBFTX a principios de año? Aprendí bastantes cosas... Un wallet no es una mala idea para resolver tu problema, especialmente si te permite recibir dinero.",
+            "d5": "En realidad, es bastante sencillo. Es como una caja fuerte digital, o un buzón digital si lo prefieres, donde cualquiera puede depositar dinero, pero nadie puede abrirlo excepto tú.",
+            "d6": "Y sobre todo, nadie nunca podrá impedirte acceder a él. Nunca.",
+            "d7": "¿Dinero real, quieres decir el que tienes en tu cuenta bancaria que no puedes usar desde que fue bloqueada?",
+            "d8": "Incluso si se trata de divisas digitales, son bien reales, muchas tiendas aceptan criptomonedas.",
+            "d9": "Bueno, primero tienes que instalar un monedero digital. TronLink es el más utilizado.",
+            "d10": "Cerca de 30 millones de personas lo utilizan. Es simplemente una extensión del navegador.",
+            "d11": "Te guiaré, lo haremos juntos.",
+            "d12": "Cuando la extensión de TronLink esté descargada en tu navegador, se abrirá una nueva ventana y te pedirá que crees un nuevo monedero.",
+            "d13": "Primero, deberás elegir una contraseña que te permita acceder a la extensión desde tu dispositivo.",
+            "d14": "Luego viene el paso más importante. TronLink generará aleatoriamente 12 palabras. Esto es lo que se llama la master key.",
+            "d15": "Es la única y exclusiva clave que permite abrir tu buzón si retomamos la metáfora anterior.",
+            "d16": "Si la pierdes, tu monedero quedará bloqueado para siempre.",
+            "d17": "Y si alguien puede acceder a estas palabras, tendrá acceso a todo lo que se almacena en el interior.",
+            "d18": "Por eso es esencial guardar estas 12 palabras en un lugar seguro.",
+            "d19": "Vuelve a verme cuando hayas terminado todas las etapas que te acabo de describir."
+        },
+        "choices": {
+            "c1": {
+                "choice1": "¿Qué estás diciendo? No he empezado nada.",
+                "choice2": "Por favor, no seas paranoica, eso no ayuda..."
+            },
+            "c2": {
+                "choice1": "Tienes razón. Y con los nuevos acontecimientos, mi problema no será la prioridad del banco.",
+                "choice2": "Debería haber resuelto el problema la semana pasada."
+            },
+            "c3": {
+                "choice1": "No entendí eso del monedero digital...",
+                "choice2": "¿Está relacionado con Bitcoin y las criptomonedas?"
+            },
+            "c4": {
+                "choice1": "Pero sigue siendo dinero “virtual“ en comparación con el que tengo en mi cuenta bancaria real.",
+                "choice2": "Preferiría dinero real."
+            },
+            "c5": {
+                "choice1": "Eso es lo que Cincinnatus me dijo que instalara.",
+                "choice2": "(no decir nada)"
+            },
+            "c6": {
+                "choice1": "Sí, por favor.",
+                "choice2": "Muchas gracias."
+            },
+            "c7": {
+                "choice1": "¿Qué pasa si la pierdo?",
+                "choice2": "De acuerdo."
+            },
+            "c8": {
+                "choice1": "De acuerdo.",
+                "choice2": "(say nothing)"
+            },
+            "c9": {
+                "choice1": "¡Listo, he terminado!",
+                "choice2": "Me costó un poco, pero finalmente lo logré."
+            }
+        },
+        "text1": "Ve a",
+        "text2": "y descarga la extensión."
     }
 }

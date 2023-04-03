@@ -31,3 +31,26 @@
         @apply opacity-100;
     }
 }
+.footerIcon {
+        @apply h-8 object-contain cursor-pointer opacity-70 hover:opacity-100;
+    }
+
+    .Skyler {
+        @apply text-red-500 text-xs;
+    }
+
+    .Rob {
+        @apply text-purple-600 text-xs;
+    }
+
+    .Jessy {
+        @apply text-green-600 text-xs;
+    }
+
+    .Cook {
+        @apply text-blue-500 text-xs;
+    }
+
+    .bar-of-progress:after {
+        @apply content-[""] block fixed top-0 left-0 h-1 bg-red-800 w-2/12;
+    }

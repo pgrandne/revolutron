@@ -55,7 +55,7 @@ export default function Index() {
         <LocaleSwitcher />
       </div>
       <div className="my-auto relative">
-        <MotionOp opacity={0.4} delay={4} duration={1}>
+        <MotionOp opacity={0.4} delay={4}>
           <Image
             className="rounded-md border-4 border-white"
             src={equipmentPic}

@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { AnimatedText } from '@/app/components';
-import { azadDeskPic, chatPic, notifPic, redactionPic, skylerPic } from "@/public/img"
+import { AnimatedText, TelegramNotification } from '@/app/components';
+import { azadDeskPic, chatPic, redactionPic, skylerPic } from "@/public/img"
 import { useTranslations } from 'next-intl';
 
 
@@ -41,20 +41,7 @@ const Sequence = ({ stage, telegramWindow, setTelegramWindow }: {
                         </div>
                     </motion.div>
                     {!telegramWindow &&
-                        < motion.div
-                            className="absolute top-0 right-0 flex h-full"
-                            initial={{ y: -10, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            transition={{ delay: 14.5, duration: 1.5 }}>
-                            <div className="flex pl-[70%] pt-[15%] pb-[47%]">
-                                <Image
-                                    className="object-contain cursor-pointer animate-pulse"
-                                    src={notifPic}
-                                    alt="notification"
-                                    onClick={() => setTelegramWindow(true)}
-                                />
-                            </div>
-                        </motion.div>
+                        <TelegramNotification setTelegramWindow={setTelegramWindow} delay={14.5} />
                     }
                 </>
             }
@@ -70,7 +57,7 @@ const Sequence = ({ stage, telegramWindow, setTelegramWindow }: {
                         <Image className="object-contain" src={skylerPic} alt="skyler office" />
                     </motion.div>
                     <div className="pl-6 pt-2 z-10">
-                        <AnimatedText size={"text-xl"} content={t('narration2')} speed={0.04} delay={3} />                    
+                        <AnimatedText size={"text-xl"} content={t('narration2')} speed={0.04} delay={3} />
                     </div>
                     < motion.div
                         className="absolute bottom-0 right-0 flex h-full"

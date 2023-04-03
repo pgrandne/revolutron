@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { perm_marker } from '@/utils/font';
 
 export const AnimatedText = (
-    { size, content, speed, delay }: {
+    { size, content, speed = 0.06, delay }: {
         size: string,
         content: string,
-        speed: number,
+        speed?: number,
         delay: number
     }) => {
 

@@ -50,7 +50,3 @@
     .Cook {
         @apply text-blue-500 text-xs;
     }
-
-    .bar-of-progress:after {
-        @apply content-[""] block fixed top-0 left-0 h-1 bg-red-800 w-2/12;
-    }

@@ -4,18 +4,29 @@ import { motion } from "framer-motion"
 import { child, textAnimation } from "@/utils/animatedText"
 
 
-export const ExternalDiscussion = ({ text, name = "Skyler", nbCharPrevDisc = 0, delay = 0, telegramWindow = false }: {
+export const ExternalDiscussion = ({
+    text,
+    name = "Skyler",
+    nbCharPrevDisc = 0,
+    delay = 0.7,
+    telegramWindow = false,
+    nbFollowingDialogue = 1
+}: {
     text: string
     name?: string
     nbCharPrevDisc?: number
     delay?: number
     telegramWindow?: boolean
+    nbFollowingDialogue?: number
 }) => {
     const factor = 0.04
-    const fixedDelay = 0.5
 
     const calculateDelay = () => {
-        const calculatedDelay = factor * nbCharPrevDisc + delay + fixedDelay
+        let calculatedDelay
+        if (telegramWindow)
+            calculatedDelay = 2.5 * (nbFollowingDialogue - 1)
+        else
+            calculatedDelay = (factor * nbCharPrevDisc) + (delay * nbFollowingDialogue)
         return calculatedDelay
     }
 

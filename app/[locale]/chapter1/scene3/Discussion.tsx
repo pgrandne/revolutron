@@ -29,11 +29,11 @@ const Discussion = ({ stage, setStage }: { stage: number, setStage: Dispatch<Set
                         {stage < 3 &&
                             <>
                                 <ExternalDiscussion text={t('dialogue.d7')} delay={6} />
-                                <ExternalDiscussion text={t('dialogue.d8')} name="Rob" nbCharPrevDisc={t('dialogue.d7').length} delay={6.5} />
-                                <ExternalDiscussion text={t('dialogue.d9')} name="Jessy" nbCharPrevDisc={t('dialogue.d7').length + t('dialogue.d8').length} delay={7} />
+                                <ExternalDiscussion text={t('dialogue.d8')} name="Rob" nbCharPrevDisc={t('dialogue.d7').length} delay={6} nbFollowingDialogue={2} />
+                                <ExternalDiscussion text={t('dialogue.d9')} name="Jessy" nbCharPrevDisc={t('dialogue.d7').length + t('dialogue.d8').length} delay={6.5} nbFollowingDialogue={3} />
                                 {stage > 0 && <>
                                     <AzadDiscussion azadText={azadText[0]} />
-                                    <ExternalDiscussion text={t('dialogue.d10')} name="Skyler" delay={0} />
+                                    <ExternalDiscussion text={t('dialogue.d10')} name="Skyler" />
                                 </>}
                                 {stage > 1 &&
                                     <AzadDiscussion azadText={azadText[1]} />

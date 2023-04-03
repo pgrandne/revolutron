@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from "framer-motion";
-import { perm_marker } from "@/lib/utils/font";
+import { perm_marker } from "@/utils/font";
 
 const Mobile = () => {
     const text = "The first version of Revolte is only accessible on Desktop. The mobile version will be available soon"

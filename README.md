@@ -1,38 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# RevoluTRON
+Join the Web3 revolution with Revolutron!
 
-## Getting Started
+Our adventure game introduces users to the world of blockchain, wallets, tokens, and more, with mandatory tasks like wallet installation to guide players through the story. Explore real Web3 applications and experience the potential of this transformative technology. 
 
-First, run the development server:
+## Story
 
+Embark on an unforgettable journey that begins in the fictitious land of Listenbourg, in October of 2023. A shocking discovery of a vast counterfeit currency network has sent the country into chaos, and in a bold move to save the economy from ruin, the government outlaws cash.
+
+As you assume the role of Azad, an intrepid journalist from the Lurenberg Post, a whistleblower contacts you with a game-changing tipoff - an unparalleled financial and political scandal is about to be exposed.
+
+Are you up for the challenge? Brace yourself for an adventure that will keep you on the edge of your seat. Don't hesitate - join Azad and discover what lies ahead!
+
+## Description
+
+With this adventure game we’re trying to help people get into web3 without scaring them off with all the complicated technical stuff.
+
+Simply follow the adventure, no additional instruction is required. Each chapter has different objectives, as described below, to enter smoothly into Web3 and into our world...
+
+1) Chapter 1 is live! It leads to the installation of the wallet for the new comers. The purpose of this chapter is to introduce the story and make the world we’ve created feel more real and interesting.
+
+2) Chapter 2: this one is for the users to experiment (on the testnet) the basics of web3, like making a transaction, swap, using a bridge, nft…This chapter (split in several episodes) will be developed from March to April 2023. Some episodes have already been released.
+
+3) Chapter 3 (on the mainnet). This chapter will be dedicated to showcase existing protocols and integrate them in our story. Users will have to interact with those protocols, as if it was part of the story, to continue the adventure. This chapter will start from May 2023. The number of episodes is not limited (one protocol per episode will be showcased).
+
+## Genesis
+
+With Irruption Lab (https://www.irruptionlab.com/), we are building applications for web3 democratization, and the RevoluTRON project is part of it. We have already created several projects, and the feedback from the newcomers was always the same: Why do I need to install a wallet? What is a transaction? Why do I need gas? Why do I need to sign/approve messages all the time? Why can't I log in with email and password like everywhere else? What are the real use cases of the technology? Blockchain, you mean Bitcoin?
+
+Something is missing ! Without easy/fun Web3 on-ramp, a mass adoption is utopian.
+With our adventure game RevoluTRON, we are trying to help people get into web3 without scaring them off with all the complicated technical stuff.
+
+Inspirations: Cryptozombie (https://cryptozombies.io/) to learn Solidity langage, and Ethereumhacker (https://ethereumhacker.com/) to learn about smart contracts vulnerabilities.
+
+## Fundings
+
+- Custom built adventures for protocols. Starting from Chapter 3 each episode will showcase a new protocol, and it will be fully integrated in the story.
+- Public Good Funding / Grants
+- Partnerships with protocols, affiliate links, comissions
+- Donations
+
+## Roadmap
+- [X] Chapter 1
+- [X] Chapter 2 episode 1 (Testnet)
+- [X] French language
+- [X] Spanish language
+- [ ] Chapter 2 episode 2 (Testnet)
+- [ ] Chapter 2 episode 3 (Testnet)
+- [ ] Chapter 2 episode 4 (Testnet)
+- [ ] Smart contract - Deposit and lock 
+- [ ] Chapter 3 episode 1 (Mainnet)
+
+## Instructions
+##### Clone the project
+Clone the repository on your local machine
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+$ git clone https://github.com/pgrandne/revolutron.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Front End ###
+We use NextJS 13. The Front End scripts are in "app" folder.
+If you want to launch the Front End locally:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Go to "revolutron" folder
+```bash
+$ cd revolutron
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+2. Install the dependencies
+```bash
+$ npm install
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+3. Launch the server locally
+```bash
+$ npm run dev
+```
+### Back End ###
+We use .env for environment variables. Change the name of env.example to .env and fill in the 2 variables :
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   - We use DATABASE_URL for our MongoDB database
+   - We use PRIVATE KEY for interacting with the blockchain

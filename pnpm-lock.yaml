@@ -11,8 +11,8 @@ dependencies:
     specifier: ^6.6.6
     version: 6.6.6
   framer-motion:
-    specifier: ^10.10.0
-    version: 10.10.0(react-dom@18.2.0)(react@18.2.0)
+    specifier: 10.11.2
+    version: 10.11.2(react-dom@18.2.0)(react@18.2.0)
   next:
     specifier: 13.2.4
     version: 13.2.4(react-dom@18.2.0)(react@18.2.0)
@@ -40,8 +40,8 @@ devDependencies:
     specifier: 18.15.11
     version: 18.15.11
   '@types/react':
-    specifier: 18.0.32
-    version: 18.0.32
+    specifier: 18.0.33
+    version: 18.0.33
   '@types/react-dom':
     specifier: 18.0.11
     version: 18.0.11
@@ -682,11 +682,11 @@ packages:
   /@types/react-dom@18.0.11:
     resolution: {integrity: sha512-O38bPbI2CWtgw/OoQoY+BRelw7uysmXbWvw3nLWO21H1HSh+GOlqPuXshJfjmpNlKiiSDG9cc1JZAaMmVdcTlw==}
     dependencies:
-      '@types/react': 18.0.32
+      '@types/react': 18.0.33
     dev: true
 
-  /@types/react@18.0.32:
-    resolution: {integrity: sha512-gYGXdtPQ9Cj0w2Fwqg5/ak6BcK3Z15YgjSqtyDizWUfx7mQ8drs0NBUzRRsAdoFVTO8kJ8L2TL8Skm7OFPnLUw==}
+  /@types/react@18.0.33:
+    resolution: {integrity: sha512-sHxzVxeanvQyQ1lr8NSHaj0kDzcNiGpILEVt69g9S31/7PfMvNCKLKcsHw4lYKjs3cGNJjXSP4mYzX43QlnjNA==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
@@ -1673,8 +1673,8 @@ packages:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
     dev: true
 
-  /framer-motion@10.10.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-eCsyOcJimIRbx9KOzBTO3j9u1rF/H8/o/ybizYqdrzHkEeHx9L2NcEfGWfV0OHTc1JV17ECVzuZpomupEJ4+dw==}
+  /framer-motion@10.11.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-IrwuC9regNOU99JoM/Z62CAMA3awGV6AcF7e3bcgXk/ZoNlGSt5aVq0J7UAwtLmCkwVlRvBkiMnvv2mZ1GW2pg==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0

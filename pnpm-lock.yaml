@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@tronweb3/tronwallet-adapter-react-hooks':
+    specifier: ^1.1.2
+    version: 1.1.2(react-dom@18.2.0)(react@18.2.0)
   eslint:
     specifier: 8.37.0
     version: 8.37.0
@@ -665,6 +668,33 @@ packages:
 
   /@tronweb3/google-protobuf@3.21.2:
     resolution: {integrity: sha512-IVcT2GfWX3K6tHUVhs14NP5uzKhQt4KeDya1g9ACxuZsUzsaoGUIGzceK2Ltu7xp1YV94AaHOf4yxLAivlvEkQ==}
+    dev: false
+
+  /@tronweb3/tronwallet-abstract-adapter@1.1.4:
+    resolution: {integrity: sha512-1bDHKWxJ1S3o9TQSzTeFpV38GBKbi11/dNR8o5Y5jRjpNh8HyIlkf/TI8O1kXTH1K5pH6xE9P6Wp6sQWyDkb6A==}
+    engines: {node: '>=16', pnpm: '>=7'}
+    dependencies:
+      eventemitter3: 4.0.7
+    dev: false
+
+  /@tronweb3/tronwallet-adapter-react-hooks@1.1.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-xl902YdTd8E2rOXMz7CmX9NMHMSlYTV0UfBp1kIhgRyasZSPzl9GvJgBwmdbfjwvUo5tBBm0nwlYCm5JkDdI1Q==}
+    engines: {node: '>=16', pnpm: '>=7'}
+    peerDependencies:
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      '@tronweb3/tronwallet-abstract-adapter': 1.1.4
+      '@tronweb3/tronwallet-adapter-tronlink': 1.1.4
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@tronweb3/tronwallet-adapter-tronlink@1.1.4:
+    resolution: {integrity: sha512-wOyeFNxyO4rM1N6/C49tFMG+VJ/yTx/5SBUWhrSJKpycglCZxE/yvxGq1y87jk3uN//nHWnnd2RuDnzDX6J+ew==}
+    engines: {node: '>=16', pnpm: '>=7'}
+    dependencies:
+      '@tronweb3/tronwallet-abstract-adapter': 1.1.4
     dev: false
 
   /@types/json5@0.0.29:
@@ -1587,6 +1617,10 @@ packages:
 
   /eventemitter3@3.1.2:
     resolution: {integrity: sha512-tvtQIeLVHjDkJYnzf2dgVMxfuSGJeM/7UCG17TT4EumTfNtF+0nebF/4zWOIkCreAbtNqhGEboB6BWrwqNaw4Q==}
+    dev: false
+
+  /eventemitter3@4.0.7:
+    resolution: {integrity: sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==}
     dev: false
 
   /fast-deep-equal@3.1.3:

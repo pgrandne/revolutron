@@ -1,5 +1,7 @@
-import { useState } from "react";
+'use client'
 
+import { MouseEvent, useEffect, useState } from "react";
+import { useWallet } from '@tronweb3/tronwallet-adapter-react-hooks';
 interface ITronLinkParams {
     ready: boolean
     request: any
@@ -15,30 +17,38 @@ declare global {
 }
 
 const TronLink = () => {
-    const [wallet, setWallet] = useState(false)
+    const { address, disconnect, select, connected } = useWallet();
     const [walletButton, setWalletButton] = useState('Connect TronLink')
-    const getTronWeb = async () => {
-        let tronWeb;
-        if (typeof window !== 'undefined' && typeof window.tronLink !== 'undefined') {
-            if (window.tronLink.ready) {
-                tronWeb = window.tronWeb;
-                setWalletButton(window.tronWeb.defaultAddress.base58)
-                console.log(tronWeb)
-            } else {
-                window.alert('Please unlock your TronLink')
-            }
-            return tronWeb;
-        } else {
-            window.alert('Wallet TronLink  is not installed')
-        }
+    useEffect(() => {
+        if (address)
+            setWalletButton(`${address.slice(0, 5)}...${address.slice(29, 34)}`)
+        else
+            setWalletButton('Connect TronLink')
+
+    }, [address])
+
+    const tronConnect = (e: MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault()
+        console.log(window.tronLink)
+        if (!connected) {
+            if (typeof window !== 'undefined' && typeof window.tronLink !== 'undefined') {
+                console.log(window)
+                if (!window.tronLink.ready)
+                    window.alert('Please unlock your TronLink')
+                else
+                    select('TronLink' as any)
+            } else
+                window.alert('Wallet TronLink  is not installed, you can install it during chapter 1')
+        } else
+            disconnect()
     }
 
     return (
-        <div
+        <button
             className="border-2 border-white opacity-60 rounded-md px-2 my-auto cursor-pointer"
-            onClick={() => getTronWeb()}
+            onClick={(e) => tronConnect(e)}
         >{walletButton}
-        </div>
+        </button>
     )
 }
 

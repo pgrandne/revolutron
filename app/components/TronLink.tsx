@@ -11,7 +11,7 @@ interface ITronLinkParams {
 
 declare global {
     interface Window {
-        tronWeb: any
+        tron: any
         tronLink: ITronLinkParams
     }
 }
@@ -29,14 +29,12 @@ const TronLink = () => {
 
     const tronConnect = (e: MouseEvent<HTMLButtonElement>) => {
         e.preventDefault()
-        console.log(window.tronLink)
         if (!connected) {
             if (typeof window !== 'undefined' && typeof window.tronLink !== 'undefined') {
-                console.log(window)
-                // if (!window.tronLink.ready)
-                //     window.alert('Please unlock your TronLink')
-                // else
-                select('TronLink' as any)
+                if (window.tron.isTronLink && !window.tronLink.ready)
+                    window.alert('Please unlock your TronLink')
+                else
+                    select('TronLink' as any)
             } else
                 window.alert('Wallet TronLink  is not installed, you can install it during chapter 1')
         } else

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Dispatch, SetStateAction } from "react";
-import { isMobile } from 'react-device-detect';
+import { isMobile, isChromium } from 'react-device-detect';
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
 import { donation, github, info, linkedin, twitter } from "@/public/svg";
@@ -91,6 +91,12 @@ export const MotionHeroButton = ({ buttonName, setModalSelectChapter }: {
     const router = useRouter()
     const locale = useLocale()
 
+    const launchRevolte = () => {
+        if (!isMobile && isChromium)
+            setModalSelectChapter(true)
+        else router.push(isMobile ? `${locale}/mobile` : (!isChromium ? `${locale}/browser` : `${locale}/chapter1/scene1`))
+    }
+
     return (
         <motion.div
             className="flex mx-auto place-content-center"
@@ -101,10 +107,7 @@ export const MotionHeroButton = ({ buttonName, setModalSelectChapter }: {
             <motion.button
                 className="btnHero"
                 whileHover={{ rotate: 7, scale: 1.5, transition: { duration: 0.1 } }}
-                onClick={() => {
-                    !isMobile ? setModalSelectChapter(true) : router.push(`${locale}/mobile`)
-                }
-                }
+                onClick={launchRevolte}
             >
                 {buttonName}
             </motion.button>

@@ -2,13 +2,11 @@
 
 import { perm_marker } from '@/utils/font';
 import { useTranslations } from 'next-intl';
-import { LocaleSwitcher, ModalInfo, ModalSelectChapter, MotionFooter, MotionHero, MotionHeroButton, MotionOp } from '../components';
+import { LocaleSwitcher, ModalInfo, ModalSelectChapter, MotionFooter, MotionHero, MotionHeroButton, MotionOp, TronLink } from '../components';
 import Image from 'next/image';
-import equipmentPic from '@/public/img/equipment.jpg'
+import { equipmentPic } from '@/public/img'
 import { useState } from 'react';
-import TronLink from '../components/TronLink';
 import { WalletProvider } from '@tronweb3/tronwallet-adapter-react-hooks';
-// import { WalletDisconnectedError, WalletError, WalletNotFoundError } from '@tronweb3/tronwallet-abstract-adapter';
 
 export default function Index() {
   const tHome = useTranslations('Home')

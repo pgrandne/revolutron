@@ -16,7 +16,7 @@ declare global {
     }
 }
 
-const TronLink = () => {
+export const TronLink = () => {
     const { address, disconnect, select, connected } = useWallet();
     const [walletButton, setWalletButton] = useState('Connect TronLink')
     useEffect(() => {
@@ -49,5 +49,3 @@ const TronLink = () => {
         </button>
     )
 }
-
-export default TronLink

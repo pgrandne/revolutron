@@ -7,6 +7,7 @@ export { default as cincinnatusPic } from "./cincinnatus.jpg"
 export { default as classifiedPic } from "./classified.png"
 export { default as decorPic } from "./decor2.png"
 export { default as documentPic } from "./classified-document.png"
+export { default as equipmentPic } from "./equipment.jpg"
 export { default as friendsPic } from "./friends3.png"
 export { default as groupfriendsPic } from "./friends4.png"
 export { default as journalPic } from './journal18oct.png'

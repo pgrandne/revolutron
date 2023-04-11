@@ -12,12 +12,36 @@
         "download": "Télécharger",
         "close": "Fermer"
     },
+    "Browser": {
+        "text": "La première version de Revolte n'est accessible qu'avec des navigateurs Chromium (Brave, Chrome, Edge, Opera)"
+    },
+    "Mobile": {
+        "text": "La première version de Revolte n'est accessible que sur ordinateur. La version mobile sera bientôt disponible."
+    },
+    "Construction": {
+        "text": "À suivre..."
+    },
     "Progression": {
         "title": "Sélectionner où vous souhaitez aller",
         "chapter": "Chapitre",
         "resume": "Dernière sauvegarde",
         "connect": "Connectez votre wallet",
         "close": "Fermer"
+    },
+    "Save": {
+        "saved": "Progression sauvegardée !",
+        "next": "Vous pouvez passer à l'épisode suivant",
+        "processing": "Patientez...",
+        "nextbutton": "Épisode suivant"
+    },
+    "Feedback": {
+        "text1": "Avant de passer à l'épisode suivant, donnez-nous",
+        "text2": "votre avis",
+        "duration": "Cela ne prend qu'une minute",
+        "sure": "Bien sûr !",
+        "close": "Plus tard",
+        "feedback": "Aidez-nous à améliorer l'expérience et donnez-nous votre avis 🙏 Cliquez",
+        "link": "ici"
     },
     "Chap1s1": {
         "narration": "Lurenberg, Listenbourg",
@@ -278,5 +302,62 @@
         },
         "text1": "Va sur",
         "text2": "et télécharge l'extension."
+    },
+    "Chap2": {
+        "tron": "TronLink est requis pour le Chapitre 2 et il semble que vous ne l'ayez pas installé.",
+        "tronLink1": "Vous pouvez cliquer ici ",
+        "tronLink2": " pour l'installer",
+        "gotochapter1": "Ou vous pouvez vous rendre au ",
+        "gotochapter1end": "pour redécouvrir toute l'histoire et comprendre comment fonctionne TronLink.",
+        "chapter1": "Chapitre 1",
+        "continue": "Pour continuer l'aventure",
+        "click": "cliquez sur",
+        "select": "et sélectionnez TronLink",
+        "processing": "Patientez...",
+        "next": "Épisode suivant sans sauvegarder",
+        "save": "Sauvegarder votre progression",
+        "or": "ou",
+        "signin": "Signez pour enregistrer votre progression:",
+        "chapter": "- chapitre:",
+        "episode": "- épisode:",
+        "error": "Erreur lors de la vérification du message"
+    },
+    "Chap2s1": {
+        "chapter": "Chapitre 2",
+        "title": "Changement de paradigme",
+        "sentgas": "Je viens de t'envoyer du gas: ETH, tu devrais le recevoir sous peu.",
+        "havegas": "Apparemment tu as déjà du gas, je n'ai pas besoin de t'en envoyer.",
+        "sentusdc": "Je viens de t'envoyer des USDC, tu devrais les recevoir.",
+        "haveusdc": "Tu as déjà assez d'USDC, je n'ai pas besoin de t'en envoyer.",
+        "networkissues": "Le réseau semble rencontrer des problèmes, reviens plus tard s'il te plaît.",
+        "clickon1": "Tu peux cliquer sur",
+        "clickon2": "pour afficher le solde USDC dans ton wallet",
+        "narration": "The Lurenberg Post, Rédaction",
+        "dialogue": {
+            "d1": "Hey Azad, as-tu installé un wallet ?",
+            "d2": "Très bien, je vais maintenant t'envoyer des fonds en USDC, une crypto-monnaie stable dont la valeur est indexée sur le dollar (1 USDC = 1 $).",
+            "d3": "Clique sur l'extension TronLink de ton navigateur. Tu devrais maintenant voir les USDC dans l'onglet 'Actifs'.",
+            "d4": "J'ai besoin de ton adresse pour t'envoyer les fonds maintenant. C'est une séquence unique de lettres et de chiffres qui commence par 0x......",
+            "d5": "Lorsque tu cliques sur l'extension, tu verras l'adresse juste en dessous de l’intitulé du compte ('Compte 1' dans ton cas car tu viens juste de l'installer).",
+            "d6": "Clique simplement dessus pour copier ton adresse dans le presse-papier et colle-la ici.",
+            "d7": "Pour effectuer des transactions sur ce réseau, tu auras également besoin de ”gas”. C'est un peu comme l'essence pour ta voiture, si tu veux la faire avancer, tu dois remplir le réservoir avec le carburant approprié.",
+            "d8": "En gros ce ”gas” est une monnaie spécifique, utilisée pour payer tes propres transactions. Sur ce réseau, cette monnaie s'appelle ETH.",
+            "d9": "Mais tu sais, lorsque tu utilises ta carte bancaire, tu paies également des frais ! La différence est simplement que tu n'en as pas conscience parce que le commerçant les paie pour toi !",
+            "d10": "Désolé, je dois y aller, je te contacterai très bientôt."
+        },
+        "choices": {
+            "c1": {
+                "choice1": "Oui",
+                "choice2": "J'ai téléchargé TronLink comme tu m'as dit."
+            },
+            "c2": {
+                "choice1": "Oui, je les vois",
+                "choice2": "Je ne vois que “0 USDC“"
+            },
+            "c3": {
+                "choice1": "Ca veut dire qu'il faut payer pour chaque transaction ? ",
+                "choice2": "(ne rien dire)"
+            }
+        }
     }
 }

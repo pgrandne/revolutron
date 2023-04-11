@@ -3,8 +3,8 @@
 import { motion } from "framer-motion";
 import { useTranslations } from 'next-intl';
 
-const Mobile = () => {
-    const t = useTranslations('Mobile');
+const Browser = () => {
+    const t = useTranslations('Browser');
     const text = t('text')
     const words = text.split("")
 
@@ -59,4 +59,4 @@ const Mobile = () => {
     )
 }
 
-export default Mobile;
+export default Browser;

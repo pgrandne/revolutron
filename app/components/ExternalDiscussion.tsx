@@ -24,9 +24,9 @@ export const ExternalDiscussion = ({
     const calculateDelay = () => {
         let calculatedDelay
         if (telegramWindow)
-            calculatedDelay = 2.5 * (nbFollowingDialogue - 1)
+            calculatedDelay = delay + 2.5 * (nbFollowingDialogue - 1)
         else
-            calculatedDelay = (factor * nbCharPrevDisc) + (delay * nbFollowingDialogue)
+            calculatedDelay = delay + (factor * nbCharPrevDisc) + 0.7 * (nbFollowingDialogue - 1)
         return calculatedDelay
     }
 

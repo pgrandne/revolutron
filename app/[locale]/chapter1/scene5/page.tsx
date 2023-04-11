@@ -1,81 +1,110 @@
 'use client';
 
+import { motion } from "framer-motion"
 import { useState } from 'react'
-import Discussion from './Discussion'
-import Sequence from './Sequence'
 import Image from "next/image";
-import { manReadJournalPic, tvPic } from "@/public/img"
-import { AnimatedText, ArrowButton, LinkLocale, MotionOp, MotionSlideX, ProgressionBar } from "@/app/components";
-import Telegram from "./Telegram";
+import { azadConfusedPic, classifiedPic, documentPic, lockerPic, pickupPic } from '@/public/img'
+import { AnimatedText, ArrowButton, LinkLocale } from "@/app/components";
 import { useTranslations } from 'next-intl';
 
 const Chap1s5 = () => {
-    const [telegramWindow, setTelegramWindow] = useState(false)
+    const [lockerOpened, setLockerOpened] = useState(false)
     const [stage, setStage] = useState(0)
-    const [discussionWindow, setDiscussionWindow] = useState(true)
-    const t = useTranslations('Chap1s6');
+    const t = useTranslations('Chap1s5');
 
     return (
         <>
-            {stage === 0 &&
-                <div className="relative overflow-hidden flex justify-center w-screen h-screen my-auto">
-                    <MotionSlideX className="flex justify-center py-[0%]">
-                        <Image className="object-contain" src={tvPic} alt="TV" />
-                    </MotionSlideX>
-                    <div className="pt-10 pl-6 z-10">
-                        <AnimatedText size="text-2xl" content={t('hour')} speed={0.05} delay={4} />
-                        <div className="pt-3">
-                            <AnimatedText size="text-3xl" content={t('narration')} speed={0.05} delay={5.5} />
-                        </div>
+            {!lockerOpened &&
+                <div className="relative flex justify-center w-screen h-screen my-auto">
+                    <motion.div
+                        className="absolute top-0"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 3.2, duration: 1 }}
+                    >
+                        <Image
+                            className="w-screen h-screen"
+                            src={lockerPic}
+                            alt="Locker"
+                        />
+                    </motion.div>
+
+                    <div className="p-1 absolute bottom-14 left-20 flex flex-col">
+                        <AnimatedText size="text-4xl" content={t('narration')} speed={0.05} delay={0.5} />
+                        <AnimatedText size="text-2xl" content={t('hour')} speed={0.05} delay={2.3} />
+
                     </div>
-                    <div className="absolute flex right-0 pb-[5%]">
-                        <MotionOp delay={2} duration={2}>
-                            <div className="flex justify-end pl-[0%] pb-[0%] pt-[30%]">
-                                <Image className="object-contain" src={manReadJournalPic} alt="Journal" />
-                            </div>
-                        </MotionOp>
-                    </div>
-                    <MotionOp delay={8}>
-                        <button
-                            className="absolute bottom-8 right-[33%] animate-pulse"
-                            onClick={() => setStage(1)}
+                    <motion.div
+                        className="absolute bottom-[16%] right-[9%]"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 5, duration: 0.8 }}
+                    >
+                        <Image
+                            className="object-contain h-[340px] w-full border-8 border-[#dac8bc] animate-pulse cursor-pointer"
+                            onClick={() => {
+                                setStage(1)
+                                setTimeout(() => setLockerOpened(true), 1000)
+                            }}
+                            src={pickupPic}
+                            alt="Pickup"
+                        />
+                    </motion.div>
+                    {stage === 1 &&
+                        < motion.div
+                            className="absolute h-screen w-screen bg-[#0f1216]"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 1 }}
                         >
-                            <ArrowButton />
-                        </button>
-                    </MotionOp>
+                        </motion.div>
+                    }
                 </div >
             }
-            {stage > 0 &&
-                <div className="flex flex-row">
-                    <ProgressionBar progression={stage < 5 ? "w-9/12" : "w-10/12"} />
-                    <div className="relative basis-2/3 w-full overflow-hidden">
-                        <Sequence discussionWindow={discussionWindow} setTelegramWindow={setTelegramWindow} telegramWindow={telegramWindow} />
-                        {stage === 10 &&
-                            <MotionOp delay={5}>
-                                <LinkLocale href="/chapter1/scene7" className="absolute bottom-8 right-8 animate-pulse">
-                                    <ArrowButton />
-                                </LinkLocale>
-                            </MotionOp>
-                        }
+
+            {
+                lockerOpened &&
+                <div className="relative overflow-hidden flex justify-center w-screen h-screen my-auto ">
+                    <div className="bar-of-progress fixed top-0 left-0 h-1 bg-red-800 w-8/12" />
+                    <div className="flex flex-col justify-center pr-[35%]">
+                        <motion.div
+                            initial={{ x: -50, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{ delay: 2.5, duration: 1 }}
+                        >
+                            <Image className="object-contain" src={classifiedPic} alt="Classified" />
+                        </motion.div>
+                        <div className="pl-20 pt-2 z-10">
+                            <AnimatedText size={"text-4xl"} content={t('narration2')} speed={0.06} delay={1} />
+                        </div>
                     </div>
-                    <div className="basis-1/3 p-6 h-screen flex-grow-0">
-                        {discussionWindow &&
-                            <Discussion stage={stage} setStage={setStage} />
-                        }
-                        {telegramWindow &&
-                            <Telegram stage={stage} setStage={setStage} />
-                        }
-                    </div>
-                    {stage === 4 && discussionWindow &&
-                        <MotionOp>
-                            <button
-                                className="absolute bottom-8 right-8 animate-pulse"
-                                onClick={() => setDiscussionWindow(false)}
-                            >
-                                <ArrowButton />
-                            </button>
-                        </MotionOp>
-                    }
+                    < motion.div
+                        className="absolute bottom-0 right-0 flex h-full"
+                        initial={{ y: 30, opacity: 0 }}
+                        animate={{ y: [30, 0, 0, 0], opacity: [0, 1, 1, 0] }}
+                        transition={{ delay: 4, duration: 3.5, times: [0, 0.2, 0.7, 1] }}>
+                        <div className="flex justify-end pl-[20%] pb-[10%] pt-[20%] ">
+                            <Image className="object-contain" src={azadConfusedPic} alt="Azad" />
+                        </div>
+                    </motion.div>
+                    < motion.div
+                        className="absolute bottom-0 right-0 flex h-full"
+                        initial={{ y: 0, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ delay: 7, duration: 2 }}>
+                        <div className="flex justify-end pl-[50%] pb-[5%] pt-[10%]">
+                            <Image className="object-contain" src={documentPic} alt="Classified-document" />
+                        </div>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 8, duration: 1 }}
+                    >
+                        <LinkLocale href="/chapter1/scene6" className="absolute bottom-8 right-8 animate-pulse">
+                            <ArrowButton />
+                        </LinkLocale>
+                    </motion.div>
                 </div>
             }
         </>

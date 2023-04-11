@@ -12,12 +12,36 @@
         "download": "Descargar",
         "close": "Cerrar"
     },
+    "Browser": {
+        "text": "La primera versión de Revolte no es accesible con Internet Explorer o Safari. Por favor, usa otro navegador (Brave, Chrome, Edge, Firefox)"
+    },
+    "Mobile": {
+        "text": "La primera versión de Revolte solo es accesible en escritorio. La versión móvil estará disponible pronto"
+    },
+    "Construction": {
+        "text": "Continuará..."
+    },
     "Progression": {
         "title": "Selecciona a dónde quieres ir",
         "chapter": "Capítulo",
         "resume": "Continuar la última sesión",
         "connect": "Conectar su wallet",
         "close": "Cerrar"
+    },
+    "Save": {
+        "saved": "¡Progreso guardado!",
+        "next": "Puedes ir al siguiente episodio",
+        "processing": "Procesando...",
+        "nextbutton": "Siguiente episodio"
+    },
+    "Feedback": {
+        "text1": "Antes de pasar al siguiente episodio, danos",
+        "text2": "tu opinión",
+        "duration": "Sólo lleva 1 minuto",
+        "sure": "¡Seguro!",
+        "close": "Más tarde",
+        "feedback": "Ayúdanos a mejorar la experiencia y danos tu opinión 🙏 Haz clic",
+        "link": "aquí"
     },
     "Chap1s1": {
         "narration": "Lurenberg, Listenbourg",
@@ -278,5 +302,62 @@
         },
         "text1": "Ve a",
         "text2": "y descarga la extensión."
+    },
+    "Chap2": {
+        "tron": "Se requiere TronLink para el Capítulo 2 y parece que no lo tienes instalado.",
+        "tronLink1": "Puedes hacer clic aquí ",
+        "tronLink2": " para instalarlo",
+        "gotochapter1": "O puedes ir al ",
+        "gotochapter1end": "para redescubrir toda la historia y entender cómo funciona TronLink.",
+        "chapter1": "Capítulo 1",
+        "continue": "Para continuar la aventura",
+        "click": "haz clic en",
+        "select": "y selecciona TronLink",
+        "processing": "Procesando...",
+        "next": "Próximo episodio sin guardar",
+        "save": "Guardar tu progreso",
+        "or": "o",
+        "signin": "Firma para guardar tu progreso:",
+        "chapter": "- capítulo:",
+        "episode": "- episodio:",
+        "error": "Error verificando el mensaje"
+    },
+    "Chap2s1": {
+        "chapter": "Capítulo 2",
+        "title": "Cambio de paradigma",
+        "sentgas": "Acabo de enviarte gas: ETH, deberías recibirlo pronto.",
+        "havegas": "Al parecer ya tienes gas, no necesito enviarte más.",
+        "sentusdc": "Acabo de enviarte USDC, deberías recibirlo.",
+        "haveusdc": "Ya tienes suficiente USDC, no necesito enviarte más.",
+        "networkissues": "La red parece tener problemas, por favor vuelve más tarde.",
+        "clickon1": "Puedes hacer clic en",
+        "clickon2": "para mostrar el saldo de USDC en tu wallet",
+        "narration": "The Lurenberg Post, Redacción",
+        "dialogue": {
+            "d1": "Hola Azad, ¿instalaste una wallet?",
+            "d2": "Muy bien, ahora te enviaré algunos fondos en USDC, una criptomoneda estable cuyo valor está indexado al dólar (1 USDC = 1 $).",
+            "d3": "Haz clic en la extensión de TronLink en tu navegador. Ahora deberías ver los USDC en la pestaña 'Activos'.",
+            "d4": "Necesito tu dirección para enviarte los fondos ahora. Es una secuencia única de letras y números que comienza con 0x ......",
+            "d5": "Cuando hagas clic en la extensión, verás la dirección justo debajo del nombre de la cuenta ('Cuenta 1' en tu caso porque acabas de instalarla).",
+            "d6": "Simplemente haz clic en ella para copiar tu dirección en el portapapeles y pégala aquí.",
+            "d7": "Para realizar transacciones en esta red, también necesitarás “gas”. Es un poco como la gasolina para tu coche, si quieres que funcione, debes llenar el tanque con el combustible adecuado.",
+            "d8": "Basicamente, este “gas” es una moneda específica utilizada para pagar tus propias transacciones. En esta red, esta moneda se llama ETH.",
+            "d9": "Pero sabes, cuando usas tu tarjeta bancaria, ¡también pagas una tarifa! La diferencia es simplemente que no eres consciente de ello porque el comerciante lo paga por ti.",
+            "d10": "Lo siento, tengo que irme, te contactaré muy pronto."
+        },
+        "choices": {
+            "c1": {
+                "choice1": "Sí",
+                "choice2": "Descargué TronLink como dijiste."
+            },
+            "c2": {
+                "choice1": "Sí, los veo",
+                "choice2": "Solo veo “0 USDC“"
+            },
+            "c3": {
+                "choice1": "¿Significa que hay que pagar por cada transacción?",
+                "choice2": "(no decir nada)"
+            }
+        }
     }
 }

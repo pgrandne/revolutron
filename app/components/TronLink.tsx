@@ -31,9 +31,10 @@ export const TronLink = () => {
         e.preventDefault()
         if (!connected) {
             if (typeof window !== 'undefined' && typeof window.tronLink !== 'undefined') {
-                if (window.tron.isTronLink && !window.tronLink.ready)
-                    window.alert('Please unlock your TronLink')
-                else
+              //  if (window.tron.isTronLink && !window.tronLink.ready)
+              //      window.alert('Please unlock your TronLink')
+              //  else
+                    console.log(window.tron)
                     select('TronLink' as any)
             } else
                 window.alert('Wallet TronLink  is not installed, you can install it during chapter 1')

@@ -77,6 +77,12 @@ $ npm run dev
 ```
 ### Back End ###
 We use .env for environment variables. Change the name of env.example to .env and fill in the 2 variables :
-
    - We use DATABASE_URL for our MongoDB database
    - We use PRIVATE KEY for interacting with the blockchain
+
+We use 2 contracts : 
+   - One for the token of the Adventure : RevolutronUSDD : TBukaqWaKjLiqLHtz1czhwLd3iSQVBkHJL
+  https://shasta.tronscan.org/#/contract/TBukaqWaKjLiqLHtz1czhwLd3iSQVBkHJL/code
+  - one for the caution of the Adventure : TKihVzd5pwmFyUidhLCRFFmdyp3fonJkkg
+  https://shasta.tronscan.org/#/contract/TKihVzd5pwmFyUidhLCRFFmdyp3fonJkkg/code
+

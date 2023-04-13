@@ -4,9 +4,9 @@
 // It will be used by the Solidity compiler to validate its version.
 pragma solidity ^0.8.18;
 
-/// @title Revolutron.app : RevolutronCaution
+/// @title Revolutron.app : RevolutronBail
 /// @author Perrin GRANDNE
-/// @notice Contract for Caution in Revolutron.app
+/// @notice Contract for Bail in Revolutron.app
 /// @custom:experimental This is an experimental contract.
 
 /// @notice Only TRC-20 functions we need
@@ -30,15 +30,15 @@ interface ITRC20 {
     ) external returns (bool);
 }
 
-/// @notice This is the contract to deposit and withdraw the caution in chapter 2 of Revolte
-contract RevolutronCaution {
+/// @notice This is the contract to deposit and withdraw the bail in chapter 2 of Revolte
+contract RevolutronBail {
     // Structure to store amount and timestamp of deposit
-    struct CautionDeposit {
+    struct BailDeposit {
         uint256 depositAmount;
         uint256 timestamp;
     }
-    // Mapping to associate struct CautionDeposit to an address
-    mapping(address => CautionDeposit) cautionDepositPerPlayer;
+    // Mapping to associate struct BailDeposit to an address
+    mapping(address => BailDeposit) bailDepositPerPlayer;
 
     // contract address for the token used in the game
     ITRC20 private revolutronUsdd;
@@ -46,7 +46,7 @@ contract RevolutronCaution {
     // address of the owner of the contract
     address public owner;
 
-    // deposit amount of the caution
+    // deposit amount of the bail
     uint256 public depositAmount;
 
     // locktime of deposit
@@ -81,7 +81,7 @@ contract RevolutronCaution {
         revolutronUsdd = ITRC20(_revolutronUsddContract);
     }
 
-    // Change the deposit amount of the caution
+    // Change the deposit amount of the bail
     function setDepositAmount(uint256 _depositAmount) public onlyOwner {
         depositAmount = _depositAmount * 10 ** 6;
     }
@@ -91,12 +91,12 @@ contract RevolutronCaution {
         lockTime = _lockTime;
     }
 
-    // Function to deposit 500 USDD for the caution
-    function depositCaution() external {
+    // Function to deposit 500 USDD for the bail
+    function depositBail() external {
         // Check there is no existing deposit from the sender
         require(
-            cautionDepositPerPlayer[msg.sender].depositAmount == 0,
-            "You already deposited a caution"
+            bailDepositPerPlayer[msg.sender].depositAmount == 0,
+            "You already deposited a bail"
         );
         //Check the balance of the player
         require(
@@ -111,7 +111,7 @@ contract RevolutronCaution {
         );
 
         // Save Amount and timestamp in mapping
-        cautionDepositPerPlayer[msg.sender] = CautionDeposit({
+        bailDepositPerPlayer[msg.sender] = BailDeposit({
             depositAmount: depositAmount,
             timestamp: block.timestamp
         });
@@ -123,21 +123,21 @@ contract RevolutronCaution {
         emit Deposit(msg.sender, depositAmount);
     }
 
-    // Function to withdraw 500 USDD from the caution
-    function withdrawCaution() external {
-        // Check if sender deposited a caution
+    // Function to withdraw 500 USDD from the bail
+    function withdrawBail() external {
+        // Check if sender deposited a bail
         require(
-            cautionDepositPerPlayer[msg.sender].depositAmount > 0,
-            "You didn't deposit a caution"
+            bailDepositPerPlayer[msg.sender].depositAmount > 0,
+            "You didn't deposit a bail"
         );
         // Check the amount was deposited more than locktime
         require(
             block.timestamp >
-                cautionDepositPerPlayer[msg.sender].timestamp + lockTime,
+                bailDepositPerPlayer[msg.sender].timestamp + lockTime,
             "You have to wait the locktime after the deposit to withdraw"
         );
         // Fetch amount to withdraw (500 USDD)
-        uint256 amount = cautionDepositPerPlayer[msg.sender].depositAmount;
+        uint256 amount = bailDepositPerPlayer[msg.sender].depositAmount;
 
         // Withdraw the amount from the contract to the player
         revolutronUsdd.transferFrom(address(this), msg.sender, amount);

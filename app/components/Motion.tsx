@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Dispatch, SetStateAction } from "react";
-import { isMobile, isChrome } from 'react-device-detect';
+import { isMobile, isChrome, isChromium, isEdge } from 'react-device-detect';
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
 import { donation, github, info, linkedin, twitter } from "@/public/svg";
@@ -94,7 +94,7 @@ export const MotionHeroButton = ({ buttonName, setModalSelectChapter }: {
     const launchRevolte = () => {
         if (!isMobile && isChrome)
             setModalSelectChapter(true)
-        else router.push(isMobile ? `${locale}/mobile` : (!isChrome ? `${locale}/browser` : `${locale}/chapter1/scene1`))
+        else router.push(isMobile ? `${locale}/mobile` : ((isChrome || isChromium || isEdge) ? `${locale}/chapter1/scene1` : `${locale}/browser`))
     }
 
     return (

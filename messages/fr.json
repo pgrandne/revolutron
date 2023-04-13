@@ -13,7 +13,7 @@
         "close": "Fermer"
     },
     "Browser": {
-        "text": "La première version de RevoluTRON n'est accessible qu'avec des navigateurs Chromium (Brave, Chrome, Edge, Opera)"
+        "text": "La première version de RevoluTRON n'est accessible qu'avec les navigateurs Brave, Chrome, Edge"
     },
     "Mobile": {
         "text": "La première version de RevoluTRON n'est accessible que sur ordinateur. La version mobile sera bientôt disponible."

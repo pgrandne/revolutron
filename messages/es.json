@@ -13,10 +13,10 @@
         "close": "Cerrar"
     },
     "Browser": {
-        "text": "La primera versión de RevoluTRON no es accesible con Internet Explorer o Safari. Por favor, usa otro navegador (Brave, Chrome, Edge, Firefox)"
+        "text": "La primera versión de RevoluTRON es accesible con Brave, Chrome, Edge"
     },
     "Mobile": {
-        "text": "La primera versión de RevoluTRON solo es accesible en escritorio. La versión móvil estará disponible pronto"
+        "text": "La primera versión de RevoluTRON solo es accesible con el ordenador. La versión móvil estará disponible pronto"
     },
     "Construction": {
         "text": "Continuará..."

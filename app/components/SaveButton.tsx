@@ -5,6 +5,7 @@ import { ArrowButton } from './'
 import { IProgression } from '@/utils/interface'
 import { useTranslations } from 'next-intl'
 import { useWallet } from '@tronweb3/tronwallet-adapter-react-hooks';
+import { perm_marker } from '@/utils/font'
 
 const SaveButton = ({
     progression,
@@ -46,7 +47,7 @@ const SaveButton = ({
         <>
             {!arrow &&
                 <button
-                    className="btnHero mx-auto"
+                    className= {`${perm_marker.className} btnHero mx-auto`}
                     disabled={loading}
                     onClick={signIn}
                 >

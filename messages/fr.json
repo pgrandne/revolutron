@@ -308,7 +308,7 @@
     "Chap2": {
         "tron": "TronLink est requis pour le Chapitre 2 et il semble que vous ne l'ayez pas installé.",
         "tronLink1": "Vous pouvez cliquer ici ",
-        "tronLink2": " pour l'installer",
+        "tronLink2": " pour l'installer (seulement pour Chrome, Brave, Edge)",
         "gotochapter1": "Ou vous pouvez vous rendre au ",
         "gotochapter1end": "pour redécouvrir toute l'histoire et comprendre comment fonctionne TronLink.",
         "chapter1": "Chapitre 1",
@@ -337,15 +337,14 @@
         "narration": "The Lurenberg Post, Rédaction",
         "dialogue": {
             "d1": "Hey Azad, as-tu installé un wallet ?",
-            "d2": "Très bien, je vais maintenant t'envoyer des fonds en USDC, une crypto-monnaie stable dont la valeur est indexée sur le dollar (1 USDC = 1 $).",
-            "d3": "Clique sur l'extension TronLink de ton navigateur. Tu devrais maintenant voir les USDC dans l'onglet 'Actifs'.",
-            "d4": "J'ai besoin de ton adresse pour t'envoyer les fonds maintenant. C'est une séquence unique de lettres et de chiffres qui commence par 0x......",
-            "d5": "Lorsque tu cliques sur l'extension, tu verras l'adresse juste en dessous de l’intitulé du compte ('Compte 1' dans ton cas car tu viens juste de l'installer).",
-            "d6": "Clique simplement dessus pour copier ton adresse dans le presse-papier et colle-la ici.",
-            "d7": "Pour effectuer des transactions sur ce réseau, tu auras également besoin de ”gas”. C'est un peu comme l'essence pour ta voiture, si tu veux la faire avancer, tu dois remplir le réservoir avec le carburant approprié.",
-            "d8": "En gros ce ”gas” est une monnaie spécifique, utilisée pour payer tes propres transactions. Sur ce réseau, cette monnaie s'appelle ETH.",
-            "d9": "Mais tu sais, lorsque tu utilises ta carte bancaire, tu paies également des frais ! La différence est simplement que tu n'en as pas conscience parce que le commerçant les paie pour toi !",
-            "d10": "Désolé, je dois y aller, je te contacterai très bientôt."
+            "d2": "Très bien, je vais maintenant t'envoyer des fonds en USDD, une crypto-monnaie stable dont la valeur est indexée sur le dollar (1 USDD = 1 $).",
+            "d3": "J'ai besoin de ton adresse pour t'envoyer les fonds maintenant. C'est une séquence unique de lettres et de chiffres qui commence par T......",
+            "d4": "Lorsque tu cliques sur l'extension, tu verras l'adresse juste en dessous de ”Wallet >”",
+            "d5": "Clique simplement dessus pour copier ton adresse dans le presse-papier et colle-la ici.",
+            "d6": "Pour effectuer des transactions sur ce réseau, tu auras également besoin de ”gas”. C'est un peu comme l'essence pour ta voiture, si tu veux la faire avancer, tu dois remplir le réservoir avec le carburant approprié.",
+            "d7": "En gros ce ”gas” est une monnaie spécifique, utilisée pour payer tes propres transactions. Sur ce réseau, cette monnaie s'appelle TRX.",
+            "d8": "Mais tu sais, lorsque tu utilises ta carte bancaire, tu paies également des frais ! La différence est simplement que tu n'en as pas conscience parce que le commerçant les paie pour toi !",
+            "d9": "Désolé, je dois y aller, je te contacterai très bientôt."
         },
         "choices": {
             "c1": {
@@ -353,10 +352,6 @@
                 "choice2": "J'ai téléchargé TronLink comme tu m'as dit."
             },
             "c2": {
-                "choice1": "Oui, je les vois",
-                "choice2": "Je ne vois que “0 USDC“"
-            },
-            "c3": {
                 "choice1": "Ca veut dire qu'il faut payer pour chaque transaction ? ",
                 "choice2": "(ne rien dire)"
             }

@@ -5,16 +5,13 @@ const fullNode = 'https://api.shasta.trongrid.io';
 const solidityNode = 'https://api.shasta.trongrid.io';
 const eventServer = 'https://api.shasta.trongrid.io';
 const privateKey = process.env.PRIVATE_KEY_SHASTA;
+const tronWeb = new TronWeb(fullNode,solidityNode,eventServer,privateKey)
 
 export async function POST(request: Request) {
     try {
         const { address } = await request.json()
-        const tronWeb = new TronWeb(fullNode,solidityNode,eventServer,privateKey)
-        console.log('1')
         if (typeof privateKey !== "undefined") {
-            console.log('2')
             tronWeb.trx.sendTransaction(address, 1000)
-            console.log('3')
             }
         else {
             const error = new Error('No env variable')

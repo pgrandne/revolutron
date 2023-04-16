@@ -1,15 +1,15 @@
 import { NextResponse } from 'next/server';
 import { ERC20 } from '@/utils/erc20'
 const TronWeb = require('tronweb');
-// const fullNode = 'https://api.shasta.trongrid.io';
-// const solidityNode = 'https://api.shasta.trongrid.io';
-// const eventServer = 'https://api.shasta.trongrid.io';
-// const privateKey = process.env.PRIVATE_KEY_SHASTA;
+const fullNode = 'https://api.shasta.trongrid.io';
+const solidityNode = 'https://api.shasta.trongrid.io';
+const eventServer = 'https://api.shasta.trongrid.io';
+const privateKey = process.env.PRIVATE_KEY_SHASTA;
 
 export async function POST(request: Request) {
     try {
-        // const { address } = await request.json()
-        // const tronWeb = new TronWeb(fullNode,solidityNode,eventServer,privateKey)
+        const { address } = await request.json()
+        const tronWeb = new TronWeb(fullNode,solidityNode,eventServer,privateKey)
         // if (typeof process.env.PRIVATE_KEY !== "undefined" && typeof process.env.USDD_CONTRACT !== "undefined") {
         //         let instance = await tronWeb.contract().at(process.env.USDD_CONTRACT)
         //         let res = await instance.transfer(address,500).send({

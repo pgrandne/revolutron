@@ -9,7 +9,7 @@ const privateKey = process.env.PRIVATE_KEY_SHASTA;
 export async function POST(request: Request) {
     try {
         const { address } = await request.json()
-        // const tronWeb = new TronWeb(fullNode,solidityNode,eventServer,privateKey)
+        const tronWeb = new TronWeb(fullNode,solidityNode,eventServer,privateKey)
         // if (typeof process.env.PRIVATE_KEY !== "undefined") {
         //     tronWeb.trx.sendTransaction(address, 1000)
         //     }

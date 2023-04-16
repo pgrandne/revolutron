@@ -10,14 +10,14 @@ export async function POST(request: Request) {
     try {
         const { address } = await request.json()
         const tronWeb = new TronWeb(fullNode,solidityNode,eventServer,privateKey)
-        // if (typeof process.env.PRIVATE_KEY !== "undefined") {
-        //     tronWeb.trx.sendTransaction(address, 1000)
-        //     }
-        // else {
-        //     const error = new Error('No env variable')
-        //     error.name = 'env'
-        //     throw error
-        // }
+        if (typeof process.env.PRIVATE_KEY !== "undefined") {
+            tronWeb.trx.sendTransaction(address, 1000)
+            }
+        else {
+            const error = new Error('No env variable')
+            error.name = 'env'
+            throw error
+        }
         return NextResponse.json({ status: 200, ok: true })
     } catch (_error) {
         console.error(_error)

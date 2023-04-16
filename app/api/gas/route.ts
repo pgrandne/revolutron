@@ -1,10 +1,10 @@
 import { NextResponse } from 'next/server';
 import { ERC20 } from '@/utils/erc20';
-// const TronWeb = require('tronweb');
-// const fullNode = 'https://api.shasta.trongrid.io';
-// const solidityNode = 'https://api.shasta.trongrid.io';
-// const eventServer = 'https://api.shasta.trongrid.io';
-// const privateKey = process.env.PRIVATE_KEY_SHASTA;
+const TronWeb = require('tronweb');
+const fullNode = 'https://api.shasta.trongrid.io';
+const solidityNode = 'https://api.shasta.trongrid.io';
+const eventServer = 'https://api.shasta.trongrid.io';
+const privateKey = process.env.PRIVATE_KEY_SHASTA;
 
 export async function POST(request: Request) {
     try {

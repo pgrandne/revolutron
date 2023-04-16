@@ -22,7 +22,7 @@
     "react-device-detect": "^2.2.3",
     "react-dom": "18.2.0",
     "react-toastify": "^9.1.2",
-    "tronweb": "^5.1.0",
+    "tronweb": "^4.4.0",
     "typescript": "5.0.4",
     "utf-8-validate": "^5.0.2"
   },

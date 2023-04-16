@@ -41,8 +41,8 @@ dependencies:
     specifier: ^9.1.2
     version: 9.1.2(react-dom@18.2.0)(react@18.2.0)
   tronweb:
-    specifier: ^5.1.0
-    version: 5.1.0(bufferutil@4.0.7)(utf-8-validate@5.0.2)
+    specifier: ^4.4.0
+    version: 4.4.0(bufferutil@4.0.7)(utf-8-validate@5.0.2)
   typescript:
     specifier: 5.0.4
     version: 5.0.4
@@ -691,10 +691,6 @@ packages:
     resolution: {integrity: sha512-4C7nX/dvpzB7za4Ql9K81xK3HPxCpHMgwTZVyf+9JQ6VUbn9jjZVN7/Nkdz/Ugzs2CSjqnL/UPXroiVBVHUWUw==}
     dependencies:
       tslib: 2.5.0
-    dev: false
-
-  /@tronweb3/google-protobuf@3.21.2:
-    resolution: {integrity: sha512-IVcT2GfWX3K6tHUVhs14NP5uzKhQt4KeDya1g9ACxuZsUzsaoGUIGzceK2Ltu7xp1YV94AaHOf4yxLAivlvEkQ==}
     dev: false
 
   /@tronweb3/tronwallet-abstract-adapter@1.1.4:
@@ -3100,11 +3096,10 @@ packages:
     dependencies:
       is-number: 7.0.0
 
-  /tronweb@5.1.0(bufferutil@4.0.7)(utf-8-validate@5.0.2):
-    resolution: {integrity: sha512-8a+mYKVUzsUWjeTHSAKcxAp82FseFTLlNLoLQ0KIL1rIt6Dy5whcyJwYatxUktbaztl55lnImHbupkKqMdIj1w==}
+  /tronweb@4.4.0(bufferutil@4.0.7)(utf-8-validate@5.0.2):
+    resolution: {integrity: sha512-0yPmjQE1drPcDtW4YCXFjtvDQmKc/utjKB2J6U5GDcWWhsGqE8yFjdIMJRa1yj1a/oFQNlthKMzw4Jd7lkWbYA==}
     dependencies:
       '@babel/runtime': 7.21.0
-      '@tronweb3/google-protobuf': 3.21.2
       axios: 0.26.1
       bignumber.js: 9.1.1
       elliptic: 6.5.4

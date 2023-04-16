@@ -10,12 +10,12 @@ interface ITronLinkParams {
     tronWeb: any;
 }
 
-declare global {
-    interface Window {
-        tron: any
-        tronLink: ITronLinkParams
-    }
-}
+// declare global {
+//     interface Window {
+//         tron: any
+//         tronLink: ITronLinkParams
+//     }
+// }
 
 export const TronLink = ({ setWallet }: { setWallet: Dispatch<SetStateAction<boolean>> }) => {
     const { address, disconnect, select, connected } = useWallet();
@@ -34,14 +34,14 @@ export const TronLink = ({ setWallet }: { setWallet: Dispatch<SetStateAction<boo
     const tronConnect = (e: MouseEvent<HTMLButtonElement>) => {
         e.preventDefault()
         if (!connected) {
-            if (typeof window !== 'undefined' && typeof window.tronLink !== 'undefined') {
+            // if (typeof window !== 'undefined' && typeof window.tronLink !== 'undefined') {
                 //  if (window.tron.isTronLink && !window.tronLink.ready)
                 //      window.alert('Please unlock your TronLink')
                 //  else
-                console.log(window.tron)
-                select('TronLink' as any)
-            } else
-                window.alert('Wallet TronLink  is not installed, you can install it during chapter 1')
+                // console.log(window.tron)
+                // select('TronLink' as any)
+            // } else
+                // window.alert('Wallet TronLink  is not installed, you can install it during chapter 1')
         } else
             disconnect()
     }

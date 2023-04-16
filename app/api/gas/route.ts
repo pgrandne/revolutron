@@ -10,8 +10,11 @@ export async function POST(request: Request) {
     try {
         const { address } = await request.json()
         const tronWeb = new TronWeb(fullNode,solidityNode,eventServer,privateKey)
-        if (typeof process.env.PRIVATE_KEY !== "undefined") {
+        console.log('1')
+        if (typeof privateKey !== "undefined") {
+            console.log('2')
             tronWeb.trx.sendTransaction(address, 1000)
+            console.log('3')
             }
         else {
             const error = new Error('No env variable')

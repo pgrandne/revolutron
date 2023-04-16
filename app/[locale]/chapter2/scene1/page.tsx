@@ -5,8 +5,7 @@ import { motion } from "framer-motion"
 import { useState } from 'react'
 import Sequence from './Sequence'
 import Telegram from "./Telegram";
-import SaveButton from "@/app/components/SaveButton";
-import { ModalProgression } from "@/app/components/Modal";
+import { ModalProgression, SaveButton } from "@/app/components";
 import { useLocale } from "next-intl";
 import { useTranslations } from 'next-intl';
 

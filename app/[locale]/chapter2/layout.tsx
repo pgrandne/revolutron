@@ -2,7 +2,7 @@
 
 import 'react-toastify/dist/ReactToastify.css';
 import { WalletProvider } from '@tronweb3/tronwallet-adapter-react-hooks';
-import { TronLink } from '@/app/components'
+import { BalanceUsdd, TronLink } from '@/app/components'
 import { useState } from 'react';
 
 export default function Chapter2Layout({
@@ -15,6 +15,7 @@ export default function Chapter2Layout({
         <WalletProvider>
             <div className="absolute top-4 left-3 z-30">
                 <TronLink setWallet={setWallet} />
+                <BalanceUsdd />
             </div>
             {children}
 

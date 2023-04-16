@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl'
 import { useWallet } from '@tronweb3/tronwallet-adapter-react-hooks';
 import { perm_marker } from '@/utils/font'
 
-const SaveButton = ({
+export const SaveButton = ({
     progression,
     setModal,
     arrow
@@ -77,5 +77,3 @@ const SaveButton = ({
         </>
     )
 }
-
-export default SaveButton

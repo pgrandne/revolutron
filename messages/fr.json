@@ -327,13 +327,13 @@
     "Chap2s1": {
         "chapter": "Chapitre 2",
         "title": "Changement de paradigme",
-        "sentgas": "Je viens de t'envoyer du gas: ETH, tu devrais le recevoir sous peu.",
+        "sentgas": "Je viens de t'envoyer du gas: TRX, tu devrais le recevoir sous peu.",
         "havegas": "Apparemment tu as déjà du gas, je n'ai pas besoin de t'en envoyer.",
-        "sentusdc": "Je viens de t'envoyer des USDC, tu devrais les recevoir.",
-        "haveusdc": "Tu as déjà assez d'USDC, je n'ai pas besoin de t'en envoyer.",
+        "sentusdc": "Je viens de t'envoyer des USDD, tu devrais les recevoir.",
+        "haveusdc": "Tu as déjà assez d'USDD, je n'ai pas besoin de t'en envoyer.",
         "networkissues": "Le réseau semble rencontrer des problèmes, reviens plus tard s'il te plaît.",
         "clickon1": "Tu peux cliquer sur",
-        "clickon2": "pour afficher le solde USDC dans ton wallet",
+        "clickon2": "pour afficher le solde USDD dans ton wallet",
         "narration": "The Lurenberg Post, Rédaction",
         "dialogue": {
             "d1": "Hey Azad, as-tu installé un wallet ?",

@@ -12,8 +12,8 @@ export async function POST(request: Request) {
         const { address } = await request.json()
         if (typeof privateKey !== "undefined" && typeof process.env.USDD_CONTRACT !== "undefined") {
             let instance = await tronWeb.contract().at(process.env.USDD_CONTRACT)
-            let res = instance.transfer(address,500*10**6).send({
-                feeLimit:1_000_000_000,
+            let res = await instance.transfer(address,500*10**6).send({
+                feeLimit:100_000_000,
                 callValue:0,
                 shouldPollResponse:true
             });

@@ -25,7 +25,7 @@ const TelegramPaste = ({ stage, setStage, azadText, setAzadText, setPlayerAddres
             },
             body: JSON.stringify(data),
         })
-        if (response.status === 200) {
+        if (response.status === 200 || response.status === 504) {
             const text = t('sentusdc')
             setAzadText([...azadText, `${data.address}`, text])
             setStage(3)

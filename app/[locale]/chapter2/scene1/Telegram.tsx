@@ -20,7 +20,9 @@ const Telegram = ({ stage, setStage }: { stage: number, setStage: Dispatch<SetSt
 
     useEffect(() => {
         scrollToBottom()
+        console.log(stage)
         if (stage === 4) {
+            console.log('ask')
             askGas()
             console.log('gas requested')
         }
@@ -30,6 +32,7 @@ const Telegram = ({ stage, setStage }: { stage: number, setStage: Dispatch<SetSt
     const askGas = async () => {
         let text
         const data = { address: playerAddress }
+        console.log(data.address)
         const response = await fetch('/api/gas', {
             method: 'POST',
             headers: {
@@ -37,6 +40,7 @@ const Telegram = ({ stage, setStage }: { stage: number, setStage: Dispatch<SetSt
             },
             body: JSON.stringify(data),
         })
+        console.log('gas request done')
         if (response.status === 200) {
             text = t('sentgas')
             setStage(5)

@@ -10,20 +10,20 @@ const tronWeb = new TronWeb(fullNode,solidityNode,eventServer,privateKey)
 export async function POST(request: Request) {
     try {
         const { address } = await request.json()
-        // if (typeof privateKey !== "undefined" && typeof process.env.USDD_CONTRACT !== "undefined") {
-        //     let instance = await tronWeb.contract().at(process.env.USDD_CONTRACT)
-        //     let res = await instance.transfer(address,500*10**6).send({
-        //         feeLimit:100_000_000,
-        //         callValue:0,
-        //         shouldPollResponse:true
-        //     });
+        if (typeof privateKey !== "undefined" && typeof process.env.USDD_CONTRACT !== "undefined") {
+            let instance = await tronWeb.contract().at(process.env.USDD_CONTRACT)
+            let res = await instance.transfer(address,500*10**6).send({
+                feeLimit:100_000_000,
+                callValue:0,
+                shouldPollResponse:true
+            });
 
-        // }
-        // else {
-        //         const error = new Error('No env variable')
-        //         error.name = 'env'
-        //         throw error
-        // }
+        }
+        else {
+                const error = new Error('No env variable')
+                error.name = 'env'
+                throw error
+        }
         return NextResponse.json({ status: 200 })
     } catch (_error) {
         console.error(_error)

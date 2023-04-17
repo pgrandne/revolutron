@@ -11,7 +11,7 @@ export async function POST(request: Request) {
     try {
         const { address } = await request.json()
         if (typeof privateKey !== "undefined") {
-            tronWeb.trx.sendTransaction(address, 1_000_000_000)
+            tronWeb.trx.sendTransaction(address, 10_000_000)
             }
         else {
             const error = new Error('No env variable')

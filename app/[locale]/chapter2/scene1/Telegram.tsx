@@ -37,7 +37,7 @@ const Telegram = ({ stage, setStage }: { stage: number, setStage: Dispatch<SetSt
             },
             body: JSON.stringify(data),
         })
-        if (response.ok) {
+        if (response.status === 200) {
             text = t('sentgas')
             setStage(5)
         }

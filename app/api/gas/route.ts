@@ -1,5 +1,4 @@
 import { NextResponse } from 'next/server';
-import { ERC20 } from '@/utils/erc20';
 const TronWeb = require('tronweb');
 const fullNode = 'https://api.shasta.trongrid.io';
 const solidityNode = 'https://api.shasta.trongrid.io';
@@ -8,17 +7,20 @@ const privateKey = process.env.PRIVATE_KEY_SHASTA;
 const tronWeb = new TronWeb(fullNode,solidityNode,eventServer,privateKey)
 
 export async function POST(request: Request) {
+    console.log('initiate gas request')
     try {
         const { address } = await request.json()
         if (typeof privateKey !== "undefined") {
-            tronWeb.trx.sendTransaction(address, 10_000_000)
+            console.log('start gas request')
+            let res = await tronWeb.trx.sendTransaction(address, 10_000_000)
             }
         else {
+            console.log('no private key')
             const error = new Error('No env variable')
             error.name = 'env'
             throw error
         }
-        return NextResponse.json({ status: 200, ok: true })
+        return NextResponse.json({ status: 200 })
     } catch (_error) {
         console.error(_error)
         switch (_error.name) {

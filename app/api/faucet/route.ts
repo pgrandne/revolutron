@@ -1,5 +1,4 @@
 import { NextResponse } from 'next/server';
-import { ERC20 } from '@/utils/erc20'
 const TronWeb = require('tronweb');
 const fullNode = 'https://api.shasta.trongrid.io';
 const solidityNode = 'https://api.shasta.trongrid.io';

@@ -43,7 +43,7 @@ const Sequence = ({ setTelegramWindow, telegramWindow }: {
                         initial={{ y: -10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 8, duration: 1.5 }}>
-                        <div className="flex pl-[70%] pt-[15%] pb-[47%]">
+                        <div className="flex pl-[70%] pb-[47%] min-h-[50%]">
                             <Image
                                 className="object-contain cursor-pointer animate-pulse"
                                 src={notifPic}

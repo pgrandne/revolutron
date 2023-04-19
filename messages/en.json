@@ -45,6 +45,13 @@
         "feedback": "Help us improve the experience and give us your feedback 🙏 Click",
         "link": "here"
     },
+    "BailTransaction": {
+        "title":"Bail",
+        "text":"Pay the bail of M Doe : 4000 USDD",
+        "approve":"Approve",
+        "pay":"Pay",
+        "refuse":"Refuse to pay"
+    },
     "Chap1s1": {
         "narration": "Lurenberg, Listenbourg",
         "day": "October 18, 2023",
@@ -354,6 +361,24 @@
             "c2": {
                 "choice1": "You mean it's required to pay for each transaction? ",
                 "choice2": "(say nothing)"
+            }
+        }
+    },
+    "Chap2s2": {
+        "narration":"à définir",
+        "dialogue": {
+            "d1":"Hi, it will be 4000$ for the bail of M. Doe",
+            "d2":"How do you want to pay?",
+            "d3": "Please read and accept the transaction"
+        },
+        "choices": {
+            "c1": {
+                "choice1":"With USDD",
+                "choice2":"With stablecoin"
+            },
+            "c2": {
+                "choice1":"All right!",
+                "choice2": "No"
             }
         }
     }

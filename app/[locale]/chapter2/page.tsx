@@ -1,13 +1,12 @@
 'use client';
 
+import { perm_marker } from '@/utils/font';
 import { motion } from "framer-motion"
-import Link from "@/app/components/LinkLocale"
-import SaveButton from "@/app/components/SaveButton";
-import { useState } from "react";
-import { ModalProgression } from "@/app/components/Modal";
-import { useTranslations } from 'next-intl';
-import { useLocale } from 'next-intl';
+import { useEffect, useState } from "react";
+import { LinkLocale, ModalProgression, SaveButton } from "@/app/components";
+import { useLocale, useTranslations } from 'next-intl';
 import { useWallet } from '@tronweb3/tronwallet-adapter-react-hooks';
+
 
 const Chap2 = () => {
     const locale = useLocale()
@@ -21,7 +20,7 @@ const Chap2 = () => {
     }
 
     return (
-        <div className="font-permarker relative flex justify-center w-screen h-screen my-auto overflow-hidden">
+        <div className={`${perm_marker.className} relative flex justify-center w-screen h-screen my-auto overflow-hidden`}>
             <motion.div
                 className="absolute top-3 left-3"
                 initial={{ opacity: 0 }}
@@ -51,7 +50,7 @@ const Chap2 = () => {
                             animate={{ opacity: 1 }}
                             transition={{ delay: 5, duration: 2 }}
                         >
-                            {t('gotochapter1')}<Link className="underline" href="/chapter1/scene1">{t('chapter1')}</Link> {t('gotochapter1end')}
+                            {t('gotochapter1')}<LinkLocale className="underline" href="/chapter1/scene1">{t('chapter1')}</LinkLocale> {t('gotochapter1end')}
                         </ motion.p>
                     </div>
                 }

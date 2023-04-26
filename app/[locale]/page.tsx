@@ -10,8 +10,6 @@ import { WalletProvider } from '@tronweb3/tronwallet-adapter-react-hooks';
 
 export default function Index() {
   const tHome = useTranslations('Home')
-  const tInfo = useTranslations('Info')
-  const tProgression = useTranslations('Progression')
   const [wallet, setWallet] = useState(false)
   const [modalInfo, setModalInfo] = useState(false)
   const [deck, setDeck] = useState(false)
@@ -21,7 +19,7 @@ export default function Index() {
     <WalletProvider>
       <main className={`${perm_marker.className} flex justify-center h-screen w-screen`}>
         <div className="absolute flex gap-2 top-3 right-3 z-40">
-          <TronLink />
+          <TronLink setWallet={setWallet} />
           <LocaleSwitcher />
         </div>
         <div className="my-auto relative">

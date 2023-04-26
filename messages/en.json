@@ -13,7 +13,7 @@
         "close": "Close"
     },
     "Browser": {
-        "text": "The first version of RevoluTRON is only accessible with Chromium browsers (Brave, Chrome Edge, Opera)"
+        "text": "The first version of RevoluTRON is only accessible with Brave, Chrome, Edge"
     },
     "Mobile": {
         "text": "The first version of RevoluTRON is only accessible on Desktop. The mobile version will be available soon"
@@ -26,7 +26,9 @@
         "chapter": "Chapter",
         "resume": "Resume last session",
         "connect": "Please connect wallet",
-        "close": "Close"
+        "close": "Close",
+        "error": "Error loading progression.",
+        "wait": "Wait..."
     },
     "Save": {
         "saved": "Progression saved!",
@@ -306,7 +308,7 @@
     "Chap2": {
         "tron": "TronLink is required for Chapter 2 and it looks like you don't have it installed.",
         "tronLink1": "You can click on this ",
-        "tronLink2": " to install it",
+        "tronLink2": " to install it (only for Chrome, Brave, Edge)",
         "gotochapter1": "Or you can go to ",
         "gotochapter1end": "to rediscover the whole story, and understand how TronLink works.",
         "chapter1": "Chapter 1",
@@ -325,25 +327,24 @@
     "Chap2s1": {
         "chapter": "Chapter 2",
         "title": "Paradigm shift",
-        "sentgas": "I just sent you some gas: ETH, you should received it pretty soon",
+        "sentgas": "I just sent you some gas: TRX, you should received it pretty soon",
         "havegas": "Apparently you already have some gas, I don't need to send you any",
-        "sentusdc": "I just sent you some USDC, you should received it",
-        "haveusdc": "You already have enough USDC, I don't need to send you any ",
+        "sentusdc": "I just sent you some USDD, you should received it",
+        "haveusdc": "You already have enough USDD, I don't need to send you any ",
         "networkissues": "The network seems to have some issues, come back later please",
         "clickon1": "You can click on",
-        "clickon2": "to display the USDC balance in your wallet",
+        "clickon2": "to display the USDD balance in your wallet",
         "narration": "The Lurenberg Post, Newsroom",
         "dialogue": {
             "d1": "Hey Azad, did you install a wallet?",
-            "d2": "Alright, I will send you some funds now, in USDC currency. It's what we call a stablecoin, its value is pegged to dollars (1USDC = $1)",
-            "d3": "Have a look and click on the wallet extension on your browser. You should now be able to see USDC in the 'Assets' tab",
-            "d4": "I need your address to send you the funds now. It is the unique sequence of letters and numbers that starts with 0x……",
-            "d5": "Once you clicked on the wallet extension you'll find it written just below the account name (which should be 'Account 1' in your case, as you've just installed it)",
-            "d6": "Just click on it to copy your address in the clipboard and paste it here",
-            "d7": "In order to do transactions on this network, you will also need some “gas”. It's like the gasoline for your car, if you want to run it, you'll need to fill the tank with the appropriate fuel",
-            "d8": "Basically this “gas” is a specific currency, used to paid your own transactions. On this network this currency is called ETH",
-            "d9": "But when you use your bankcard you pay a fee too! The difference is just that you don't care about it because the merchant pays it for you!",
-            "d10": "Sorry I need to go, I'll contact you very soon"
+            "d2": "Alright, I will send you some funds now, in USDD currency. It's what we call a stablecoin, its value is pegged to dollars (1USDD = $1)",
+            "d3": "I need your address to send you the funds now. It is the unique sequence of letters and numbers that starts with T……",
+            "d4": "Once you clicked on the wallet extension you'll find it written just below “Wallet >“",
+            "d5": "Just click on it to copy your address in the clipboard and paste it here",
+            "d6": "In order to do transactions on this network, you will also need some “gas”. It's like the gasoline for your car, if you want to run it, you'll need to fill the tank with the appropriate fuel",
+            "d7": "Basically this “gas” is a specific currency, used to paid your own transactions. On this network this currency is called TRX",
+            "d8": "But when you use your bankcard you pay a fee too! The difference is just that you don't care about it because the merchant pays it for you!",
+            "d9": "Sorry I need to go, I'll contact you very soon"
         },
         "choices": {
             "c1": {
@@ -351,10 +352,6 @@
                 "choice2": "I installed TronLink as you said"
             },
             "c2": {
-                "choice1": "Yes I see it",
-                "choice2": "I can only see “0 USDC“"
-            },
-            "c3": {
                 "choice1": "You mean it's required to pay for each transaction? ",
                 "choice2": "(say nothing)"
             }

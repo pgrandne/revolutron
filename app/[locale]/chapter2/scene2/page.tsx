@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use client';
 
 import { useEffect, useState } from 'react'
@@ -33,3 +34,16 @@ const Chap1s7 = () => {
 }
 
 export default Chap1s7
+=======
+'use client'
+
+import { redirect } from 'next/navigation';
+import { useLocale } from 'next-intl';
+
+const Chap2s2 = () => {
+    const locale = useLocale()
+    redirect(`/${locale}/construction?source=chap1scene2`);
+}
+
+export default Chap2s2;
+>>>>>>> 6ee396b71f365cc8104e3cda0606c87d4ac7d5b9

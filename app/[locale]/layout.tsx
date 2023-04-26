@@ -1,5 +1,5 @@
 import './globals.css'
-import { NextIntlClientProvider } from 'next-intl/client';
+import {NextIntlClientProvider} from 'next-intl/client';
 import { notFound } from 'next/navigation';
 
 export const metadata = {

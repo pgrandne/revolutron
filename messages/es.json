@@ -13,10 +13,10 @@
         "close": "Cerrar"
     },
     "Browser": {
-        "text": "La primera versión de RevoluTRON no es accesible con Internet Explorer o Safari. Por favor, usa otro navegador (Brave, Chrome, Edge, Firefox)"
+        "text": "La primera versión de RevoluTRON es accesible con Brave, Chrome, Edge"
     },
     "Mobile": {
-        "text": "La primera versión de RevoluTRON solo es accesible en escritorio. La versión móvil estará disponible pronto"
+        "text": "La primera versión de RevoluTRON solo es accesible con el ordenador. La versión móvil estará disponible pronto"
     },
     "Construction": {
         "text": "Continuará..."
@@ -26,7 +26,9 @@
         "chapter": "Capítulo",
         "resume": "Continuar la última sesión",
         "connect": "Conectar su wallet",
-        "close": "Cerrar"
+        "close": "Cerrar",
+        "error": "Error al cargar la última sesión.",
+        "wait": "Procesando..."
     },
     "Save": {
         "saved": "¡Progreso guardado!",
@@ -306,7 +308,7 @@
     "Chap2": {
         "tron": "Se requiere TronLink para el Capítulo 2 y parece que no lo tienes instalado.",
         "tronLink1": "Puedes hacer clic aquí ",
-        "tronLink2": " para instalarlo",
+        "tronLink2": " para instalarlo (solo para Chrome, Brave, Edge)",
         "gotochapter1": "O puedes ir al ",
         "gotochapter1end": "para redescubrir toda la historia y entender cómo funciona TronLink.",
         "chapter1": "Capítulo 1",
@@ -325,25 +327,24 @@
     "Chap2s1": {
         "chapter": "Capítulo 2",
         "title": "Cambio de paradigma",
-        "sentgas": "Acabo de enviarte gas: ETH, deberías recibirlo pronto.",
+        "sentgas": "Acabo de enviarte gas: TRX, deberías recibirlo pronto.",
         "havegas": "Al parecer ya tienes gas, no necesito enviarte más.",
-        "sentusdc": "Acabo de enviarte USDC, deberías recibirlo.",
-        "haveusdc": "Ya tienes suficiente USDC, no necesito enviarte más.",
+        "sentusdc": "Acabo de enviarte USDD, deberías recibirlo.",
+        "haveusdc": "Ya tienes suficiente USDD, no necesito enviarte más.",
         "networkissues": "La red parece tener problemas, por favor vuelve más tarde.",
         "clickon1": "Puedes hacer clic en",
-        "clickon2": "para mostrar el saldo de USDC en tu wallet",
+        "clickon2": "para mostrar el saldo de USDD en tu wallet",
         "narration": "The Lurenberg Post, Redacción",
         "dialogue": {
             "d1": "Hola Azad, ¿instalaste una wallet?",
-            "d2": "Muy bien, ahora te enviaré algunos fondos en USDC, una criptomoneda estable cuyo valor está indexado al dólar (1 USDC = 1 $).",
-            "d3": "Haz clic en la extensión de TronLink en tu navegador. Ahora deberías ver los USDC en la pestaña 'Activos'.",
-            "d4": "Necesito tu dirección para enviarte los fondos ahora. Es una secuencia única de letras y números que comienza con 0x ......",
-            "d5": "Cuando hagas clic en la extensión, verás la dirección justo debajo del nombre de la cuenta ('Cuenta 1' en tu caso porque acabas de instalarla).",
-            "d6": "Simplemente haz clic en ella para copiar tu dirección en el portapapeles y pégala aquí.",
-            "d7": "Para realizar transacciones en esta red, también necesitarás “gas”. Es un poco como la gasolina para tu coche, si quieres que funcione, debes llenar el tanque con el combustible adecuado.",
-            "d8": "Basicamente, este “gas” es una moneda específica utilizada para pagar tus propias transacciones. En esta red, esta moneda se llama ETH.",
-            "d9": "Pero sabes, cuando usas tu tarjeta bancaria, ¡también pagas una tarifa! La diferencia es simplemente que no eres consciente de ello porque el comerciante lo paga por ti.",
-            "d10": "Lo siento, tengo que irme, te contactaré muy pronto."
+            "d2": "Muy bien, ahora te enviaré algunos fondos en USDD, una criptomoneda estable cuyo valor está indexado al dólar (1 USDD = 1 $).",
+            "d3": "Necesito tu dirección para enviarte los fondos ahora. Es una secuencia única de letras y números que comienza con T ......",
+            "d4": "Cuando hagas clic en la extensión, verás la dirección justo debajo ”Wallet >”",
+            "d5": "Simplemente haz clic en ella para copiar tu dirección en el portapapeles y pégala aquí.",
+            "d6": "Para realizar transacciones en esta red, también necesitarás “gas”. Es un poco como la gasolina para tu coche, si quieres que funcione, debes llenar el tanque con el combustible adecuado.",
+            "d7": "Basicamente, este “gas” es una moneda específica utilizada para pagar tus propias transacciones. En esta red, esta moneda se llama TRX.",
+            "d8": "Pero sabes, cuando usas tu tarjeta bancaria, ¡también pagas una tarifa! La diferencia es simplemente que no eres consciente de ello porque el comerciante lo paga por ti.",
+            "d9": "Lo siento, tengo que irme, te contactaré muy pronto."
         },
         "choices": {
             "c1": {
@@ -351,10 +352,6 @@
                 "choice2": "Descargué TronLink como dijiste."
             },
             "c2": {
-                "choice1": "Sí, los veo",
-                "choice2": "Solo veo “0 USDC“"
-            },
-            "c3": {
                 "choice1": "¿Significa que hay que pagar por cada transacción?",
                 "choice2": "(no decir nada)"
             }

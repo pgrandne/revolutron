@@ -1,5 +1,6 @@
 'use client'
 
+import { perm_marker } from '@/utils/font';
 import { motion } from "framer-motion";
 import { useTranslations } from 'next-intl';
 
@@ -47,7 +48,7 @@ const Browser = () => {
             >
                 {words.map((word, index) =>
                     <motion.span
-                        className="font-permarker"
+                        className={`${perm_marker.className}`}
                         key={index}
                         variants={child}
                     >

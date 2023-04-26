@@ -27,14 +27,13 @@ export const tronTransactionApprove = async ({setLoadingApprove}:{
         tronWeb.setAddress(usddContract)
         let instance = await tronWeb.contract().at(usddContract)
         let transaction = await instance.approve(bailContract,amount).send()
+        console.log(transaction)
         setTimeout(() => {
-            let info = tronWeb.trx.getTransaction(transaction).then((result:any) => {return(result)})
-            console.log(info.then())
-        },5000)
+            let info = tronWeb.trx.getTransaction(transaction)
+            info.then(console.log(info.PromiseState))
+        }, 5000)
         
-        
-        // let info = await tronWeb.trx.getTransaction(transaction)
-        // console.log(info.ret.contractRet)
+        // console.log(info2)
         // info.then((result:any) => {console.log(result.ret.contractRet)})
         // while (info.receipt.result ==! 'SUCCESS' || info.receipt.result ==! 'FAIL') {
         //     info =tronWeb.trx.getTransactionInfo(transaction)

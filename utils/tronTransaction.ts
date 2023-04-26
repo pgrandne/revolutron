@@ -28,11 +28,9 @@ export const tronTransactionApprove = async ({setLoadingApprove}:{
         let instance = await tronWeb.contract().at(usddContract)
         let transaction = await instance.approve(bailContract,amount).send()
         console.log(transaction)
-        setTimeout(() => {
-            let info = tronWeb.trx.getTransaction(transaction)
-            info.then(console.log(info.PromiseState))
-        }, 5000)
-        
+        let info = await tronWeb.trx.getConfirmedTransaction(transaction)
+        let result = info.ret
+        console.log(result[0].contractRet)
         // console.log(info2)
         // info.then((result:any) => {console.log(result.ret.contractRet)})
         // while (info.receipt.result ==! 'SUCCESS' || info.receipt.result ==! 'FAIL') {

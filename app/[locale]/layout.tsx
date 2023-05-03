@@ -1,7 +1,8 @@
 import './globals.css'
 import {NextIntlClientProvider} from 'next-intl';
 import { notFound } from 'next/navigation';
-
+import { Analytics } from '@vercel/analytics/react';
+ 
 export const metadata = {
   title: 'RevoluTRON',
   description: 'Adventure game for Web3 onboarding',
@@ -29,6 +30,7 @@ export default async function LocaleLayout({ children, params: { locale } }:
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   )

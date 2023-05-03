@@ -1,5 +1,6 @@
 import './globals.css'
 import {NextIntlClientProvider} from 'next-intl/client';
+import { Analytics } from '@vercel/analytics/react';
 import { notFound } from 'next/navigation';
 
 export const metadata = {
@@ -29,6 +30,7 @@ export default async function LocaleLayout({ children, params: { locale } }:
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   )

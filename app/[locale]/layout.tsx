@@ -1,5 +1,5 @@
 import './globals.css'
-import {NextIntlClientProvider} from 'next-intl/client';
+import {NextIntlClientProvider} from 'next-intl';
 import { Analytics } from '@vercel/analytics/react';
 import { notFound } from 'next/navigation';
 

@@ -7,19 +7,6 @@ import { notFound } from 'next/navigation';
 export const metadata = {
   title: 'RevoluTRON',
   description: 'Adventure game for Web3 onboarding',
-  openGraph: {
-    title: 'Next.js',
-    description: 'The React Framework for the Web',
-    url: 'https://nextjs.org',
-    siteName: 'Next.js',
-    images: [
-      {
-        url: 'https://nextjs.org/og.png',
-        width: 800,
-        height: 600,
-      },
-    ]
-  }
 }
 
 export function generateStaticParams() {

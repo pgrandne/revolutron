@@ -1,6 +1,5 @@
 'use client';
 
-import { perm_marker } from '@/utils/font';
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { lurembergPic, tassePic, kiosquePic, journalPic } from "@/public/img"
@@ -11,7 +10,7 @@ const Chap1s1 = () => {
     const t = useTranslations('Chap1s1');
 
     return (
-        <div className={`${perm_marker.className} relative flex justify-center w-screen h-screen my-auto`}>
+        <div className="font-permarker relative flex justify-center w-screen h-screen my-auto">
             <div className="my-auto">
                 <motion.h1
                     className="text-center text-7xl"

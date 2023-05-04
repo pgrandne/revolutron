@@ -5,7 +5,6 @@ import LinkLocale from "@/app/components/LinkLocale"
 import { useRouter } from 'next/navigation';
 import { useLocale, useTranslations } from 'next-intl';
 import Image from "next/image";
-import { perm_marker } from '@/utils/font'
 import roadmap from "@/public/img/roadmap.png"
 import { useWallet } from '@tronweb3/tronwallet-adapter-react-hooks';
 import { useWillChange } from "framer-motion";
@@ -124,10 +123,10 @@ export const ModalInfo = ({ setModalInfo, deck }:
             <div className={` bg-[#0f1216] px-2 sm:px-16 py-2 sm:py-14 rounded-md text-center w-4/5`}>
                 <div className="flex justify-center">
                     {deck &&
-                        <p className="inline font-sans sm:block text-sm md:text-xl my-4 font-bold"><span className={`${perm_marker.className} md:text-3xl`}>RevoluTRON </span> {t('title')}</p>
+                        <p className="inline font-sans sm:block text-sm md:text-xl my-4 font-bold"><span className="font-permarker">RevoluTRON </span> {t('title')}</p>
                     }
                     {!deck &&
-                        <p className="inline font-sans sm:block text-sm md:text-xl my-4 font-bold"><span className={`${perm_marker.className} md:text-3xl`}>RevoluTRON </span> {t('subtitle')}</p>
+                        <p className="inline font-sans sm:block text-sm md:text-xl my-4 font-bold"><span className="font-permarker">RevoluTRON </span> {t('subtitle')}</p>
                     }
                 </div>
                 {deck &&
@@ -159,7 +158,7 @@ export const ModalFeedback = ({ setModalFeedback }: {
 
     return (
         <div className="bg-slate-800 bg-opacity-90 flex justify-center items-center absolute top-0 right-0 bottom-0 left-0 z-30">
-            <div className={`${perm_marker.className} flex flex-col bg-[#0f1216] px-2 sm:px-16 py-2 sm:py-14 gap-2 rounded-md text-center w-2/5`}>
+            <div className="font-permarker flex flex-col bg-[#0f1216] px-2 sm:px-16 py-2 sm:py-14 gap-2 rounded-md text-center w-2/5">
                 <p className="mb-4 text-2xl"> {t('text1')} <a className="underline"> {t('text2')} </a> </p>
                 <p className="mb-4 text-sm"> {t('duration')} </p>
                 <a className="bg-red-500 hover:bg-red-700 px-7 py-2 ml-2 rounded-md text-2xl text-white font-semibold" target="_blank" href="https://msprr0gajgn.typeform.com/to/DSl54TqJ#url=TRONchap1ep7"

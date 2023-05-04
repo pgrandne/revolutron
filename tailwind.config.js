@@ -4,7 +4,12 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        permarker: ['var(--font-perm-marker)'],
+        roboto: ['var(--font-roboto)'],
+      },
+    },
   },
   plugins: [],
 }

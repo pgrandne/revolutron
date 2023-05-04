@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from "framer-motion";
-import { perm_marker } from '@/utils/font';
 
 export const AnimatedText = (
     { size, content, speed = 0.06, delay }: {
@@ -41,7 +40,7 @@ export const AnimatedText = (
         >
             {content.split("").map((word, index) =>
                 <motion.span
-                    className={perm_marker.className}
+                    className="font-permarker"
                     key={index}
                     variants={child}
                 >

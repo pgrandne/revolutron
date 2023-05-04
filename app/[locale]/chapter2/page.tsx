@@ -1,6 +1,5 @@
 'use client';
 
-import { perm_marker } from '@/utils/font';
 import { motion } from "framer-motion"
 import { useEffect, useState } from "react";
 import { LinkLocale, ModalProgression, SaveButton } from "@/app/components";
@@ -20,7 +19,7 @@ const Chap2 = () => {
     }
 
     return (
-        <div className={`${perm_marker.className} relative flex justify-center w-screen h-screen my-auto overflow-hidden`}>
+        <div className="font-permarker relative flex justify-center w-screen h-screen my-auto overflow-hidden">
             <motion.div
                 className="absolute top-3 left-3"
                 initial={{ opacity: 0 }}

@@ -1,6 +1,5 @@
 'use client';
 
-import { perm_marker } from '@/utils/font';
 import { useTranslations } from 'next-intl';
 import { LocaleSwitcher, ModalInfo, ModalSelectChapter, MotionFooter, MotionHero, MotionHeroButton, MotionOp, TronLink } from '../components';
 import Image from 'next/image';
@@ -17,7 +16,7 @@ export default function Index() {
 
   return (
     <WalletProvider>
-      <main className={`${perm_marker.className} flex justify-center h-screen w-screen`}>
+      <main className="font-permarker flex justify-center h-screen w-screen">
         <div className="absolute flex gap-2 top-3 right-3 z-40">
           <TronLink setWallet={setWallet} />
           <LocaleSwitcher />

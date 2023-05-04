@@ -30,8 +30,6 @@ export const metadata = {
   },
 }
 
-
-
 export function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'fr' }, { locale: 'es' }];
 }

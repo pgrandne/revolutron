@@ -24,6 +24,12 @@ export const metadata = {
         width: 800,
         height: 600,
       },
+      {
+        url: 'https://nextjs.org/og-alt.png',
+        width: 1800,
+        height: 1600,
+        alt: 'My custom alt',
+      },
     ],
     locale: 'en-US',
     type: 'website',

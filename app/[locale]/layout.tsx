@@ -7,33 +7,6 @@ import { notFound } from 'next/navigation';
 export const metadata = {
   title: 'RevoluTRON',
   description: 'Adventure game for Web3 onboarding',
-  twitter: {
-    card: 'revolte',
-    description: 'Adventure game for Web3 onboarding',
-    title: 'Revolte.app',
-    images: 'https://www.revolte.app/img/revolte_card.jpeg'
-  },
-  openGraph: {
-    title: 'RevoluTRON',
-    description: 'Adventure game for Web3 onboarding',
-    url: 'https://revolutron.vercel.app',
-    siteName: 'RevoluTRON.app',
-    images: [
-      {
-        url: 'https://nextjs.org/og.png',
-        width: 800,
-        height: 600,
-      },
-      {
-        url: 'https://nextjs.org/og-alt.png',
-        width: 1800,
-        height: 1600,
-        alt: 'My custom alt',
-      },
-    ],
-    locale: 'en-US',
-    type: 'website',
-  },
 }
 
 export function generateStaticParams() {

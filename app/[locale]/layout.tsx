@@ -13,6 +13,21 @@ export const metadata = {
     title: 'Revolte.app',
     images: 'https://www.revolte.app/img/revolte_card.jpeg'
   },
+  openGraph: {
+    title: 'RevoluTRON',
+    description: 'Adventure game for Web3 onboarding',
+    url: 'https://revolutron.vercel.app',
+    siteName: 'RevoluTRON.app',
+    images: [
+      {
+        url: 'https://nextjs.org/og.png',
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: 'en-US',
+    type: 'website',
+  },
 }
 
 

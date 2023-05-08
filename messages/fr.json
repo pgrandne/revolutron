@@ -45,6 +45,13 @@
         "feedback": "Aidez-nous à améliorer l'expérience et donnez-nous votre avis 🙏 Cliquez",
         "link": "ici"
     },
+    "BailTransaction": {
+        "title":"Bail",
+        "text":"Pay the bail of M Doe : 4000 USDD",
+        "approve":"Approve",
+        "pay":"Pay",
+        "refuse":"Refuse to pay"
+    },
     "Chap1s1": {
         "narration": "Lurenberg, Listenbourg",
         "day": "18 Octobre, 2023",

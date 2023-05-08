@@ -45,6 +45,13 @@
         "feedback": "Help us improve the experience and give us your feedback 🙏 Click",
         "link": "here"
     },
+    "BailTransaction": {
+        "title":"Bail PLEASE SELECT TRON Shasta Testnet in your TronLink before click on any button",
+        "text":"Pay the bail of M Doe : 4000 USDD",
+        "approve":"Approve",
+        "pay":"Pay",
+        "refuse":"Refuse to pay"
+    },
     "Chap1s1": {
         "narration": "Lurenberg, Listenbourg",
         "day": "October 18, 2023",

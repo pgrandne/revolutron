@@ -23,14 +23,14 @@ dependencies:
     specifier: ^6.6.6
     version: 6.6.6
   framer-motion:
-    specifier: 10.12.9
-    version: 10.12.9(react-dom@18.2.0)(react@18.2.0)
+    specifier: 10.12.10
+    version: 10.12.10(react-dom@18.2.0)(react@18.2.0)
   next:
     specifier: 13.4.1
     version: 13.4.1(react-dom@18.2.0)(react@18.2.0)
   next-intl:
-    specifier: ^2.13.2
-    version: 2.13.2(next@13.4.1)(react@18.2.0)
+    specifier: ^2.14.1
+    version: 2.14.1(next@13.4.1)(react@18.2.0)
   react:
     specifier: 18.2.0
     version: 18.2.0
@@ -1806,8 +1806,8 @@ packages:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
     dev: true
 
-  /framer-motion@10.12.9(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-diLij2xjOn8RS1xz66wNDTa6nezR3bRRBB9J0r1a5xeJjcSdJpOkk2U7pTzhg1v54bzZ7HBLJ4gKo8aAQM0U3w==}
+  /framer-motion@10.12.10(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-f/VkrpxfG4xSmBi105/NCfcTt219IgglQEUR0BsuFZAg+be6N3QAcujFyBEvBvbDOSP9Ccv6OMiaY0HFMnBoMA==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
@@ -2413,8 +2413,8 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
-  /next-intl@2.13.2(next@13.4.1)(react@18.2.0):
-    resolution: {integrity: sha512-wDkAP8IWcK23XMcQxUbGmoXowMkBMAbxD5OTeFLALVelNqx4+aZ/dkLRNmXcBBn1UUzp9gc6k6FrA0B4FVkf1Q==}
+  /next-intl@2.14.1(next@13.4.1)(react@18.2.0):
+    resolution: {integrity: sha512-Qy90udOy+Km9UqQN6CQQJ+GS6eQN4FB5LO9YwW3aKALrV0gO7LIk5CjFQQEdX3wXB6Xs/1PgZ8if9GPOVghOHQ==}
     engines: {node: '>=10'}
     peerDependencies:
       next: ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0
@@ -2424,7 +2424,7 @@ packages:
       negotiator: 0.6.3
       next: 13.4.1(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
-      use-intl: 2.13.2(react@18.2.0)
+      use-intl: 2.14.1(react@18.2.0)
     dev: false
 
   /next@13.4.1(react-dom@18.2.0)(react@18.2.0):
@@ -3258,8 +3258,8 @@ packages:
       punycode: 2.3.0
     dev: false
 
-  /use-intl@2.13.2(react@18.2.0):
-    resolution: {integrity: sha512-68MUzhKV9Q58DkNqjM87fSIPpBW3T5OI9SRYeOSrs/1za25btnt2Pmjo598ZA3Nd/Nw3IL317hoIkP9nIAqd8Q==}
+  /use-intl@2.14.1(react@18.2.0):
+    resolution: {integrity: sha512-gvN49ebxV+smTZobLdK3ECqzMGsUQjdrUmEbapm1hdlskQUYriBKz4FaR9lb9VpEVta/KhxRNbPrrc1WvhPp4g==}
     engines: {node: '>=10'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0

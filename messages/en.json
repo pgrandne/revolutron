@@ -50,7 +50,8 @@
         "text":"Pay the bail of M Doe : 4000 USDD",
         "approve":"Approve",
         "pay":"Pay",
-        "refuse":"Refuse to pay"
+        "refuse":"Refuse to pay",
+        "close":"Close"
     },
     "Chap1s1": {
         "narration": "Lurenberg, Listenbourg",
@@ -341,6 +342,30 @@
         "networkissues": "The network seems to have some issues, come back later please",
         "clickon1": "You can click on",
         "clickon2": "to display the USDD balance in your wallet",
+        "narration": "The Lurenberg Post, Newsroom",
+        "dialogue": {
+            "d1": "Hey Azad, did you install a wallet?",
+            "d2": "Alright, I will send you some funds now, in USDD currency. It's what we call a stablecoin, its value is pegged to dollars (1USDD = $1)",
+            "d3": "I need your address to send you the funds now. It is the unique sequence of letters and numbers that starts with T……",
+            "d4": "Once you clicked on the wallet extension you'll find it written just below “Wallet >“",
+            "d5": "Just click on it to copy your address in the clipboard and paste it here",
+            "d6": "In order to do transactions on this network, you will also need some “gas”. It's like the gasoline for your car, if you want to run it, you'll need to fill the tank with the appropriate fuel",
+            "d7": "Basically this “gas” is a specific currency, used to paid your own transactions. On this network this currency is called TRX",
+            "d8": "But when you use your bankcard you pay a fee too! The difference is just that you don't care about it because the merchant pays it for you!",
+            "d9": "Sorry I need to go, I'll contact you very soon"
+        },
+        "choices": {
+            "c1": {
+                "choice1": "Yes",
+                "choice2": "I installed TronLink as you said"
+            },
+            "c2": {
+                "choice1": "You mean it's required to pay for each transaction? ",
+                "choice2": "(say nothing)"
+            }
+        }
+    },
+    "Chap2s2": {
         "narration": "The Lurenberg Post, Newsroom",
         "dialogue": {
             "d1": "Hey Azad, did you install a wallet?",

@@ -7,7 +7,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import Image from "next/image";
 import roadmap from "@/public/img/roadmap.png"
 import { useWallet } from '@tronweb3/tronwallet-adapter-react-hooks';
-import { tronTransactionApprove, tronTransactionDeposit } from "@/utils/tronTransaction";
+import { tronTransactionApprove, tronTransactionDeposit, tronUsddAllowance } from "@/utils/tronTransaction";
 import { StepsBar } from "./StepsBar";
 
 export const ModalProgression = ({ route }: { route: string }) => {
@@ -27,7 +27,6 @@ export const ModalProgression = ({ route }: { route: string }) => {
                     onClick={() => {
                         setLoading(true)
                         router.push(route)
-
                     }}
                 >
                     {loading &&
@@ -188,68 +187,77 @@ export const ModalTransaction = ({ setTransactionModal }: {
 }) => {
     const t = useTranslations('BailTransaction');
     const locale = useLocale()
+    const [tsx, setTsx] = useState('')
     const [transactionStatus, setTransactionStatus] = useState({
-        loadingApprove : false,
-        approve : false,
-        loadingDeposit : false,
-        deposit : false
+        loadingApprove: false,
+        approve: false,
+        loadingDeposit: false,
+        deposit: false
     })
 
+    useEffect(() => {
+        tronUsddAllowance({ setTransactionStatus })
+    }, [])
+
     return (
-    <div className="bg-slate-800 bg-opacity-90 flex justify-center items-center absolute top-0 right-0 bottom-0 left-0 z-30">
-        <div className="flex flex-col bg-[#0f1216] px-2 sm:px-16 py-2 sm:py-14 gap-2 rounded-md text-center w-2/5">
-            <p className="mb-4 text-2xl"> {t('title')}</p>
-            <p className="mb-4 text-sm"> {t('text')} </p>
-            <StepsBar/>
-            <button className="bg-red-500 hover:bg-red-700 px-7 py-2 ml-2 rounded-md text-2xl text-white font-semibold"
-                onClick={() => {
-                    setTransactionStatus(prevState => ({
-                        ...prevState,
-                        loadingApprove :true
+        <div className="bg-slate-800 bg-opacity-90 flex justify-center items-center absolute top-0 right-0 bottom-0 left-0 z-30">
+            <div className="flex flex-col bg-[#0f1216] px-2 sm:px-16 py-2 sm:py-14 gap-2 rounded-md text-center w-2/5">
+                <p className="mb-4 text-2xl"> {t('title')}</p>
+                <p className="mb-4 text-sm"> {t('text')} </p>
+                <StepsBar transactionStatus={transactionStatus} />
+                {!transactionStatus.approve &&
+                    <button className="bg-red-500 hover:bg-red-700 px-7 py-2 ml-2 rounded-md text-2xl text-white font-semibold"
+                        onClick={() => {
+                            setTransactionStatus(prevState => ({
+                                ...prevState,
+                                loadingApprove: true
 
-                    }))
-                    console.log(transactionStatus)
-                    // tronTransactionApprove({setLoadingApprove})
-                }}
-            >
-                <div className="flex justify-center">
-                    {transactionStatus.loadingApprove &&
-                            <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="black" strokeWidth="4"></circle>
-                                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                            </svg>
-                    }
-                    {transactionStatus.loadingApprove?"Processing...":t('approve')}
-                </div>
-            </button>
+                            }))
+                            tronTransactionApprove({ setTsx, setTransactionStatus })
+                        }}
+                    >
+                        <div className="flex justify-center">
+                            {transactionStatus.loadingApprove &&
+                                <svg className="animate-spin -ml-1 mr-3 h-7 w-7 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="black" strokeWidth="4"></circle>
+                                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                            }
+                            {transactionStatus.loadingApprove ? "Processing..." : t('approve')}
+                        </div>
+                    </button>
+                }
+                {transactionStatus.approve &&
+                    <button className="bg-red-500 hover:bg-red-700 px-7 py-2 ml-2 rounded-md text-2xl text-white font-semibold"
+                        onClick={() => {
+                            setTransactionStatus(prevState => ({
+                                ...prevState,
+                                loadingDeposit: true
 
-            <button className="bg-red-500 hover:bg-red-700 px-7 py-2 ml-2 rounded-md text-2xl text-white font-semibold"
-                onClick={() => {
-                    // setLoadingDeposit(true)
-                    tronTransactionDeposit()
-                }}
+                            }))
+                            tronTransactionDeposit({ setTsx, setTransactionStatus })
+                        }}
+                    >
+                        <div className="flex justify-center">
+                            {transactionStatus.loadingDeposit &&
+                                <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="black" strokeWidth="4"></circle>
+                                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                            }
+                            {transactionStatus.loadingDeposit ? "Processing..." : t('pay')}
+                        </div>
+                    </button>
+                }
+                <button
+                    className="border-2 border-white opacity-70 hover:opacity-100 mt-2 px-7 py-2 ml-2 rounded-md text-2xl text-white font-semibold"
+                    onClick={() => {
+                        setTransactionModal(false)
 
-            >
-                <div className="flex justify-center">
-                    {transactionStatus.loadingDeposit &&
-                            <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="black" strokeWidth="4"></circle>
-                                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                            </svg>
-                    }
-                    {transactionStatus.loadingDeposit?"Processing...":t('pay')}
-                </div>
-            </button>
-
-            <button
-                className="border-2 border-white opacity-70 hover:opacity-100 mt-2 px-7 py-2 ml-2 rounded-md text-2xl text-white font-semibold"
-                onClick={() => {
-                    setTransactionModal(false)
-                    
-                }}
-            >{t('refuse')}</button>
-        </div>
-    </div >
+                    }}
+                >{t('close')}</button>
+            </div>
+        </div >
     )
 }
 

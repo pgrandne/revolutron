@@ -5,8 +5,12 @@ import { Permanent_Marker, Roboto } from 'next/font/google';
 import { notFound } from 'next/navigation';
 
 export const metadata = {
+  metadataBase: new URL('https://revolutron.vercel.app'),
   title: 'RevoluTRON',
   description: 'Adventure game for Web3 onboarding',
+  openGraph: {
+    images: '/opengraph-image.jpg',
+  }
 }
 
 export function generateStaticParams() {

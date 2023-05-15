@@ -1,7 +1,7 @@
 {
     "Home": {
         "title": "Histoire d'un lanceur d'alerte",
-        "subtitle": "Une fiction interactive pour explorer le Web3",
+        "subtitle": "Découvrez le Web3 de façon ludique. Et gagnez des récompenses.",
         "buttonName": "Entrer dans l'aventure"
     },
     "Info": {
@@ -27,6 +27,29 @@
         "resume": "Dernière sauvegarde",
         "connect": "Connectez votre wallet",
         "close": "Fermer",
+        "error": "Erreur lors du chargement de la sauvegarde.",
+        "wait": "Patientez..."
+    },
+    "SelectChapter": {
+        "chapter": "Chapitre",
+        "episode": "épisode",
+        "episodes": "épisodes",
+        "textChap1-1": "Découvrez l'histoire",
+        "textChap1-2": "Installez votre wallet",
+        "textChap1-3": "Indispensable pour explorer le Web3",
+        "beginner": "Débutant",
+        "advanced": "Avancé",
+        "textChap2-1": "Continuez l'aventure",
+        "textChap2-2": "Apprenez les bases du Web3",
+        "textChap2-3": "Transactions, Gas, NFT...",
+        "underConstruction": "En construction",
+        "textChap3-1": "Continuez l'aventure",
+        "textChap3-2": "Découvrez les protocoles Web3 existants",
+        "textChap3-3": "Ce chaptitre est sur le mainnet",
+        "resume": "Reprendre la dernière session",
+        "close": "Fermer",
+
+        "connect": "Connectez votre wallet",        
         "error": "Erreur lors du chargement de la sauvegarde.",
         "wait": "Patientez..."
     },

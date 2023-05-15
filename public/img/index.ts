@@ -27,3 +27,8 @@ export { default as takeawayPic } from "./takeaway2.png"
 export { default as tassePic } from './tasse.png'
 export { default as tvPic } from './tv.png'
 export { default as pubPic } from './pub.png'
+export { default as azadChap1Pic } from './azad-chap1.png'
+export { default as ruizChap2Pic } from './ruiz-chap2.png'
+export { default as skylerChap3Pic } from './skyler-chap3.png'
+export { default as bgModalPic } from './bg-modal-chapter.jpg'
+export { default as tronlinkPic } from './tronlink-icon.png'

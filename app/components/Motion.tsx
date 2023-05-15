@@ -61,7 +61,7 @@ export const MotionHero = ({ title, subtitle }: {
             className="hidden sm:block fixed top-5 left-5 -z-10"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 6, duration: 1 }}
+            transition={{ delay: 4.5, duration: 1 }}
         >
             <p className="text-white text-opacity-70 text-xl">{subtitle}</p>
         </motion.div>

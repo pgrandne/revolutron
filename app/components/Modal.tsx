@@ -9,6 +9,13 @@ import roadmap from "@/public/img/roadmap.png"
 import { useWallet } from '@tronweb3/tronwallet-adapter-react-hooks';
 import { tronTransactionApprove, tronTransactionDeposit, tronUsddAllowance } from "@/utils/tronTransaction";
 import { StepsBar } from "./StepsBar";
+import {
+    azadChap1Pic,
+    ruizChap2Pic,
+    skylerChap3Pic,
+    bgModalPic,
+    tronlinkPic,
+  } from "@/public/img";
 
 export const ModalProgression = ({ route }: { route: string }) => {
     const router = useRouter()
@@ -42,8 +49,8 @@ export const ModalProgression = ({ route }: { route: string }) => {
     )
 }
 
-export const ModalSelectChapter = ({ setModalSelectChapter, wallet }: {
-    setModalSelectChapter: Dispatch<SetStateAction<boolean>>
+export const ModalSelectChapterV1 = ({ setModalSelectChapterV1, wallet }: {
+    setModalSelectChapterV1: Dispatch<SetStateAction<boolean>>
     wallet: boolean
 }) => {
     const t = useTranslations('Progression')
@@ -74,7 +81,7 @@ export const ModalSelectChapter = ({ setModalSelectChapter, wallet }: {
             router.push(path.path)
         } catch (error) {
             alert(error.message)
-            setModalSelectChapter(false)
+            setModalSelectChapterV1(false)
         }
     }
 
@@ -95,7 +102,7 @@ export const ModalSelectChapter = ({ setModalSelectChapter, wallet }: {
                 <button
                     disabled={loading}
                     className="btnClose mx-auto w-36"
-                    onClick={() => setModalSelectChapter(false)}
+                    onClick={() => setModalSelectChapterV1(false)}
                 >
                     {loading &&
                         <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -109,6 +116,315 @@ export const ModalSelectChapter = ({ setModalSelectChapter, wallet }: {
         </div >
     )
 }
+
+
+export const ModalSelectChapter = ({
+    setModalSelectChapter,
+    wallet,
+  }: {
+    setModalSelectChapter: Dispatch<SetStateAction<boolean>>;
+    wallet: boolean;
+  }) => {
+    const t = useTranslations('SelectChapter')
+    const locale = useLocale()
+    const router = useRouter()
+    const { address } = useWallet()
+    const [loading, setLoading] = useState(false)
+    const [resumeButton, setResumeButton] = useState(t('resume'))
+
+    useEffect(() => {
+        if (typeof address !== 'undefined')
+            setResumeButton(t('resume'))
+
+    }, [address])
+
+    const getProgression = async () => {
+        setLoading(true)
+        try {
+            const progRes = await fetch('/api/progression', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ address, locale }),
+            })
+            if (progRes.status !== 200) throw new Error(t('error'))
+            const path = await progRes.json()
+            router.push(path.path)
+        } catch (error) {
+            alert(error.message)
+            setModalSelectChapter(false)
+        }
+    }
+  
+    return (
+      <div className="bg-gray-900 bg-opacity-80 flex justify-center items-center absolute top-0 right-0 bottom-0 left-0 z-30">
+        <div
+          className={`font-sans flex flex-col bg-[#0f1216] border rounded-md  w-2/5`}
+          style={{ zIndex: -2 }}
+        >
+          <LinkLocale
+            className="card border rounded-md w-[28rem] relative flex flex-col mx-auto mt-5 m-2 opacity-90 cursor-pointer hover:opacity-100"
+            href="/chapter1/scene1"
+          >
+            <Image
+              className="max-h-16 w-full rounded-t-md opacity-80 absolute top-0"
+              style={{ zIndex: -1 }}
+              src={bgModalPic}
+              alt=""
+            />
+            <div className="profile w-full flex p-3 pl-4 text-white">
+              <Image
+                className="w-28 h-28 p-1 bg-amber-50 rounded-full"
+                src={azadChap1Pic}
+                alt=""
+              />
+              <div className="title mt-1 ml-3 font-bold flex flex-col">
+                <div className="font-permarker name break-words">
+                  {t("chapter")} 1
+                </div>
+                <div className="name break-words pl-2 text-xs">
+                  (1 {t("episode")})
+                </div>
+                <div className="flex flex-col absolute top-0 font-bold right-0 text-xs text-white space-x-0 my-3.5 mr-3">
+                  <div className="add border rounded-2xl  border-gray-300 p-1 px-4">
+                    15min
+                  </div>
+                </div>
+                <div className="add mt-4 font-semibold text-xs  text-white">
+                  {" "}
+                  • {t("textChap1-1")} <br /> • {t("textChap1-2")} <br />(
+                  {t("textChap1-3")})
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col absolute bottom-0 font-bold right-0 text-[.6rem] text-[#0f1216] space-x-0 my-3.5 mr-3">
+              <div className="add  rounded-2xl text-center opacity-60 bg-lime-500 border-white mb-1  px-1.5">
+                {t("beginner")}
+              </div>
+              <div className="add  rounded-2xl text-center opacity-60 bg-rose-600 border-white px-1.5">
+                {t("advanced")}
+              </div>
+            </div>
+          </LinkLocale>
+  
+          {wallet && (
+            <LinkLocale
+              className="card border rounded-md w-[28rem] relative flex flex-col mx-auto m-2 opacity-90 cursor-pointer hover:opacity-100"
+              href="/chapter2/scene1"
+            >
+              <Image
+                className="max-h-16 w-full rounded-t-md opacity-80 absolute top-0"
+                style={{ zIndex: -1 }}
+                src={bgModalPic}
+                alt=""
+              />
+              <div className="profile w-full flex p-3 pl-4 text-white">
+                <Image
+                  className="w-28 h-28 p-1 bg-amber-50 rounded-full"
+                  src={ruizChap2Pic}
+                  alt=""
+                />
+                <div className="title mt-1 ml-3 font-bold flex flex-col">
+                  <div className="font-permarker name break-words">
+                    {t("chapter")} 2
+                  </div>
+                  <div className="name break-words pl-2 text-xs">
+                    (4 {t("episodes")})
+                  </div>
+  
+                  <div className="flex  absolute top-0 font-bold right-0 text-xs text-white space-x-0 my-3.5 mr-3">
+                    <div className="add   p-1 px-2">4 x </div>
+                    <div className="add border rounded-2xl  border-gray-300 p-1 px-4">
+                      5min
+                    </div>
+                  </div>
+  
+                  <div className="add mt-4 font-semibold text-xs  text-white">
+                    {" "}
+                    • {t("textChap2-1")} <br /> • {t("textChap2-2")} <br />(
+                    {t("textChap2-3")})
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col absolute bottom-0 font-bold right-0 text-[.6rem] text-[#0f1216] space-x-0 my-3.5 mr-3">
+                <div className="add  rounded-2xl text-center opacity-60 bg-lime-500 border-white mb-1  px-1.5">
+                  {t("beginner")}
+                </div>
+                <div className="add  rounded-2xl text-center opacity-60 bg-rose-600 border-white px-1.5">
+                  {t("advanced")}
+                </div>
+              </div>
+            </LinkLocale>
+          )}
+  
+          {!wallet && (
+            <LinkLocale
+              className="card border rounded-md w-[28rem] relative flex flex-col mx-auto m-2 opacity-90 cursor-pointer hover:opacity-100"
+              href="/chapter2"
+            >
+              <Image
+                className="max-h-16 w-full rounded-t-md opacity-80 absolute top-0"
+                style={{ zIndex: -1 }}
+                src={bgModalPic}
+                alt=""
+              />
+              <div className="profile w-full flex p-3 pl-4 text-white">
+                <Image
+                  className="w-28 h-28 p-1 bg-amber-50 rounded-full"
+                  src={ruizChap2Pic}
+                  alt=""
+                />
+                <div className="title mt-1 ml-3 font-bold flex flex-col">
+                  <div className="font-permarker name break-words">
+                    {t("chapter")} 2
+                  </div>
+                  <div className="name break-words pl-2 text-xs">
+                    (4 {t("episodes")})
+                  </div>
+  
+                  <div className="flex  absolute top-0 font-bold right-0 text-xs text-white space-x-0 my-3.5 mr-3">
+                    <div className="add   p-1 px-2">4 x </div>
+                    <div className="add border rounded-2xl  border-gray-300 p-1 px-4">
+                      5min
+                    </div>
+                  </div>
+  
+                  <div className="add mt-4 font-semibold text-xs  text-white">
+                    {" "}
+                    • {t("textChap2-1")} <br /> • {t("textChap2-2")} <br />(
+                    {t("textChap2-3")})
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col absolute bottom-0 font-bold right-0 text-[.6rem] text-[#0f1216] space-x-0 my-3.5 mr-3">
+                <div className="add  rounded-2xl text-center opacity-60 bg-lime-500 border-white mb-1  px-1.5">
+                  {t("beginner")}
+                </div>
+                <div className="add  rounded-2xl text-center opacity-60 bg-rose-600 border-white px-1.5">
+                  {t("advanced")}
+                </div>
+              </div>
+            </LinkLocale>
+          )}
+  
+          <LinkLocale
+            className="card border rounded-md w-[28rem] relative flex flex-col mx-auto m-2 opacity-90 cursor-pointer hover:opacity-100"
+            href="/construction"
+          >
+            <Image
+              className="max-h-16 w-full rounded-t-md opacity-80 absolute top-0"
+              style={{ zIndex: -1 }}
+              src={bgModalPic}
+              alt=""
+            />
+            <div className="profile w-full flex p-3 pl-4 text-white">
+              <Image
+                className="w-28 h-28 p-1 bg-amber-50 rounded-full"
+                src={skylerChap3Pic}
+                alt=""
+              />
+              <div className="title mt-1 ml-3 font-bold flex flex-col">
+                <div className="font-permarker name break-words">
+                  {t("chapter")} 3
+                </div>
+                <div className="name break-words pl-2 text-xs">
+                  ({t("underConstruction")})
+                </div>
+  
+                {/* <div className="flex  absolute top-0 font-bold right-0 text-xs text-white space-x-0 my-3.5 mr-3">         
+          <div className="add   p-1 px-2">4 x </div>
+            <div className="add border rounded-2xl  border-gray-300 p-1 px-4">5min</div>
+          </div> */}
+  
+                <div className="add mt-4 font-semibold text-xs  text-white">
+                  {" "}
+                  • {t("textChap3-1")} <br /> • {t("textChap3-2")} <br />(
+                  {t("textChap3-3")})
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col absolute bottom-0 font-bold right-0 text-[.6rem] text-[#0f1216] space-x-0 my-3.5 mr-3">
+              <div className="add  rounded-2xl text-center opacity-60 bg-rose-600 border-white px-1.5">
+                {t("advanced")}
+              </div>
+            </div>
+          </LinkLocale>
+  
+          {wallet && (
+            <button
+              onClick={() => {
+                typeof address === "undefined"
+                  ? setResumeButton(t("connect"))
+                  : getProgression();
+              }}
+            >
+              <div className="card border  rounded-md w-[28rem] relative flex flex-col mx-auto  m-2 opacity-90 cursor-pointer hover:opacity-100">
+                <Image
+                  className="h-full w-full rounded-md opacity-80 absolute top-0"
+                  style={{ zIndex: -1 }}
+                  src={bgModalPic}
+                  alt=""
+                />
+                <div className="absolute bottom-0 left-0 my-3 ml-6">
+                  <Image
+                    className="w-10 h-10 p-0.5 bg-amber-50 rounded-full"
+                    src={tronlinkPic}
+                    alt=""
+                  />
+                </div>
+                <div className="profile h-16 w-full flex p-3 pl-4 text-white">
+                  <div className="title  my-auto mx-auto font-bold ">
+                    <div className="font-permarker name break-words">
+                      {resumeButton}
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute bottom-0 right-0 my-3 mr-6">
+                  <Image
+                    className="w-10 h-10 p-0.5 bg-amber-50 rounded-full "
+                    src={tronlinkPic}
+                    alt=""
+                  />
+                </div>
+              </div>
+            </button>
+          )}
+  
+          <button disabled={loading} onClick={() => setModalSelectChapter(false)}>
+            <div className="card border  rounded-md w-[9rem] relative  mx-auto mb-5 m-2 opacity-80 cursor-pointer hover:bg-red-900 hover:opacity-100">
+              <div className=" my-auto mx-auto flex justify-center font-bold font-permarker p-2  text-white ">
+                {loading && (
+                  <svg
+                    className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="black"
+                      strokeWidth="4"
+                    ></circle>
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    ></path>
+                  </svg>
+                )}
+                {loading ? t("wait") : t("close")}
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    );
+  };
+
 
 export const ModalInfo = ({ setModalInfo, deck }:
     {

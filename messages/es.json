@@ -1,7 +1,7 @@
 {
     "Home": {
         "title": "Historia de un denunciante",
-        "subtitle": "Una aventura para empezar a explorar el Web3",
+        "subtitle": "Descubre el Web3 de manera divertida. Y gana recompensas.",
         "buttonName": "Empezar la aventura"
     },
     "Info": {
@@ -27,6 +27,29 @@
         "resume": "Continuar la última sesión",
         "connect": "Conectar su wallet",
         "close": "Cerrar",
+        "error": "Error al cargar la última sesión.",
+        "wait": "Procesando..."
+    },
+    "SelectChapter": {
+        "chapter": "Capítulo",
+        "episode": "episodio",
+        "episodes": "episodios",
+        "textChap1-1": "Descubre la historia",
+        "textChap1-2": "Instala tu wallet",
+        "textChap1-3": "Esencial para explorar el Web3",
+        "beginner": "Principiante",
+        "advanced": "Avanzado",
+        "textChap2-1": "Continúa la aventura",
+        "textChap2-2": "Aprende los básicos del Web3",
+        "textChap2-3": "Transacciones, Gas, NFT...",
+        "underConstruction": "En construcción",
+        "textChap3-1": "Continúa la aventura",
+        "textChap3-2": "Descubre los protocolos Web3 existentes",
+        "textChap3-3": "Este capítulo está en el mainnet",
+        "resume": "Continuar la última sesión",
+        "close": "Cerrar",
+
+        "connect": "Conecta tu wallet",        
         "error": "Error al cargar la última sesión.",
         "wait": "Procesando..."
     },

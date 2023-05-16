@@ -1,7 +1,7 @@
 {
     "Home": {
         "title": "Story of a whistleblower",
-        "subtitle": "An adventure game to start exploring Web3",
+        "subtitle": "Learn about Web3 in a fun way. And earn incentives.",
         "buttonName": "Enter the adventure"
     },
     "Info": {
@@ -27,6 +27,29 @@
         "resume": "Resume last session",
         "connect": "Please connect wallet",
         "close": "Close",
+        "error": "Error loading progression.",
+        "wait": "Wait..."
+    },
+    "SelectChapter": {
+        "chapter": "Chapter",
+        "episode": "episode",
+        "episodes": "episodes",
+        "textChap1-1": "Discover the story",
+        "textChap1-2": "Install your wallet",
+        "textChap1-3": "Required to explore Web3",
+        "beginner": "Beginner",
+        "advanced": "Advanced",        
+        "textChap2-1": "Continue the adventure",
+        "textChap2-2": "Learn Web3 basics",
+        "textChap2-3": "Transactions, Gas, NFT...",
+        "underConstruction": "Under construction",
+        "textChap3-1": "Continue the adventure",
+        "textChap3-2": "Discover existing Web3 protocols",
+        "textChap3-3": "This chapter is on the mainnet",
+        "resume": "Resume last session",
+        "close": "Close",
+
+        "connect": "Please connect wallet",        
         "error": "Error loading progression.",
         "wait": "Wait..."
     },

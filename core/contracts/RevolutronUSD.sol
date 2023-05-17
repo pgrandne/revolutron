@@ -1,3 +1,5 @@
+//SPDX-License-Identifier: UNLICENSED
+
 // 0.5.1-c8a2
 // Enable optimization
 pragma solidity ^0.5.0;
@@ -15,11 +17,11 @@ import "./TRC20Detailed.sol";
  * The creator is Cincinnatus the whistleblower of the story and he will send this token
  * to players who follow the adventure.
  */
-contract RevolutronUSDD is TRC20, TRC20Detailed {
+contract RevolutronUSD is TRC20, TRC20Detailed {
     /**
      * @dev Constructor that gives msg.sender all of existing tokens.
      */
-    constructor() public TRC20Detailed("RevoluTRON USDD", "USDD", 6) {
-        _mint(msg.sender, 10000000000 * (10 ** uint256(decimals())));
+    constructor() public TRC20Detailed("RevoluTRON USD", "RUSD", 6) {
+        _mint(msg.sender, 100000000000 * (10 ** uint256(decimals())));
     }
 }

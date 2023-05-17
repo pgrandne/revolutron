@@ -1,4 +1,5 @@
 import { Dispatch, SetStateAction } from "react";
+import { usddContract,bailContract } from "./contract";
 
 interface ITronLinkParams {
     ready: boolean
@@ -14,7 +15,7 @@ declare global {
     }
 }
 
-const bailContract="TKihVzd5pwmFyUidhLCRFFmdyp3fonJkkg"
+
 
 export const tronTransactionApprove = async ({setTsx, setTransactionStatus}:{
     setTsx:Dispatch<SetStateAction<string>>
@@ -26,7 +27,7 @@ export const tronTransactionApprove = async ({setTsx, setTransactionStatus}:{
     }>>
 }) => {
     if (window.tronLink.ready) {
-        const usddContract="TBukaqWaKjLiqLHtz1czhwLd3iSQVBkHJL"
+        
         const amount = 4000000000
         const tronWeb = window.tronLink.tronWeb
         const address = tronWeb.defaultAddress.base58
@@ -60,7 +61,6 @@ export const tronUsddAllowance = async ({setTransactionStatus}:{
     }>>
 }) => {
     if (window.tronLink.ready) {
-        const usddContract="TBukaqWaKjLiqLHtz1czhwLd3iSQVBkHJL"
         const tronWeb = window.tronLink.tronWeb
         const address = tronWeb.defaultAddress.base58
         tronWeb.setAddress(usddContract)

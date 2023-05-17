@@ -28,6 +28,11 @@ interface ITRC20 {
         address recipient,
         uint256 amount
     ) external returns (bool);
+
+    function transfer(
+        address recipient,
+        uint256 amount
+    ) external returns (bool);
 }
 
 /// @notice This is the contract to deposit and withdraw the bail in chapter 2 of Revolte
@@ -38,10 +43,10 @@ contract RevolutronBail {
         uint256 timestamp;
     }
     // Mapping to associate struct BailDeposit to an address
-    mapping(address => BailDeposit) bailDepositPerPlayer;
+    mapping(address => BailDeposit) public bailDepositPerPlayer;
 
     // contract address for the token used in the game
-    ITRC20 private revolutronUsdd;
+    ITRC20 public revolutronUsdd;
 
     // address of the owner of the contract
     address public owner;
@@ -64,8 +69,8 @@ contract RevolutronBail {
     constructor(address _revolutronUsdd) {
         revolutronUsdd = ITRC20(_revolutronUsdd);
         owner = msg.sender;
-        depositAmount = 500 * 10 ** 6;
-        lockTime = 7 days;
+        depositAmount = 4000 * 10 ** 6;
+        lockTime = 1 days;
     }
 
     // Authorize only the ownner to execute the function
@@ -91,8 +96,8 @@ contract RevolutronBail {
         lockTime = _lockTime;
     }
 
-    // Function to deposit 500 USDD for the bail
-    function depositBail() external {
+    // Function to deposit 4000 USDD for the bail
+    function depositBail() external returns (bool) {
         // Check there is no existing deposit from the sender
         require(
             bailDepositPerPlayer[msg.sender].depositAmount == 0,
@@ -121,10 +126,11 @@ contract RevolutronBail {
 
         // Emit the event of Deposit
         emit Deposit(msg.sender, depositAmount);
+        return true;
     }
 
-    // Function to withdraw 500 USDD from the bail
-    function withdrawBail() external {
+    // Function to withdraw 4000 USDD from the bail
+    function withdrawBail() external returns (bool) {
         // Check if sender deposited a bail
         require(
             bailDepositPerPlayer[msg.sender].depositAmount > 0,
@@ -136,13 +142,20 @@ contract RevolutronBail {
                 bailDepositPerPlayer[msg.sender].timestamp + lockTime,
             "You have to wait the locktime after the deposit to withdraw"
         );
-        // Fetch amount to withdraw (500 USDD)
+        // Fetch amount to withdraw (4000 USDD)
         uint256 amount = bailDepositPerPlayer[msg.sender].depositAmount;
 
         // Withdraw the amount from the contract to the player
-        revolutronUsdd.transferFrom(address(this), msg.sender, amount);
+        revolutronUsdd.transfer(msg.sender, amount);
+
+        // Reinitiate the mapping with 0 deposit
+        bailDepositPerPlayer[msg.sender] = BailDeposit({
+            depositAmount: 0,
+            timestamp: 0
+        });
 
         // Emit the event of Deposit
         emit Withdraw(msg.sender, amount);
+        return true;
     }
 }

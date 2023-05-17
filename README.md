@@ -81,8 +81,10 @@ We use .env for environment variables. Change the name of env.example to .env an
    - We use PRIVATE KEY for interacting with the blockchain
 
 We use 2 contracts : 
-   - One for the token of the Adventure : RevolutronUSDD : TBukaqWaKjLiqLHtz1czhwLd3iSQVBkHJL
-  https://shasta.tronscan.org/#/contract/TBukaqWaKjLiqLHtz1czhwLd3iSQVBkHJL/code
-   - One for the bail of the Adventure : TKihVzd5pwmFyUidhLCRFFmdyp3fonJkkg
-  https://shasta.tronscan.org/#/contract/TKihVzd5pwmFyUidhLCRFFmdyp3fonJkkg/code
+   - One for the token of the Adventure : RevolutronUSD : TSq8uXtJSX5o3wimqsQj5TDdEdTNP13kAo
+  https://shasta.tronscan.org/#/contract/TSq8uXtJSX5o3wimqsQj5TDdEdTNP13kAo/code
+   - One for the bail of the Adventure : TLFkPf5XTC5JqUH91jfNPe2k2Rvj6L9ih3
+  https://shasta.tronscan.org/#/contract/TLFkPf5XTC5JqUH91jfNPe2k2Rvj6L9ih3/code
+  
+
 

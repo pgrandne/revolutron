@@ -7,14 +7,14 @@ import { ArrowButton, LinkLocale, ModalTransaction, MotionOp, ProgressionBar } f
 
 const Chap2s2 = () => {
     const [stage, setStage] = useState(0)
-    const [transactionModal, setTransactionModal]= useState(true)
+    const [transactionModal, setTransactionModal] = useState(false)
 
-    useEffect(()=> {
+    useEffect(() => {
         if (stage === 2) {
             setTransactionModal(true)
             setStage(3)
         }
-    },[stage])
+    }, [stage])
 
     return (
         <div className="flex flex-row">
@@ -30,7 +30,7 @@ const Chap2s2 = () => {
                 }
             </div>
             <div className="basis-1/3 p-6 h-screen flex-grow-0">
-                    <Discussion stage={stage} setStage={setStage} />
+                <Discussion stage={stage} setStage={setStage} />
             </div>
             {stage === 3 &&
                 <MotionOp>
@@ -41,7 +41,11 @@ const Chap2s2 = () => {
                     </button>
                 </MotionOp>
             }
-            {transactionModal && <ModalTransaction setTransactionModal={setTransactionModal} />}
+            {stage === 1 &&
+                <MotionOp delay={30}>
+                    <ModalTransaction setTransactionModal={setTransactionModal} />
+                </MotionOp>
+            }
         </div >
     )
 }

@@ -388,27 +388,52 @@
             }
         }
     },
+
     "Chap2s2": {
-        "narration": "The Lurenberg Post, Newsroom",
         "dialogue": {
-            "d1": "Hey Azad, did you install a wallet?",
-            "d2": "Alright, I will send you some funds now, in USDD currency. It's what we call a stablecoin, its value is pegged to dollars (1USDD = $1)",
-            "d3": "I need your address to send you the funds now. It is the unique sequence of letters and numbers that starts with T……",
-            "d4": "Once you clicked on the wallet extension you'll find it written just below “Wallet >“",
-            "d5": "Just click on it to copy your address in the clipboard and paste it here",
-            "d6": "In order to do transactions on this network, you will also need some “gas”. It's like the gasoline for your car, if you want to run it, you'll need to fill the tank with the appropriate fuel",
-            "d7": "Basically this “gas” is a specific currency, used to paid your own transactions. On this network this currency is called TRX",
-            "d8": "But when you use your bankcard you pay a fee too! The difference is just that you don't care about it because the merchant pays it for you!",
-            "d9": "Sorry I need to go, I'll contact you very soon"
+        "d1": "Tu as pu avancer ?",
+        "d2": "OK, pour transférer des cryptomonnaies vers un compte bancaire classique, il suffit d’utiliser un intermédiaire reconnu qui fait la liaison entre les deux mondes. D’un côté tu envoies des USDC qu’il va conserver et de l’autre il va créditer des $ sur le compte que tu auras choisi. Il y a bien sûr des frais à payer pour ce service.",
+        "d3": "Tu peux utiliser XXXX par exemple pour verser les $4000 de la caution.",
+        "d4": "Il suffit que tu connectes ton wallet, renseigne le montant, et l’IBAN de Ruiz.",
+        "d5": "Si tout est rempli tu peux cliquer sur “Approuver” afin d’autoriser le site d’intéragir avec les USDC de ton wallet, puis sur “Envoyer” pour valider le montant d’USDC.",
+        "d6": "Ca peut paraitre lourd au début, mais à chaque interaction avec ton wallet tu devras donner ton accord. C’est ce qui permet de rendre ce système très sécurisé. Tu devras aussi valider directement dans ton wallet les frais de réseau associés à la transaction comme je te l’avais expliqué précédemment."
         },
         "choices": {
             "c1": {
-                "choice1": "Yes",
-                "choice2": "I installed TronLink as you said"
+                "choice1": "J’ai contacté Ruiz à la prison centrale de Listenbourg",
+                "choice2": "Il est au courant que je vais lui envoyer de l’argent pour payer sa caution sur son compte bancaire personnel."
             },
             "c2": {
-                "choice1": "You mean it's required to pay for each transaction? ",
-                "choice2": "(say nothing)"
+                "choice1": "C’est bon, ça a fonctionné",
+                "choice2": "(ne rien dire)"
+            }
+        }
+    },
+    "Chap2s3": {
+        "dialogue": {
+            "d1": "Merci Azad! J’ai pu me renseigner sur toi, et avec tout ce que tu m’as raconté au sujet de Cincinnatus et des documents qu’il t’a fourni je peux te faire confiance.",
+            "d2": "J’ai des images compromettantes qui pourraient rompre toute confiance avec notre gouvernement. Posséder de telles preuves m’a rendu parano, et extrêmement stressé…mon excès de vitesse sur l’autoroute n’y est pas étranger.",
+            "d3": "J’avais contacté ce groupe de hackers éthiques il y a 1 semaine pour trouver une manière de révéler tout ça. Cincinnatus en faisait partie, et possédait également des documents à charges.",
+            "d4": "Je travaille comme superviseur, dans une entreprise sous-traitante de l’armée, sur des questions logistiques. Nous avons été mandaté pour procéder à l’incinération des nombreuses palettes de faux billets découvertes il y a 2 semaines.",
+            "d5": "J’ai repéré que le film de protection d’une des palettes s’était déchiré, pendant le transport jusqu’à l’incinérateur. Pour des raison évidente, l’armée nous avait formellement interdit tout contact physique avec les charges que nous transportions.",
+            "d6": "J’ai malgré tout voulu camoufler ça pour éviter d’être réprimandé… en m’approchant j’ai vu ce que contenait les palettes, non pas de faux billets, mais des piles de feuilles de papier.",
+            "d7": "J’ai tout de suite compris qu’il y avait un problème. J’ai pris peur. Je n’ai rien dit au conducteur de l’engin, mais j’ai pris des photos puis refermé au mieux la protection.",
+            "d8": "Tout a été incinéré, il ne reste que ces photos comme preuve de cette vaste mise en scène… il faut trouver un moyen pour les rendre public et que personne ne puisse les détruire.",
+            "d9": "Je ne pas eu le temps de faire quoi que ce soit avant de me retrouver en détention provisoire, mais les différents membres du réseau de hacker m’ont conseillé de le mettre sur la blockchain sous forme d’un NFT.",
+            "d10": "Je ne connais pas encore bien, mais les principales caractéristiques de cette technologie, sont la transparence, la décentralisation bien sûr, mais surtout l’immuabilité. Ce qui est gravé, est gravé à jamais, personne n’a autorité pour qu’il en soit autrement."
+        },
+        "choices": {
+            "c1": {
+                "choice1": "Qu’est-ce que tu as découvert?",
+                "choice2": "(ne rien dire)"
+            },
+            "c2": {
+                "choice1": "Et aujourd’hui il n’existe plus aucune trace des ces palettes…",
+                "choice2": "(ne rien dire)"
+            },
+            "c3": {
+                "choice1": "",
+                "choice2": ""
             }
         }
     }

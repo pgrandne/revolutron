@@ -17,7 +17,6 @@ const Discussion = ({ stage, setStage }: { stage: number, setStage: Dispatch<Set
         if (messageEnd !== null) {
             messageEnd.scrollIntoView({ behavior: "smooth" })
         }
-
     }, [stage])
 
     return (

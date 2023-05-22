@@ -6,6 +6,7 @@ import Image from "next/image";
 import { azadConfusedPic, classifiedPic, documentPic, lockerPic, pickupPic } from '@/public/img'
 import { AnimatedText, ArrowButton, LinkLocale } from "@/app/components";
 import { useTranslations } from 'next-intl';
+import ModalExpress from "@/app/components/ModalExpress";
 
 const Chap1s5 = () => {
     const [lockerOpened, setLockerOpened] = useState(false)
@@ -14,6 +15,7 @@ const Chap1s5 = () => {
 
     return (
         <>
+        <ModalExpress></ModalExpress>
             {!lockerOpened &&
                 <div className="relative flex justify-center w-screen h-screen my-auto">
                     <motion.div

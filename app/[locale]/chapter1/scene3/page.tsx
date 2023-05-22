@@ -4,12 +4,14 @@ import { useState } from 'react'
 import Discussion from './Discussion'
 import Sequence from './Sequence'
 import { ArrowButton, LinkLocale, MotionOp, ProgressionBar } from '@/app/components';
+import ModalExpress from "@/app/components/ModalExpress";
 
 const Chap1s3 = () => {
     const [stage, setStage] = useState(0)
 
     return (
         <div className="flex flex-row">
+            <ModalExpress></ModalExpress>
             <ProgressionBar progression={"w-5/12"} />
             <div className="relative basis-2/3 w-full overflow-hidden">
                 <Sequence stage={stage} setStage={setStage} />

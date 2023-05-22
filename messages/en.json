@@ -19,7 +19,8 @@
         "text": "The first version of RevoluTRON is only accessible on Desktop. The mobile version will be available soon"
     },
     "Construction": {
-        "text": "To be continued..."
+        "text": "To be continued...",
+        "text2": "Stay tuned for new episodes! Follow us on social media."
     },
     "Progression": {
         "title": "Select where you want to go",
@@ -67,6 +68,19 @@
         "close": "Later",
         "feedback": "Help us improve the experience and give us your feedback 🙏 Click",
         "link": "here"
+    },
+    "ExpressVersion": {
+        "button":"Express mode",
+        "title": "Chapter summary",
+        "text1": "Following the discovery of a vast counterfeit currency network, Azad, a journalist at the Lurenberg Post, receives a message from a mysterious informant calling himself Cincinnatus. The documents he possesses could reveal a very sensitive and explosive affair.",
+        "text2": "Azad gets hold of classified documents related to Operation ClearPath. This stunning revelation unveils a strategy aimed at eliminating cash and promoting a cashless society.",
+        "text3": "The next day, the news breaks: the government suddenly announces the end of cash in a desperate move to save the economy. Azad finds himself trapped, with his credit card blocked, but an opportunity presents itself to him...",
+        "text4": "Hopeful of uncovering the truth, Azad decides to follow Cincinnatus' advice and install a digital wallet called 'TronLink'. The promise of financial support from his informant encourages him to persist with his investigations, despite the increasingly high stakes.",
+        "next": "Next",
+        "previous": "Previous",
+        "install": "Install TronLink",
+        "nextChapter": "Continue the adventure",
+        "note": "(Required to continue the adventure and explore Web3)"        
     },
     "BailTransaction": {
         "title":"Bail PLEASE SELECT TRON Shasta Testnet in your TronLink before click on any button",

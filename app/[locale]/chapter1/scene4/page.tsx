@@ -9,6 +9,7 @@ import Image from "next/image";
 import journalPic from "@/public/img/journal30oct.png"
 import { AnimatedText, ArrowButton, LinkLocale, MotionOp, ProgressionBar } from '@/app/components';
 import { useTranslations } from 'next-intl';
+import ModalExpress from "@/app/components/ModalExpress";
 
 const Chap1s4 = () => {
     const [stage, setStage] = useState(0)
@@ -17,6 +18,7 @@ const Chap1s4 = () => {
 
     return (
         <div className="flex flex-row">
+            <ModalExpress></ModalExpress>
             <div className="absolute overflow-hidden h-screen w-screen flex-flex-col p-1">
                 <motion.div
                     initial={{ opacity: 0 }}

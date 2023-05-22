@@ -19,7 +19,8 @@
         "text": "La primera versión de RevoluTRON solo es accesible con el ordenador. La versión móvil estará disponible pronto"
     },
     "Construction": {
-        "text": "Continuará..."
+        "text": "Continuará...",
+        "text2": "¡No te pierdas nuevos episodios! Síguenos en redes."
     },
     "Progression": {
         "title": "Selecciona a dónde quieres ir",
@@ -67,6 +68,19 @@
         "close": "Más tarde",
         "feedback": "Ayúdanos a mejorar la experiencia y danos tu opinión 🙏 Haz clic",
         "link": "aquí"
+    },
+    "ExpressVersion": {
+        "button":"Modo express",
+        "title": "Resumen del capítulo",
+        "text1": "Tras descubrir una red colosal de billetes falsos, Azad, periodista del Lurenberg Post, recibe un mensaje de un misterioso informante que se hace llamar Cincinnatus. Los documentos que tiene podrían revelar un asunto delicado y explosivo.",
+        "text2": "Azad obtiene los documentos clasificados relacionados con la operación ClearPath. Esta revelación impactante revela una estrategia para eliminar el dinero en efectivo y promover una sociedad sin efectivo.",
+        "text3": "Al día siguiente, estalla la noticia: el gobierno anuncia de manera repentina el fin del dinero en efectivo en un intento desesperado por salvar la economía. Azad se encuentra atrapado, con su tarjeta bancaria bloqueada, pero se le presenta una oportunidad...",
+        "text4": "Con la esperanza de llevar a cabo su investigación, Azad decide seguir los consejos de Cincinnatus e instalar una billetera electrónica llamada 'TronLink'. La promesa de apoyo financiero de su informante lo alienta a continuar con sus investigaciones, a pesar de los crecientes riesgos.",
+        "next": "Siguiente",
+        "previous": "Anterior",
+        "install": "Instalar TronLink",
+        "nextChapter": "Continuar la aventura",
+        "note": "(Esencial para continuar la aventura y explorar Web3)"        
     },
     "BailTransaction": {
         "title":"Bail",

@@ -5,6 +5,7 @@ import Discussion from './Discussion'
 import Sequence from './Sequence'
 import Telegram from './Telegram'
 import { ArrowButton, LinkLocale, MotionOp, ProgressionBar } from '@/app/components';
+import ModalExpress from "@/app/components/ModalExpress";
 
 const Chap1s2 = () => {
     const [stage, setStage] = useState(0)
@@ -13,6 +14,7 @@ const Chap1s2 = () => {
 
     return (
         <div className="flex flex-row">
+            <ModalExpress></ModalExpress>
             <ProgressionBar progression={discussionWindow ? "w-2/12" : "w-3/12"} />
             <div className="relative basis-2/3 w-full overflow-hidden">
                 <Sequence discussionWindow={discussionWindow} setTelegramWindow={setTelegramWindow} telegramWindow={telegramWindow} />

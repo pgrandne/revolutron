@@ -400,5 +400,58 @@
                 "choice2": "(no decir nada)"
             }
         }
+    },
+
+    "Chap2s2": {
+      "dialogue": {
+        "d1": "¿Has podido avanzar?",
+        "d2": "OK, para transferir criptomonedas a una cuenta bancaria convencional, solo necesitas utilizar un intermediario reconocido que haga la conexión entre ambos mundos. Por un lado, enviarás USDC que él conservará y, por otro lado, él acreditará dólares en la cuenta que hayas elegido. Por supuesto, hay una tarifa por este servicio.",
+        "d3": "Puedes utilizar XXXX, por ejemplo, para depositar los $4000 de la fianza.",
+        "d4": "Solo necesitas conectar tu billetera, proporcionar el monto y el IBAN de Ruiz.",
+        "d5": "Si todo está completado, puedes hacer clic en 'Aprobar' para autorizar al sitio a interactuar con tus USDC de tu billetera, y luego en 'Enviar' para confirmar la cantidad de USDC.",
+        "d6": "Puede parecer pesado al principio, pero en cada interacción con tu billetera deberás dar tu consentimiento. Esto es lo que hace que este sistema sea muy seguro. También deberás validar directamente en tu billetera las tarifas de red asociadas con la transacción, como te expliqué anteriormente."
+      },
+      "choices": {
+        "c1": {
+          "choice1": "He contactado a Ruiz en la prisión central de Listenbourg",
+          "choice2": "Él está al tanto de que le voy a enviar dinero para pagar su fianza en su cuenta bancaria personal."
+        },
+        "c2": {
+          "choice1": "Listo, funcionó",
+          "choice2": "(no decir nada)"
+        }
+      }
+    },
+  
+    "Chap2s3": {
+      "dialogue": {
+        "d1": "¡Gracias, Azad! Pude investigarte y, con todo lo que me contaste sobre Cincinnatus y los documentos que me diste acceso, puedo confiar en ti.",
+        "d2": "Tengo imágenes comprometedoras que podrían romper toda confianza con nuestro gobierno. Tener ese tipo de pruebas me ha vuelto paranoico y extremadamente estresado... de ahí mi exceso de velocidad en la autopista...",
+        "d3": "Hace una semana contacté a este grupo de hackers éticos para encontrar una manera de revelar todo esto. Cincinnatus formaba parte de este grupo y también tenía documentos incriminatorios.",
+        "d4": "Trabajo como supervisor en una empresa subcontratada por el ejército, en asuntos logísticos. Nos encargaron la incineración de numerosos paquetes de billetes falsos descubiertos hace 2 semanas.",
+        "d5": "Noté que la película protectora de uno de los paquetes se había roto durante el transporte hacia el incinerador. Por razones obvias, el ejército nos había prohibido terminantemente cualquier contacto físico con las cargas que transportábamos.",
+        "d6": "A pesar de eso, quise encubrirlo para evitar represalias... Me acerqué y vi lo que había en los paquetes, no eran billetes falsos, sino montones de hojas de papel.",
+        "d7": "Enseguida comprendí que había un problema. Me asusté. No le dije nada al conductor del vehículo, pero tomé fotos y cerré lo mejor posible la protección.",
+        "d8": "Todo ha sido incinerado, solo quedan estas fotos como evidencia de esta gran farsa... tenemos que encontrar una manera de hacerlas públicas y que nadie pueda destruirlas.",
+        "d9": "No tuve tiempo de hacer nada antes de ser puesto en detención provisional, pero los diferentes miembros de la red de hackers me aconsejaron ponerlo en la cadena de bloques como un NFT",
+        "d10": "Aún no lo conozco bien, pero las principales características de esta tecnología son la transparencia, la descentralización, por supuesto, pero sobre todo la inmutabilidad. Lo que se graba, se graba para siempre, nadie tiene la autoridad para cambiarlo.",
+        "d11": "Acabo de enviarte los documentos por Telegram, aún debemos enviarlos a la cadena de bloques.",
+        "d12": "Los archivos están adjuntos, puedes confirmar.",
+        "d13": "A partir de ahora, cualquiera podrá acceder a los documentos. Puedes echarles un vistazo (link)."
+      },
+      "choices": {
+        "c1": {
+          "choice1": "¿Qué descubriste?",
+          "choice2": "(no decir nada)"
+        },
+        "c2": {
+          "choice1": "Y ahora no queda nada de esos paquetes...",
+          "choice2": "(no decir nada)"
+        },
+        "c3": {
+          "choice1": "Vamos a poner estas pruebas a salvo",
+          "choice2": "Podemos hacerlo juntos desde mi billetera"
+        }
+      } 
     }
 }

@@ -405,49 +405,53 @@
 
     "Chap2s2": {
         "dialogue": {
-        "d1": "Tu as pu avancer ?",
-        "d2": "OK, pour transférer des cryptomonnaies vers un compte bancaire classique, il suffit d’utiliser un intermédiaire reconnu qui fait la liaison entre les deux mondes. D’un côté tu envoies des USDC qu’il va conserver et de l’autre il va créditer des $ sur le compte que tu auras choisi. Il y a bien sûr des frais à payer pour ce service.",
-        "d3": "Tu peux utiliser XXXX par exemple pour verser les $4000 de la caution.",
-        "d4": "Il suffit que tu connectes ton wallet, renseigne le montant, et l’IBAN de Ruiz.",
-        "d5": "Si tout est rempli tu peux cliquer sur “Approuver” afin d’autoriser le site d’intéragir avec les USDC de ton wallet, puis sur “Envoyer” pour valider le montant d’USDC.",
-        "d6": "Ca peut paraitre lourd au début, mais à chaque interaction avec ton wallet tu devras donner ton accord. C’est ce qui permet de rendre ce système très sécurisé. Tu devras aussi valider directement dans ton wallet les frais de réseau associés à la transaction comme je te l’avais expliqué précédemment."
+            "d1": "Did you make any progress?",
+            "d2": "OK, to transfer cryptocurrencies to a traditional bank account, you just need to use a recognized intermediary that bridges the two worlds. On one side, you send USDC that he will keep, and on the other side, he will credit dollars to the account you have chosen. There are, of course, fees to pay for this service.",
+            "d3": "You can use XXXX, for example, to transfer $4,000 for the bail.",
+            "d4": "You just need to connect your wallet, enter the amount, and Ruiz's IBAN.",
+            "d5": "If everything is filled out, you can click on 'Approve' to authorize the site to interact with your wallet's USDC and then click 'Send' to validate the USDC amount.",
+            "d6": "It may seem heavy at first, but for each interaction with your wallet, you will need to give your approval. This is what makes this system very secure. You will also need to directly approve in your wallet the network fees associated with the transaction, as I explained to you before."            
         },
         "choices": {
             "c1": {
-                "choice1": "J’ai contacté Ruiz à la prison centrale de Listenbourg",
-                "choice2": "Il est au courant que je vais lui envoyer de l’argent pour payer sa caution sur son compte bancaire personnel."
+                "choice1": "I contacted Ruiz at Listenbourg Central Prison.",
+                "choice2": "He knows that I'm going to send him money to pay his bail on his personal bank account."
             },
             "c2": {
-                "choice1": "C’est bon, ça a fonctionné",
-                "choice2": "(ne rien dire)"
+                "choice1": "It worked, everything's good",
+                "choice2": "(say nothing)"
             }
         }
     },
+
     "Chap2s3": {
         "dialogue": {
-            "d1": "Merci Azad! J’ai pu me renseigner sur toi, et avec tout ce que tu m’as raconté au sujet de Cincinnatus et des documents qu’il t’a fourni je peux te faire confiance.",
-            "d2": "J’ai des images compromettantes qui pourraient rompre toute confiance avec notre gouvernement. Posséder de telles preuves m’a rendu parano, et extrêmement stressé…mon excès de vitesse sur l’autoroute n’y est pas étranger.",
-            "d3": "J’avais contacté ce groupe de hackers éthiques il y a 1 semaine pour trouver une manière de révéler tout ça. Cincinnatus en faisait partie, et possédait également des documents à charges.",
-            "d4": "Je travaille comme superviseur, dans une entreprise sous-traitante de l’armée, sur des questions logistiques. Nous avons été mandaté pour procéder à l’incinération des nombreuses palettes de faux billets découvertes il y a 2 semaines.",
-            "d5": "J’ai repéré que le film de protection d’une des palettes s’était déchiré, pendant le transport jusqu’à l’incinérateur. Pour des raison évidente, l’armée nous avait formellement interdit tout contact physique avec les charges que nous transportions.",
-            "d6": "J’ai malgré tout voulu camoufler ça pour éviter d’être réprimandé… en m’approchant j’ai vu ce que contenait les palettes, non pas de faux billets, mais des piles de feuilles de papier.",
-            "d7": "J’ai tout de suite compris qu’il y avait un problème. J’ai pris peur. Je n’ai rien dit au conducteur de l’engin, mais j’ai pris des photos puis refermé au mieux la protection.",
-            "d8": "Tout a été incinéré, il ne reste que ces photos comme preuve de cette vaste mise en scène… il faut trouver un moyen pour les rendre public et que personne ne puisse les détruire.",
-            "d9": "Je ne pas eu le temps de faire quoi que ce soit avant de me retrouver en détention provisoire, mais les différents membres du réseau de hacker m’ont conseillé de le mettre sur la blockchain sous forme d’un NFT.",
-            "d10": "Je ne connais pas encore bien, mais les principales caractéristiques de cette technologie, sont la transparence, la décentralisation bien sûr, mais surtout l’immuabilité. Ce qui est gravé, est gravé à jamais, personne n’a autorité pour qu’il en soit autrement."
+            "d1": "Thank you, Azad! I was able to gather information about you, and with everything you told me about Cincinnatus and the documents he provided you, I believe I can trust you.",
+            "d2": "I have compromising images that could break all trust with our government. Possessing such evidence has made me paranoid and extremely stressed... hence my speeding on the highway.",
+            "d3": "I contacted this group of ethical hackers a week ago to find a way to expose all of this. Cincinnatus was part of it and also had incriminating documents.",
+            "d4": "I work as a supervisor in a subcontracting company for the military, handling logistics. We were tasked with incinerating numerous pallets of counterfeit bills discovered two weeks ago.",
+            "d5": "I noticed that the protective film on one of the pallets had torn during transportation to the incinerator. For obvious reasons, the military strictly prohibited any physical contact with the items we were transporting.",
+            "d6": "Nevertheless, I wanted to cover it up to avoid reprimand... as I approached, I saw what the pallets actually contained—not counterfeit bills, but stacks of paper.",            
+            "d7": "I immediately realized there was a problem. I got scared. I didn't say anything to the driver of the vehicle, but I took photos and closed the protection the best I could.",
+            "d8": "Everything was incinerated. The only evidence left of this elaborate setup are these photos. We need to find a way to make them public and ensure nobody can destroy them.",
+            "d9": "I didn't have time to do anything before ending up in provisional detention, but different members of the hacker network advised me to put it on the blockchain as an NFT",
+            "d10": "I'm not very familiar with it yet, but the main features of this technology are transparency, decentralization, and most importantly, immutability. What's engraved is engraved forever, and no one has the authority to change that.",
+            "d11": "I just sent you the documents on Telegram. We still need to send them to the blockchain.",
+            "d12": "The files are attached. You can proceed.",
+            "d13": "From now on, anyone will be able to access the documents. You can take a look (link)."
         },
         "choices": {
             "c1": {
-                "choice1": "Qu’est-ce que tu as découvert?",
-                "choice2": "(ne rien dire)"
+                "choice1": "What did you discover?",
+                "choice2": "(say nothing)"
             },
             "c2": {
-                "choice1": "Et aujourd’hui il n’existe plus aucune trace des ces palettes…",
-                "choice2": "(ne rien dire)"
+                "choice1": "And now there's no trace of those pallets anymore...",
+                "choice2": "(say nothing)"
             },
             "c3": {
-                "choice1": "",
-                "choice2": ""
+                "choice1": "Let's secure these pieces of evidence.",
+                "choice2": "We can do it together using my wallet."
             }
         }
     }

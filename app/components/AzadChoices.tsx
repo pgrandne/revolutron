@@ -15,7 +15,7 @@ export const AzadChoices = ({ stage, setStage, azadText, setAzadText, choice1, c
     duration?: number
 }) => {
 
-    const factor = 0.038
+    const factor = 0.02
 
     const calculateDelay = () => {
         const calculatedDelay = factor * nbCharPrevDisc + delay

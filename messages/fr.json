@@ -388,7 +388,13 @@
       "d6": "Pour effectuer des transactions sur ce réseau, tu auras également besoin de ”gas”. C'est un peu comme l'essence pour ta voiture, si tu veux la faire avancer, tu dois remplir le réservoir avec le carburant approprié.",
       "d7": "En gros ce ”gas” est une monnaie spécifique, utilisée pour payer tes propres transactions. Sur ce réseau, cette monnaie s'appelle TRX.",
       "d8": "Mais tu sais, lorsque tu utilises ta carte bancaire, tu paies également des frais ! La différence est simplement que tu n'en as pas conscience parce que le commerçant les paie pour toi !",
-      "d9": "Désolé, je dois y aller, je te contacterai très bientôt."
+      "d9": "Désolé, je dois y aller, je te contacterai très bientôt.",
+
+      "d9b": "Je viens de t'envoyer des ETH à ton adresse, tu pourras bientôt les voir dans ton portefeuille.",
+      "d10": "Cette histoire est sortie grâce à un homme qui aujourd’hui en détention provisoire pour une toute autre raison: une infraction routière.",
+      "d11": "Il possède des preuves accablantes, qu’il n’a pas eu le temps de partager.",
+      "d12": "Je ne peux pas révéler mon identité, mais ce n’est pas ton cas. L’argent est aussi pour payer sa caution. On a besoin de lui pour tout révéler.",
+      "d13": "Son nom est Ruiz Carvalho."
     },
     "choices": {
       "c1": {
@@ -398,6 +404,10 @@
       "c2": {
         "choice1": "Ca veut dire qu'il faut payer pour chaque transaction ? ",
         "choice2": "(ne rien dire)"
+      },
+      "c3": {
+        "choice1": "J’ai bien reçu l’argent, merci",
+        "choice2": "Tu m’as envoyé 10.000 USDC, c’est énorme !"
       }
     }
   },

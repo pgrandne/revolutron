@@ -389,7 +389,13 @@
             "d6": "In order to do transactions on this network, you will also need some “gas”. It's like the gasoline for your car, if you want to run it, you'll need to fill the tank with the appropriate fuel",
             "d7": "Basically this “gas” is a specific currency, used to paid your own transactions. On this network this currency is called TRX",
             "d8": "But when you use your bankcard you pay a fee too! The difference is just that you don't care about it because the merchant pays it for you!",
-            "d9": "Sorry I need to go, I'll contact you very soon"
+            "d9": "Sorry I need to go, I'll contact you very soon",
+
+            "d9b": "I’ve just sent you some ETH on your adress, it will be visible soon on your wallet.",
+            "d10": "This story came out thanks to a man who is currently in pre-trial detention for an entirely different reason: a traffic offense.",
+            "d11": "He has damning evidence that he hasn't had time to share.",
+            "d12": "I can't reveal my identity, but that's not your case. The money is also to pay for his bail. We need him to reveal everything.",
+            "d13": "His name is Ruiz Carvalho."
         },
         "choices": {
             "c1": {
@@ -399,6 +405,10 @@
             "c2": {
                 "choice1": "You mean it's required to pay for each transaction? ",
                 "choice2": "(say nothing)"
+            },
+            "c3": {
+              "choice1": "I have received the money, thank you",
+              "choice2": "You sent me 10,000 USDC, that's huge!"
             }
         }
     },

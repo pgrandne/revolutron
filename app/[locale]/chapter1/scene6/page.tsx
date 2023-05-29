@@ -8,6 +8,7 @@ import { manReadJournalPic, tvPic } from '@/public/img'
 import { AnimatedText, ArrowButton, LinkLocale, MotionOp, MotionSlideX, ProgressionBar } from '@/app/components'
 import Telegram from './Telegram';
 import { useTranslations } from 'next-intl';
+import ModalExpress from "@/app/components/ModalExpress";
 
 const Chap1s6 = () => {
     const [telegramWindow, setTelegramWindow] = useState(false)
@@ -17,6 +18,7 @@ const Chap1s6 = () => {
 
     return (
         <>
+        <ModalExpress></ModalExpress>
             {stage === 0 &&
                 <div className="relative overflow-hidden flex justify-center w-screen h-screen my-auto">
                     <MotionSlideX className="flex justify-center py-[0%]">

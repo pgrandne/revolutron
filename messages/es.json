@@ -1,390 +1,467 @@
 {
-    "Home": {
-        "title": "Historia de un denunciante",
-        "subtitle": "Descubre el Web3 de manera divertida. Y gana recompensas.",
-        "buttonName": "Empezar la aventura"
-    },
-    "Info": {
-        "title": "una novela interactiva para incorporar a los usuarios de Web2 a Web3",
-        "subtitle": "es un proyecto open source. Si desea apoyarnos, puede hacer una donación en:",
-        "deck": "Descubre nuestro Deck",
-        "online": "En línea",
-        "download": "Descargar",
-        "close": "Cerrar"
-    },
-    "Browser": {
-        "text": "La primera versión de RevoluTRON es accesible con Brave, Chrome, Edge"
-    },
-    "Mobile": {
-        "text": "La primera versión de RevoluTRON solo es accesible con el ordenador. La versión móvil estará disponible pronto"
-    },
-    "Construction": {
-        "text": "Continuará..."
-    },
-    "Progression": {
-        "title": "Selecciona a dónde quieres ir",
-        "chapter": "Capítulo",
-        "resume": "Continuar la última sesión",
-        "connect": "Conectar su wallet",
-        "close": "Cerrar",
-        "error": "Error al cargar la última sesión.",
-        "wait": "Procesando..."
-    },
-    "SelectChapter": {
-        "chapter": "Capítulo",
-        "episode": "episodio",
-        "episodes": "episodios",
-        "textChap1-1": "Descubre la historia",
-        "textChap1-2": "Instala tu wallet",
-        "textChap1-3": "Esencial para explorar el Web3",
-        "beginner": "Principiante",
-        "advanced": "Avanzado",
-        "textChap2-1": "Continúa la aventura",
-        "textChap2-2": "Aprende los básicos del Web3",
-        "textChap2-3": "Transacciones, Gas, NFT...",
-        "underConstruction": "En construcción",
-        "textChap3-1": "Continúa la aventura",
-        "textChap3-2": "Descubre los protocolos Web3 existentes",
-        "textChap3-3": "Este capítulo está en el mainnet",
-        "resume": "Continuar la última sesión",
-        "close": "Cerrar",
+  "Home": {
+    "title": "Historia de un denunciante",
+    "subtitle": "Descubre el Web3 de manera divertida. Y gana recompensas.",
+    "buttonName": "Empezar la aventura"
+  },
+  "Info": {
+    "title": "una novela interactiva para incorporar a los usuarios de Web2 a Web3",
+    "subtitle": "es un proyecto open source. Si desea apoyarnos, puede hacer una donación en:",
+    "deck": "Descubre nuestro Deck",
+    "online": "En línea",
+    "download": "Descargar",
+    "close": "Cerrar"
+  },
+  "Browser": {
+    "text": "La primera versión de RevoluTRON es accesible con Brave, Chrome, Edge"
+  },
+  "Mobile": {
+    "text": "La primera versión de RevoluTRON solo es accesible con el ordenador. La versión móvil estará disponible pronto"
+  },
+  "Construction": {
+    "text": "Continuará...",
+    "text2": "¡No te pierdas nuevos episodios! Síguenos en redes."
+  },
+  "Progression": {
+    "title": "Selecciona a dónde quieres ir",
+    "chapter": "Capítulo",
+    "resume": "Continuar la última sesión",
+    "connect": "Conectar su wallet",
+    "close": "Cerrar",
+    "error": "Error al cargar la última sesión.",
+    "wait": "Procesando..."
+  },
+  "SelectChapter": {
+    "chapter": "Capítulo",
+    "episode": "episodio",
+    "episodes": "episodios",
+    "textChap1-1": "Descubre la historia",
+    "textChap1-2": "Instala tu wallet",
+    "textChap1-3": "Esencial para explorar el Web3",
+    "beginner": "Principiante",
+    "advanced": "Avanzado",
+    "textChap2-1": "Continúa la aventura",
+    "textChap2-2": "Aprende los básicos del Web3",
+    "textChap2-3": "Transacciones, Gas, NFT...",
+    "underConstruction": "En construcción",
+    "textChap3-1": "Continúa la aventura",
+    "textChap3-2": "Descubre los protocolos Web3 existentes",
+    "textChap3-3": "Este capítulo está en el mainnet",
+    "resume": "Continuar la última sesión",
+    "close": "Cerrar",
 
-        "connect": "Conecta tu wallet",        
-        "error": "Error al cargar la última sesión.",
-        "wait": "Procesando..."
+    "connect": "Conecta tu wallet",
+    "error": "Error al cargar la última sesión.",
+    "wait": "Procesando..."
+  },
+  "Save": {
+    "saved": "¡Progreso guardado!",
+    "next": "Puedes ir al siguiente episodio",
+    "processing": "Procesando...",
+    "nextbutton": "Siguiente episodio"
+  },
+  "Feedback": {
+    "text1": "Antes de pasar al siguiente episodio, danos",
+    "text2": "tu opinión",
+    "duration": "Sólo lleva 1 minuto",
+    "sure": "¡Seguro!",
+    "close": "Más tarde",
+    "feedback": "Ayúdanos a mejorar la experiencia y danos tu opinión 🙏 Haz clic",
+    "link": "aquí"
+  },
+  "ExpressVersion": {
+    "button": "Modo express",
+    "title": "Resumen del capítulo",
+    "text1": "Tras descubrir una red colosal de billetes falsos, Azad, periodista del Lurenberg Post, recibe un mensaje de un misterioso informante que se hace llamar Cincinnatus. Los documentos que tiene podrían revelar un asunto delicado y explosivo.",
+    "text2": "Azad obtiene los documentos clasificados relacionados con la operación ClearPath. Esta revelación impactante revela una estrategia para eliminar el dinero en efectivo y promover una sociedad sin efectivo.",
+    "text3": "Al día siguiente, estalla la noticia: el gobierno anuncia de manera repentina el fin del dinero en efectivo en un intento desesperado por salvar la economía. Azad se encuentra atrapado, con su tarjeta bancaria bloqueada, pero se le presenta una oportunidad...",
+    "text4": "Con la esperanza de llevar a cabo su investigación, Azad decide seguir los consejos de Cincinnatus e instalar una billetera electrónica llamada 'TronLink'. La promesa de apoyo financiero de su informante lo alienta a continuar con sus investigaciones, a pesar de los crecientes riesgos.",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "install": "Instalar TronLink",
+    "nextChapter": "Continuar la aventura",
+    "note": "(Esencial para continuar la aventura y explorar Web3)"
+  },
+  "BailTransaction": {
+    "title": "Bail",
+    "text": "Pay the bail of M Doe : 4000 USDD",
+    "approve": "Approve",
+    "pay": "Pay",
+    "refuse": "Refuse to pay"
+  },
+  "Chap1s1": {
+    "narration": "Lurenberg, Listenbourg",
+    "day": "18 de Octubre, 2023",
+    "title": "Capítulo 1",
+    "subtitle": "Nada es nunca seguro"
+  },
+  "Chap1s2": {
+    "narration": "The Lurenberg Post, Redacción",
+    "hour1": "8:50 am",
+    "hour2": "2:45 pm",
+    "dialogue": {
+      "d1": "Hey Azad, ¿viste las noticias?",
+      "d2": "¡Se descubrieron miles de millones en moneda falsa! ¡Esto representa el 15% de nuestro PIB!",
+      "d3": "Todo el mundo trabajará en ello en las próximas semanas. Tengo reuniones durante todo el día, hablamos esta noche.",
+      "d4": "Hola Azad, alguien de confianza me dio su contacto.",
+      "d5": "Tengo documentos relacionados con un asunto muy delicado.",
+      "d6": "¿Estás interesado?",
+      "d7": "No puedo decir más por el momento, volveré a contactarte muy pronto."
     },
-    "Save": {
-        "saved": "¡Progreso guardado!",
-        "next": "Puedes ir al siguiente episodio",
-        "processing": "Procesando...",
-        "nextbutton": "Siguiente episodio"
-    },
-    "Feedback": {
-        "text1": "Antes de pasar al siguiente episodio, danos",
-        "text2": "tu opinión",
-        "duration": "Sólo lleva 1 minuto",
-        "sure": "¡Seguro!",
-        "close": "Más tarde",
-        "feedback": "Ayúdanos a mejorar la experiencia y danos tu opinión 🙏 Haz clic",
-        "link": "aquí"
-    },
-    "BailTransaction": {
-        "title":"Bail",
-        "text":"Pay the bail of M Doe : 4000 USDD",
-        "approve":"Approve",
-        "pay":"Pay",
-        "refuse":"Refuse to pay"
-    },
-    "Chap1s1": {
-        "narration": "Lurenberg, Listenbourg",
-        "day": "18 de Octubre, 2023",
-        "title": "Capítulo 1",
-        "subtitle": "Nada es nunca seguro"
-    },
-    "Chap1s2": {
-        "narration": "The Lurenberg Post, Redacción",
-        "hour1": "8:50 am",
-        "hour2": "2:45 pm",
-        "dialogue": {
-            "d1": "Hey Azad, ¿viste las noticias?",
-            "d2": "¡Se descubrieron miles de millones en moneda falsa! ¡Esto representa el 15% de nuestro PIB!",
-            "d3": "Todo el mundo trabajará en ello en las próximas semanas. Tengo reuniones durante todo el día, hablamos esta noche.",
-            "d4": "Hola Azad, alguien de confianza me dio su contacto.",
-            "d5": "Tengo documentos relacionados con un asunto muy delicado.",
-            "d6": "¿Estás interesado?",
-            "d7": "No puedo decir más por el momento, volveré a contactarte muy pronto."
-        },
-        "choices": {
-            "c1": {
-                "choice1": "Sí, ¡es increíble!",
-                "choice2": "¿De qué se trata?"
-            },
-            "c2": {
-                "choice1": "Nadie lo hubiera imaginado.",
-                "choice2": "Es difícil de creer."
-            },
-            "c3": {
-                "choice1": "De acuerdo.",
-                "choice2": "(no decir nada)"
-            },
-            "c4": {
-                "choice1": "Tal vez, pero necesitas decirme más...",
-                "choice2": "Sí, por supuesto."
-            }
-        }
-    },
-    "Chap1s3": {
-        "narration": "The Optimistic Brewery",
-        "hour": "Por la noche",
-        "dialogue": {
-            "d1": "Hey Azad, ¿podrías comprar algo de comida, por favor? Rob está llegando con Jessy y no lo conté...",
-            "d2": "¿Qué le gustaría, señor?",
-            "d3": "Serán 12 LIS, señor.",
-            "d4": "Su tarjeta ha sido rechazada.",
-            "d5": "Todavía no funciona. ¿Tiene otro medio de pago?",
-            "d6": "Espero que no sea moneda falsa...",
-            "d7": "¡Esta historia de moneda falsa es terrible!",
-            "d8": "Desde esta mañana, cada vez que un cliente paga en efectivo en el restaurante, tengo miedo de que sean billetes falsos...",
-            "d9": "Sí, es una catástrofe para nuestro país...",
-            "d10": "Aparentemente, hay miles de millones en circulación en este momento."
-        },
-        "choices": {
-            "c1": {
-                "choice1": "No hay problema, estoy justo al lado del camión de comida libanesa.",
-                "choice2": "Sí, por supuesto."
-            },
-            "c2": {
-                "choice1": "Tomaré 5 falafels, por favor.",
-                "choice2": "Un mezze mediano."
-            },
-            "c3": {
-                "choice1": "Por favor, con tarjeta.",
-                "choice2": "¿Tienes pago sin contacto?"
-            },
-            "c4": {
-                "choice1": "Voy a intentar con el código.",
-                "choice2": "Lo insertaré."
-            },
-            "c5": {
-                "choice1": "Tengo 20 LIS en efectivo...",
-                "choice2": "Dejame ver."
-            },
-            "c6": {
-                "choice1": "La gente podría perder toda confianza en nuestra moneda.",
-                "choice2": "No veo cómo el gobierno podría resolver el problema."
-            },
-            "c7": {
-                "choice1": "Los problemas con mi tarjeta bancaria no podrían haber llegado en peor momento.",
-                "choice2": "No puedo creer que esto pasa justo cuando tengo problemas con mi banco."
-            }
-        }
-    },
-    "Chap1s4": {
-        "narration": "30 de Octubre, 2023",
-        "narration1": "The Lurenberg Post, Redacción",
-        "narration2": "The Lurenberg Post, Oficina de Skyler",
-        "hour": "11:10 am",
-        "dialogue": {
-            "d1": "Hola Azad",
-            "d2": "Te contacté la semana pasada sobre un asunto delicado",
-            "d3": "Antes de hablarte de eso, debo asegurarme de que nuestros intercambios sean privados. El asunto es extremadamente delicado.",
-            "d4": "En este punto, solo puedo darte su nombre en clave: ClearPath",
-            "d5": "No hables con nadie sobre nuestros intercambios, nunca te contactaré en otra aplicación que no sea esta aplicación cifrada.",
-            "d6": "Hay un casillero, el número 29, en la estación de Central Street. El código es 311009. Puse una muestra inicial de documentos allí, te darás cuenta de la magnitud de la situación.",
-            "d7": "Parecía urgente, ¿hay un problema?",
-            "d8": "No cuesta nada ver a dónde nos lleva.",
-            "d9": "¿Qué es eso?"
-        },
-        "choices": {
-            "c1": {
-                "choice1": "Hola. Sí, lo recuerdo muy bien.",
-                "choice2": "Hola “Cincinnatus”, todavía no tengo idea de lo que estás hablando..."
-            },
-            "c2": {
-                "choice1": "Entiendo, ¿puedes al menos decirme de qué se trata?",
-                "choice2": "Por supuesto"
-            },
-            "c3": {
-                "choice1": "¿Qué quieres que haga?",
-                "choice2": "De acuerdo, entendido"
-            },
-            "c4": {
-                "choice1": "Cuenta conmigo",
-                "choice2": "¡Es como una película de espías!"
-            },
-            "c5": {
-                "choice1": "No realmente, pero tengo dudas sobre un informante que me contactó.",
-                "choice2": "Alguien me contactó, no sé si puedo confiar en él."
-            },
-            "c6": {
-                "choice1": "ClearPath, ¿te suena de algo?",
-                "choice2": "Mencionó la operación ClearPath."
-            },
-            "c7": {
-                "choice1": "Todavía no estoy seguro, tengo que irme.",
-                "choice2": "Olvídalo, te mantendré informado."
-            }
-        }
-    },
-    "Chap1s5": {
-        "narration": "Central Street Station",
-        "narration2": "En casa de Azad",
-        "hour": "5:40 pm"
-    },
-    "Chap1s6": {
-        "hour": "31 de Octubre, 2023",
-        "narration": "El gobierno anuncia el fin del efectivo",
-        "hour1": "8:55 am",
-        "hour2": "9:30 am",
-        "narration2": "The Lurenberg Post, Redacción",
-        "dialogue": {
-            "d1": "Es absurdo. ¿Estamos en una novela de Orwell o qué? ¡Han prohibido el efectivo!",
-            "d2": "¿De verdad? ¿Quién es? ¿Un informante interno?",
-            "d3": "¿Por qué tomaría un riesgo así justo antes de que se haga público? No tiene sentido...",
-            "d4": "Hola Azad, supongo que estás siguiendo las noticias en vivo.",
-            "d5": "Todo se ha acelerado. No pensé que actuarían tan rápido.",
-            "d6": "No tienes idea de lo que vamos a revelar. Esto es solo la punta del iceberg...",
-            "d7": "¡Vaya! Mal momento... Escucha, estoy dispuesto a enviarte dinero para ayudarte y seguir con la investigación.",
-            "d8": "No tienes idea en lo que nos estamos metiendo. Tenemos que llegar hasta el final ahora.",
-            "d9": "Digamos simplemente que el dinero no es un problema, y realmente necesito que saques a la luz esta historia.",
-            "d10": "Tienes que instalar un wallet.",
-            "d11": "Es como tu monedero físico, pero digital. No está controlada por un banco o una autoridad central, y nadie puede impedir que la uses. Es dinero digital.",
-            "d12": "Tengo que irme ahora. Instala TronLink y envíame tu dirección y te enviaré dinero."
-        },
-        "choices": {
-            "c1": {
-                "choice1": "¿Recuerdas el informante del que hablé ayer? Sabía sobre esto.",
-                "choice2": "Mi informante me advirtió ayer."
-            },
-            "c2": {
-                "choice1": "Todavía no lo sé. Me envió documentos clasificados que recopilé anoche.",
-                "choice2": "Recibí documentos sobre la operación ClearPath."
-            },
-            "c3": {
-                "choice1": "Tienes razón. Tengo que investigar.",
-                "choice2": "Tengo que contactar a mi informante."
-            },
-            "c4": {
-                "choice1": "¿Cómo te enteraste?",
-                "choice2": "Sí, estamos viendo la televisión."
-            },
-            "c5": {
-                "choice1": "Me costó creerlo cuando examiné los documentos ayer.",
-                "choice2": "(no decir nada)"
-            },
-            "c6": {
-                "choice1": "¿Sabes algo más? Mi tarjeta bancaria está bloqueada, así que esto es terrible para mí.",
-                "choice2": "Lo irónico de esto es que mi tarjeta bancaria está bloqueada."
-            },
-            "c7": {
-                "choice1": "¿Por qué harías eso?",
-                "choice2": "(no decir nada)"
-            },
-            "c8": {
-                "choice1": "Eres afortunado.",
-                "choice2": "(no decir nada)"
-            },
-            "c9": {
-                "choice1": "¿Instalar un wallet?",
-                "choice2": "¿Qué es eso?"
-            }
-        }
-    },
-    "Chap1s7": {
-        "narration": "En casa de Azad",
-        "hour": "8:00 pm",
-        "dialogue": {
-            "d1": "Tu informante probablemente tenga razón. Si quieres llevar a cabo esta investigación, necesitas dinero. El bloqueo de tu cuenta por “actividad sospechosa“ probablemente es un intento de intimidación.",
-            "d2": "Es una extraña coincidencia.",
-            "d3": "De todas formas, también necesitas dinero para vivir, no puedes seguir pidiendo prestado dinero a todo el mundo como lo has estado haciendo durante una semana.",
-            "d4": "¿Recuerdas la investigación SBFTX a principios de año? Aprendí bastantes cosas... Un wallet no es una mala idea para resolver tu problema, especialmente si te permite recibir dinero.",
-            "d5": "En realidad, es bastante sencillo. Es como una caja fuerte digital, o un buzón digital si lo prefieres, donde cualquiera puede depositar dinero, pero nadie puede abrirlo excepto tú.",
-            "d6": "Y sobre todo, nadie nunca podrá impedirte acceder a él. Nunca.",
-            "d7": "¿Dinero real, quieres decir el que tienes en tu cuenta bancaria que no puedes usar desde que fue bloqueada?",
-            "d8": "Incluso si se trata de divisas digitales, son bien reales, muchas tiendas aceptan criptomonedas.",
-            "d9": "Bueno, primero tienes que instalar un monedero digital. TronLink es el más utilizado.",
-            "d10": "Cerca de 30 millones de personas lo utilizan. Es simplemente una extensión del navegador.",
-            "d11": "Te guiaré, lo haremos juntos.",
-            "d12": "Cuando la extensión de TronLink esté descargada en tu navegador, se abrirá una nueva ventana y te pedirá que crees un nuevo monedero.",
-            "d13": "Primero, deberás elegir una contraseña que te permita acceder a la extensión desde tu dispositivo.",
-            "d14": "Luego viene el paso más importante. TronLink generará aleatoriamente 12 palabras. Esto es lo que se llama la master key.",
-            "d15": "Es la única y exclusiva clave que permite abrir tu buzón si retomamos la metáfora anterior.",
-            "d16": "Si la pierdes, tu monedero quedará bloqueado para siempre.",
-            "d17": "Y si alguien puede acceder a estas palabras, tendrá acceso a todo lo que se almacena en el interior.",
-            "d18": "Por eso es esencial guardar estas 12 palabras en un lugar seguro.",
-            "d19": "Vuelve a verme cuando hayas terminado todas las etapas que te acabo de describir."
-        },
-        "choices": {
-            "c1": {
-                "choice1": "¿Qué estás diciendo? No he empezado nada.",
-                "choice2": "Por favor, no seas paranoica, eso no ayuda..."
-            },
-            "c2": {
-                "choice1": "Tienes razón. Y con los nuevos acontecimientos, mi problema no será la prioridad del banco.",
-                "choice2": "Debería haber resuelto el problema la semana pasada."
-            },
-            "c3": {
-                "choice1": "No entendí eso del monedero digital...",
-                "choice2": "¿Está relacionado con Bitcoin y las criptomonedas?"
-            },
-            "c4": {
-                "choice1": "Pero sigue siendo dinero “virtual“ en comparación con el que tengo en mi cuenta bancaria real.",
-                "choice2": "Preferiría dinero real."
-            },
-            "c5": {
-                "choice1": "Eso es lo que Cincinnatus me dijo que instalara.",
-                "choice2": "(no decir nada)"
-            },
-            "c6": {
-                "choice1": "Sí, por favor.",
-                "choice2": "Muchas gracias."
-            },
-            "c7": {
-                "choice1": "¿Qué pasa si la pierdo?",
-                "choice2": "De acuerdo."
-            },
-            "c8": {
-                "choice1": "De acuerdo.",
-                "choice2": "(say nothing)"
-            },
-            "c9": {
-                "choice1": "¡Listo, he terminado!",
-                "choice2": "Me costó un poco, pero finalmente lo logré."
-            }
-        },
-        "text1": "Ve a",
-        "text2": "y descarga la extensión."
-    },
-    "Chap2": {
-        "tron": "Se requiere TronLink para el Capítulo 2 y parece que no lo tienes instalado.",
-        "tronLink1": "Puedes hacer clic aquí ",
-        "tronLink2": " para instalarlo (solo para Chrome, Brave, Edge)",
-        "gotochapter1": "O puedes ir al ",
-        "gotochapter1end": "para redescubrir toda la historia y entender cómo funciona TronLink.",
-        "chapter1": "Capítulo 1",
-        "continue": "Para continuar la aventura",
-        "click": "haz clic en",
-        "select": "y selecciona TronLink",
-        "processing": "Procesando...",
-        "next": "Próximo episodio sin guardar",
-        "save": "Guardar tu progreso",
-        "or": "o",
-        "signin": "Firma para guardar tu progreso:",
-        "chapter": "- capítulo:",
-        "episode": "- episodio:",
-        "error": "Error verificando el mensaje"
-    },
-    "Chap2s1": {
-        "chapter": "Capítulo 2",
-        "title": "Cambio de paradigma",
-        "sentgas": "Acabo de enviarte gas: TRX, deberías recibirlo pronto.",
-        "havegas": "Al parecer ya tienes gas, no necesito enviarte más.",
-        "sentusdc": "Acabo de enviarte USDD, deberías recibirlo.",
-        "haveusdc": "Ya tienes suficiente USDD, no necesito enviarte más.",
-        "networkissues": "La red parece tener problemas, por favor vuelve más tarde.",
-        "clickon1": "Puedes hacer clic en",
-        "clickon2": "para mostrar el saldo de USDD en tu wallet",
-        "narration": "The Lurenberg Post, Redacción",
-        "dialogue": {
-            "d1": "Hola Azad, ¿instalaste una wallet?",
-            "d2": "Muy bien, ahora te enviaré algunos fondos en USDD, una criptomoneda estable cuyo valor está indexado al dólar (1 USDD = 1 $).",
-            "d3": "Necesito tu dirección para enviarte los fondos ahora. Es una secuencia única de letras y números que comienza con T ......",
-            "d4": "Cuando hagas clic en la extensión, verás la dirección justo debajo ”Wallet >”",
-            "d5": "Simplemente haz clic en ella para copiar tu dirección en el portapapeles y pégala aquí.",
-            "d6": "Para realizar transacciones en esta red, también necesitarás “gas”. Es un poco como la gasolina para tu coche, si quieres que funcione, debes llenar el tanque con el combustible adecuado.",
-            "d7": "Basicamente, este “gas” es una moneda específica utilizada para pagar tus propias transacciones. En esta red, esta moneda se llama TRX.",
-            "d8": "Pero sabes, cuando usas tu tarjeta bancaria, ¡también pagas una tarifa! La diferencia es simplemente que no eres consciente de ello porque el comerciante lo paga por ti.",
-            "d9": "Lo siento, tengo que irme, te contactaré muy pronto."
-        },
-        "choices": {
-            "c1": {
-                "choice1": "Sí",
-                "choice2": "Descargué TronLink como dijiste."
-            },
-            "c2": {
-                "choice1": "¿Significa que hay que pagar por cada transacción?",
-                "choice2": "(no decir nada)"
-            }
-        }
+    "choices": {
+      "c1": {
+        "choice1": "Sí, ¡es increíble!",
+        "choice2": "¿De qué se trata?"
+      },
+      "c2": {
+        "choice1": "Nadie lo hubiera imaginado.",
+        "choice2": "Es difícil de creer."
+      },
+      "c3": {
+        "choice1": "De acuerdo.",
+        "choice2": "(no decir nada)"
+      },
+      "c4": {
+        "choice1": "Tal vez, pero necesitas decirme más...",
+        "choice2": "Sí, por supuesto."
+      }
     }
+  },
+  "Chap1s3": {
+    "narration": "The Optimistic Brewery",
+    "hour": "Por la noche",
+    "dialogue": {
+      "d1": "Hey Azad, ¿podrías comprar algo de comida, por favor? Rob está llegando con Jessy y no lo conté...",
+      "d2": "¿Qué le gustaría, señor?",
+      "d3": "Serán 12 LIS, señor.",
+      "d4": "Su tarjeta ha sido rechazada.",
+      "d5": "Todavía no funciona. ¿Tiene otro medio de pago?",
+      "d6": "Espero que no sea moneda falsa...",
+      "d7": "¡Esta historia de moneda falsa es terrible!",
+      "d8": "Desde esta mañana, cada vez que un cliente paga en efectivo en el restaurante, tengo miedo de que sean billetes falsos...",
+      "d9": "Sí, es una catástrofe para nuestro país...",
+      "d10": "Aparentemente, hay miles de millones en circulación en este momento."
+    },
+    "choices": {
+      "c1": {
+        "choice1": "No hay problema, estoy justo al lado del camión de comida libanesa.",
+        "choice2": "Sí, por supuesto."
+      },
+      "c2": {
+        "choice1": "Tomaré 5 falafels, por favor.",
+        "choice2": "Un mezze mediano."
+      },
+      "c3": {
+        "choice1": "Por favor, con tarjeta.",
+        "choice2": "¿Tienes pago sin contacto?"
+      },
+      "c4": {
+        "choice1": "Voy a intentar con el código.",
+        "choice2": "Lo insertaré."
+      },
+      "c5": {
+        "choice1": "Tengo 20 LIS en efectivo...",
+        "choice2": "Dejame ver."
+      },
+      "c6": {
+        "choice1": "La gente podría perder toda confianza en nuestra moneda.",
+        "choice2": "No veo cómo el gobierno podría resolver el problema."
+      },
+      "c7": {
+        "choice1": "Los problemas con mi tarjeta bancaria no podrían haber llegado en peor momento.",
+        "choice2": "No puedo creer que esto pasa justo cuando tengo problemas con mi banco."
+      }
+    }
+  },
+  "Chap1s4": {
+    "narration": "30 de Octubre, 2023",
+    "narration1": "The Lurenberg Post, Redacción",
+    "narration2": "The Lurenberg Post, Oficina de Skyler",
+    "hour": "11:10 am",
+    "dialogue": {
+      "d1": "Hola Azad",
+      "d2": "Te contacté la semana pasada sobre un asunto delicado",
+      "d3": "Antes de hablarte de eso, debo asegurarme de que nuestros intercambios sean privados. El asunto es extremadamente delicado.",
+      "d4": "En este punto, solo puedo darte su nombre en clave: ClearPath",
+      "d5": "No hables con nadie sobre nuestros intercambios, nunca te contactaré en otra aplicación que no sea esta aplicación cifrada.",
+      "d6": "Hay un casillero, el número 29, en la estación de Central Street. El código es 311009. Puse una muestra inicial de documentos allí, te darás cuenta de la magnitud de la situación.",
+      "d7": "Parecía urgente, ¿hay un problema?",
+      "d8": "No cuesta nada ver a dónde nos lleva.",
+      "d9": "¿Qué es eso?"
+    },
+    "choices": {
+      "c1": {
+        "choice1": "Hola. Sí, lo recuerdo muy bien.",
+        "choice2": "Hola “Cincinnatus”, todavía no tengo idea de lo que estás hablando..."
+      },
+      "c2": {
+        "choice1": "Entiendo, ¿puedes al menos decirme de qué se trata?",
+        "choice2": "Por supuesto"
+      },
+      "c3": {
+        "choice1": "¿Qué quieres que haga?",
+        "choice2": "De acuerdo, entendido"
+      },
+      "c4": {
+        "choice1": "Cuenta conmigo",
+        "choice2": "¡Es como una película de espías!"
+      },
+      "c5": {
+        "choice1": "No realmente, pero tengo dudas sobre un informante que me contactó.",
+        "choice2": "Alguien me contactó, no sé si puedo confiar en él."
+      },
+      "c6": {
+        "choice1": "ClearPath, ¿te suena de algo?",
+        "choice2": "Mencionó la operación ClearPath."
+      },
+      "c7": {
+        "choice1": "Todavía no estoy seguro, tengo que irme.",
+        "choice2": "Olvídalo, te mantendré informado."
+      }
+    }
+  },
+  "Chap1s5": {
+    "narration": "Central Street Station",
+    "narration2": "En casa de Azad",
+    "hour": "5:40 pm"
+  },
+  "Chap1s6": {
+    "hour": "31 de Octubre, 2023",
+    "narration": "El gobierno anuncia el fin del efectivo",
+    "hour1": "8:55 am",
+    "hour2": "9:30 am",
+    "narration2": "The Lurenberg Post, Redacción",
+    "dialogue": {
+      "d1": "Es absurdo. ¿Estamos en una novela de Orwell o qué? ¡Han prohibido el efectivo!",
+      "d2": "¿De verdad? ¿Quién es? ¿Un informante interno?",
+      "d3": "¿Por qué tomaría un riesgo así justo antes de que se haga público? No tiene sentido...",
+      "d4": "Hola Azad, supongo que estás siguiendo las noticias en vivo.",
+      "d5": "Todo se ha acelerado. No pensé que actuarían tan rápido.",
+      "d6": "No tienes idea de lo que vamos a revelar. Esto es solo la punta del iceberg...",
+      "d7": "¡Vaya! Mal momento... Escucha, estoy dispuesto a enviarte dinero para ayudarte y seguir con la investigación.",
+      "d8": "No tienes idea en lo que nos estamos metiendo. Tenemos que llegar hasta el final ahora.",
+      "d9": "Digamos simplemente que el dinero no es un problema, y realmente necesito que saques a la luz esta historia.",
+      "d10": "Tienes que instalar un wallet.",
+      "d11": "Es como tu monedero físico, pero digital. No está controlada por un banco o una autoridad central, y nadie puede impedir que la uses. Es dinero digital.",
+      "d12": "Tengo que irme ahora. Instala TronLink y envíame tu dirección y te enviaré dinero."
+    },
+    "choices": {
+      "c1": {
+        "choice1": "¿Recuerdas el informante del que hablé ayer? Sabía sobre esto.",
+        "choice2": "Mi informante me advirtió ayer."
+      },
+      "c2": {
+        "choice1": "Todavía no lo sé. Me envió documentos clasificados que recopilé anoche.",
+        "choice2": "Recibí documentos sobre la operación ClearPath."
+      },
+      "c3": {
+        "choice1": "Tienes razón. Tengo que investigar.",
+        "choice2": "Tengo que contactar a mi informante."
+      },
+      "c4": {
+        "choice1": "¿Cómo te enteraste?",
+        "choice2": "Sí, estamos viendo la televisión."
+      },
+      "c5": {
+        "choice1": "Me costó creerlo cuando examiné los documentos ayer.",
+        "choice2": "(no decir nada)"
+      },
+      "c6": {
+        "choice1": "¿Sabes algo más? Mi tarjeta bancaria está bloqueada, así que esto es terrible para mí.",
+        "choice2": "Lo irónico de esto es que mi tarjeta bancaria está bloqueada."
+      },
+      "c7": {
+        "choice1": "¿Por qué harías eso?",
+        "choice2": "(no decir nada)"
+      },
+      "c8": {
+        "choice1": "Eres afortunado.",
+        "choice2": "(no decir nada)"
+      },
+      "c9": {
+        "choice1": "¿Instalar un wallet?",
+        "choice2": "¿Qué es eso?"
+      }
+    }
+  },
+  "Chap1s7": {
+    "narration": "En casa de Azad",
+    "hour": "8:00 pm",
+    "dialogue": {
+      "d1": "Tu informante probablemente tenga razón. Si quieres llevar a cabo esta investigación, necesitas dinero. El bloqueo de tu cuenta por “actividad sospechosa“ probablemente es un intento de intimidación.",
+      "d2": "Es una extraña coincidencia.",
+      "d3": "De todas formas, también necesitas dinero para vivir, no puedes seguir pidiendo prestado dinero a todo el mundo como lo has estado haciendo durante una semana.",
+      "d4": "¿Recuerdas la investigación SBFTX a principios de año? Aprendí bastantes cosas... Un wallet no es una mala idea para resolver tu problema, especialmente si te permite recibir dinero.",
+      "d5": "En realidad, es bastante sencillo. Es como una caja fuerte digital, o un buzón digital si lo prefieres, donde cualquiera puede depositar dinero, pero nadie puede abrirlo excepto tú.",
+      "d6": "Y sobre todo, nadie nunca podrá impedirte acceder a él. Nunca.",
+      "d7": "¿Dinero real, quieres decir el que tienes en tu cuenta bancaria que no puedes usar desde que fue bloqueada?",
+      "d8": "Incluso si se trata de divisas digitales, son bien reales, muchas tiendas aceptan criptomonedas.",
+      "d9": "Bueno, primero tienes que instalar un monedero digital. TronLink es el más utilizado.",
+      "d10": "Cerca de 30 millones de personas lo utilizan. Es simplemente una extensión del navegador.",
+      "d11": "Te guiaré, lo haremos juntos.",
+      "d12": "Cuando la extensión de TronLink esté descargada en tu navegador, se abrirá una nueva ventana y te pedirá que crees un nuevo monedero.",
+      "d13": "Primero, deberás elegir una contraseña que te permita acceder a la extensión desde tu dispositivo.",
+      "d14": "Luego viene el paso más importante. TronLink generará aleatoriamente 12 palabras. Esto es lo que se llama la master key.",
+      "d15": "Es la única y exclusiva clave que permite abrir tu buzón si retomamos la metáfora anterior.",
+      "d16": "Si la pierdes, tu monedero quedará bloqueado para siempre.",
+      "d17": "Y si alguien puede acceder a estas palabras, tendrá acceso a todo lo que se almacena en el interior.",
+      "d18": "Por eso es esencial guardar estas 12 palabras en un lugar seguro.",
+      "d19": "Vuelve a verme cuando hayas terminado todas las etapas que te acabo de describir."
+    },
+    "choices": {
+      "c1": {
+        "choice1": "¿Qué estás diciendo? No he empezado nada.",
+        "choice2": "Por favor, no seas paranoica, eso no ayuda..."
+      },
+      "c2": {
+        "choice1": "Tienes razón. Y con los nuevos acontecimientos, mi problema no será la prioridad del banco.",
+        "choice2": "Debería haber resuelto el problema la semana pasada."
+      },
+      "c3": {
+        "choice1": "No entendí eso del monedero digital...",
+        "choice2": "¿Está relacionado con Bitcoin y las criptomonedas?"
+      },
+      "c4": {
+        "choice1": "Pero sigue siendo dinero “virtual“ en comparación con el que tengo en mi cuenta bancaria real.",
+        "choice2": "Preferiría dinero real."
+      },
+      "c5": {
+        "choice1": "Eso es lo que Cincinnatus me dijo que instalara.",
+        "choice2": "(no decir nada)"
+      },
+      "c6": {
+        "choice1": "Sí, por favor.",
+        "choice2": "Muchas gracias."
+      },
+      "c7": {
+        "choice1": "¿Qué pasa si la pierdo?",
+        "choice2": "De acuerdo."
+      },
+      "c8": {
+        "choice1": "De acuerdo.",
+        "choice2": "(say nothing)"
+      },
+      "c9": {
+        "choice1": "¡Listo, he terminado!",
+        "choice2": "Me costó un poco, pero finalmente lo logré."
+      }
+    },
+    "text1": "Ve a",
+    "text2": "y descarga la extensión."
+  },
+  "Chap2": {
+    "tron": "Se requiere TronLink para el Capítulo 2 y parece que no lo tienes instalado.",
+    "tronLink1": "Puedes hacer clic aquí ",
+    "tronLink2": " para instalarlo (solo para Chrome, Brave, Edge)",
+    "gotochapter1": "O puedes ir al ",
+    "gotochapter1end": "para redescubrir toda la historia y entender cómo funciona TronLink.",
+    "chapter1": "Capítulo 1",
+    "continue": "Para continuar la aventura",
+    "click": "haz clic en",
+    "select": "y selecciona TronLink",
+    "processing": "Procesando...",
+    "next": "Próximo episodio sin guardar",
+    "save": "Guardar tu progreso",
+    "or": "o",
+    "signin": "Firma para guardar tu progreso:",
+    "chapter": "- capítulo:",
+    "episode": "- episodio:",
+    "error": "Error verificando el mensaje"
+  },
+  "Chap2s1": {
+    "chapter": "Capítulo 2",
+    "title": "Cambio de paradigma",
+    "sentgas": "Acabo de enviarte gas: TRX, deberías recibirlo pronto.",
+    "havegas": "Al parecer ya tienes gas, no necesito enviarte más.",
+    "sentusdc": "Acabo de enviarte USDD, deberías recibirlo.",
+    "haveusdc": "Ya tienes suficiente USDD, no necesito enviarte más.",
+    "networkissues": "La red parece tener problemas, por favor vuelve más tarde.",
+    "clickon1": "Puedes hacer clic en",
+    "clickon2": "para mostrar el saldo de USDD en tu wallet",
+    "narration": "The Lurenberg Post, Redacción",
+    "dialogue": {
+      "d1": "Hola Azad, ¿instalaste una wallet?",
+      "d2": "Muy bien, ahora te enviaré algunos fondos en USDD, una criptomoneda estable cuyo valor está indexado al dólar (1 USDD = 1 $).",
+      "d3": "Necesito tu dirección para enviarte los fondos ahora. Es una secuencia única de letras y números que comienza con T ......",
+      "d4": "Cuando hagas clic en la extensión, verás la dirección justo debajo ”Wallet >”",
+      "d5": "Simplemente haz clic en ella para copiar tu dirección en el portapapeles y pégala aquí.",
+      "d6": "Para realizar transacciones en esta red, también necesitarás “gas”. Es un poco como la gasolina para tu coche, si quieres que funcione, debes llenar el tanque con el combustible adecuado.",
+      "d7": "Basicamente, este “gas” es una moneda específica utilizada para pagar tus propias transacciones. En esta red, esta moneda se llama TRX.",
+      "d8": "Pero sabes, cuando usas tu tarjeta bancaria, ¡también pagas una tarifa! La diferencia es simplemente que no eres consciente de ello porque el comerciante lo paga por ti.",
+      "d9": "Lo siento, tengo que irme, te contactaré muy pronto.",
+
+      "d9b": "Acabo de enviarte ETH a tu dirección, pronto podrás verlos en tu wallet.",
+      "d10": "Esta historia salió gracias a un hombre que ahora está en prisión preventiva por una razón completamente diferente: una infracción de tráfico.",
+      "d11": "Él tiene pruebas incriminatorias que no tuvo tiempo de compartir.",
+      "d12": "No puedo revelar mi identidad, pero ese no es tu caso. El dinero también es para pagar su fianza. Lo necesitamos para que revele todo.",
+      "d13": "Su nombre es Ruiz Carvalho."
+    },
+    "choices": {
+      "c1": {
+        "choice1": "Sí",
+        "choice2": "Descargué TronLink como dijiste."
+      },
+      "c2": {
+        "choice1": "¿Significa que hay que pagar por cada transacción?",
+        "choice2": "(no decir nada)"
+      },
+      "c3": {
+        "choice1": "Recibí el dinero, gracias",
+        "choice2": "Me enviaste 10.000 USDC, ¡es enorme!"
+      }
+    }
+  },
+
+  "Chap2s2": {
+    "dialogue": {
+      "d1": "¿Has podido avanzar?",
+      "d2": "OK, para transferir criptomonedas a una cuenta bancaria convencional, solo necesitas utilizar un intermediario reconocido que haga la conexión entre ambos mundos. Por un lado, enviarás USDC que él conservará y, por otro lado, él acreditará dólares en la cuenta que hayas elegido. Por supuesto, hay una tarifa por este servicio.",
+      "d3": "Puedes utilizar XXXX, por ejemplo, para depositar los $4000 de la fianza.",
+      "d4": "Solo necesitas conectar tu billetera, proporcionar el monto y el IBAN de Ruiz.",
+      "d5": "Si todo está completado, puedes hacer clic en 'Aprobar' para autorizar al sitio a interactuar con tus USDC de tu billetera, y luego en 'Enviar' para confirmar la cantidad de USDC.",
+      "d6": "Puede parecer pesado al principio, pero en cada interacción con tu billetera deberás dar tu consentimiento. Esto es lo que hace que este sistema sea muy seguro. También deberás validar directamente en tu billetera las tarifas de red asociadas con la transacción, como te expliqué anteriormente."
+    },
+    "choices": {
+      "c1": {
+        "choice1": "He contactado a Ruiz en la prisión central de Listenbourg",
+        "choice2": "Él está al tanto de que le voy a enviar dinero para pagar su fianza en su cuenta bancaria personal."
+      },
+      "c2": {
+        "choice1": "Listo, funcionó",
+        "choice2": "(no decir nada)"
+      }
+    }
+  },
+
+  "Chap2s3": {
+    "dialogue": {
+      "d1": "¡Gracias, Azad! Pude investigarte y, con todo lo que me contaste sobre Cincinnatus y los documentos que me diste acceso, puedo confiar en ti.",
+      "d2": "Tengo imágenes comprometedoras que podrían romper toda confianza con nuestro gobierno. Tener ese tipo de pruebas me ha vuelto paranoico y extremadamente estresado... de ahí mi exceso de velocidad en la autopista...",
+      "d3": "Hace una semana contacté a este grupo de hackers éticos para encontrar una manera de revelar todo esto. Cincinnatus formaba parte de este grupo y también tenía documentos incriminatorios.",
+      "d4": "Trabajo como supervisor en una empresa subcontratada por el ejército, en asuntos logísticos. Nos encargaron la incineración de numerosos paquetes de billetes falsos descubiertos hace 2 semanas.",
+      "d5": "Noté que la película protectora de uno de los paquetes se había roto durante el transporte hacia el incinerador. Por razones obvias, el ejército nos había prohibido terminantemente cualquier contacto físico con las cargas que transportábamos.",
+      "d6": "A pesar de eso, quise encubrirlo para evitar represalias... Me acerqué y vi lo que había en los paquetes, no eran billetes falsos, sino montones de hojas de papel.",
+      "d7": "Enseguida comprendí que había un problema. Me asusté. No le dije nada al conductor del vehículo, pero tomé fotos y cerré lo mejor posible la protección.",
+      "d8": "Todo ha sido incinerado, solo quedan estas fotos como evidencia de esta gran farsa... tenemos que encontrar una manera de hacerlas públicas y que nadie pueda destruirlas.",
+      "d9": "No tuve tiempo de hacer nada antes de ser puesto en detención provisional, pero los diferentes miembros de la red de hackers me aconsejaron ponerlo en la cadena de bloques como un NFT",
+      "d10": "Aún no lo conozco bien, pero las principales características de esta tecnología son la transparencia, la descentralización, por supuesto, pero sobre todo la inmutabilidad. Lo que se graba, se graba para siempre, nadie tiene la autoridad para cambiarlo.",
+      "d11": "Acabo de enviarte los documentos por Telegram, aún debemos enviarlos a la cadena de bloques.",
+      "d12": "Los archivos están adjuntos, puedes confirmar.",
+      "d13": "A partir de ahora, cualquiera podrá acceder a los documentos. Puedes echarles un vistazo (link)."
+    },
+    "choices": {
+      "c1": {
+        "choice1": "¿Qué descubriste?",
+        "choice2": "(no decir nada)"
+      },
+      "c2": {
+        "choice1": "Y ahora no queda nada de esos paquetes...",
+        "choice2": "(no decir nada)"
+      },
+      "c3": {
+        "choice1": "Vamos a poner estas pruebas a salvo",
+        "choice2": "Podemos hacerlo juntos desde mi billetera"
+      }
+    }
+  }
 }

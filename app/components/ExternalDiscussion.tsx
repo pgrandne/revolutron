@@ -19,7 +19,7 @@ export const ExternalDiscussion = ({
     telegramWindow?: boolean
     nbFollowingDialogue?: number
 }) => {
-    const factor = 0.04
+    const factor = 0.02
 
     const calculateDelay = () => {
         let calculatedDelay

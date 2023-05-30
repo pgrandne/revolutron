@@ -83,10 +83,16 @@ We use 2 contracts deployed on Shasta testnet and mainnet:
  - One for the token of the Adventure: RevolutronUSD
  - One for the bail of the Adventure: RevolutronBail
 
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
 Shasta:
 
 | Contract  | Address | Tronscan |
-| ------------- | ------------- |
+| ------------- | ------------- | --- |
 
 [link]](https://shasta.tronscan.org/#/contract/TSq8uXtJSX5o3wimqsQj5TDdEdTNP13kAo/code)
 [link](https://shasta.tronscan.org/#/contract/TLFkPf5XTC5JqUH91jfNPe2k2Rvj6L9ih3/code) 

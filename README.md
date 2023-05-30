@@ -83,12 +83,6 @@ We use 2 contracts deployed on Shasta testnet and mainnet:
  - One for the token of the Adventure: RevolutronUSD
  - One for the bail of the Adventure: RevolutronBail
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
 Shasta:
 
 | Contract  | Address | Tronscan |
@@ -97,7 +91,8 @@ Shasta:
 [link]](https://shasta.tronscan.org/#/contract/TSq8uXtJSX5o3wimqsQj5TDdEdTNP13kAo/code)
 [link](https://shasta.tronscan.org/#/contract/TLFkPf5XTC5JqUH91jfNPe2k2Rvj6L9ih3/code) 
 
-
+| Contract  | Address | Tronscan |
+| --------- | ------- | -------- |
 | RevolutronUSD | TSq8uXtJSX5o3wimqsQj5TDdEdTNP13kAo | [link]](https://shasta.tronscan.org/#/contract/TSq8uXtJSX5o3wimqsQj5TDdEdTNP13kAo/code) |
 | RevolutronBail | TLFkPf5XTC5JqUH91jfNPe2k2Rvj6L9ih3 | [link](https://shasta.tronscan.org/#/contract/TLFkPf5XTC5JqUH91jfNPe2k2Rvj6L9ih3/code) |
 
@@ -106,7 +101,7 @@ Shasta:
 Mainnet:
 
 | Contract  | Address | Tronscan |
-| ------------- | ------------- |
+| --------- | ------- | -------- |
 | RevolutronUSD | TP2Vu2YW2mXUbBg56MMjLSTgXJhdNW1sw4 | [link]](https://tronscan.org/#/contract/TP2Vu2YW2mXUbBg56MMjLSTgXJhdNW1sw4/code) |
 | RevolutronBail | TWUSBDSyuVrYnQzX2epG3hfbWzUSqWZwzH | [link](https://tronscan.org/#/contract/TWUSBDSyuVrYnQzX2epG3hfbWzUSqWZwzH/code) |
   

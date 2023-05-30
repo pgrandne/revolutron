@@ -13,7 +13,7 @@ pragma solidity ^0.8.18;
 interface ITRC20 {
     function balanceOf(address account) external view returns (uint256);
 
-    /// @notice Approve the deposit of USDD from player to contract
+    /// @notice Approve the deposit of RUSD from player to contract
     function approve(address spender, uint256 amount) external returns (bool);
 
     /// @notice Confirm the allowed amount before deposit
@@ -22,7 +22,7 @@ interface ITRC20 {
         address spender
     ) external view returns (uint256);
 
-    /// @notice Transfer USDC from User to Contract (deposit) or from Contract to User (withdraw)
+    /// @notice Transfer RUSD from User to Contract (deposit) or from Contract to User (withdraw)
     function transferFrom(
         address sender,
         address recipient,

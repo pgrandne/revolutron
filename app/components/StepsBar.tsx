@@ -1,6 +1,7 @@
 'use client';
 
 import 'react-toastify/dist/ReactToastify.css';
+import { useLocale, useTranslations } from 'next-intl';
 import { ToastContainer, toast } from 'react-toastify';
 import { useEffect, useState } from 'react';
 
@@ -55,6 +56,8 @@ export const StepsBar = ({ transactionStatus }: {
     deposit: boolean
   }
 }) => {
+  const t = useTranslations('BailTransaction')
+
   return (
     <div className="w-full py-6">
       <div className="flex">
@@ -78,7 +81,7 @@ export const StepsBar = ({ transactionStatus }: {
             {transactionStatus.approve ? <Validated /> : (transactionStatus.loadingApprove ? <Wait /> : <Lock />)}
           </div>
           <div className="text-xs text-center md:text-base">
-            {!transactionStatus.approve && !transactionStatus.loadingApprove ? "Wait Approve" : (!transactionStatus.approve ? "Approving" : "Approved")}
+            {!transactionStatus.approve && !transactionStatus.loadingApprove ? t('waitApprove') : (!transactionStatus.approve ? t('approving') : t('approved'))}
           </div>
         </div>
         <div className="w-1/3">
@@ -91,7 +94,7 @@ export const StepsBar = ({ transactionStatus }: {
             {transactionStatus.deposit ? <Validated /> : (transactionStatus.loadingDeposit ? <Wait /> : <Lock />)}
           </div>
           <div className="text-xs text-center md:text-base">
-            {!transactionStatus.deposit && !transactionStatus.loadingDeposit ? "Wait Pay" : (!transactionStatus.deposit ? "Paying" : "Payed")}
+            {!transactionStatus.deposit && !transactionStatus.loadingDeposit ? t('waitPay') : (!transactionStatus.deposit ? t('paying') : t('payment'))}
           </div>
         </div>
       </div>

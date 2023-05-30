@@ -44,10 +44,9 @@ Inspirations: Cryptozombie (https://cryptozombies.io/) to learn Solidity langage
 - [X] Chapter 2 episode 1 (Testnet)
 - [X] French language
 - [X] Spanish language
-- [ ] Chapter 2 episode 2 (Testnet)
-- [ ] Chapter 2 episode 3 (Testnet)
-- [ ] Chapter 2 episode 4 (Testnet)
-- [ ] Smart contract - Deposit and lock 
+- [X] Chapter 2 episode 2 (Mainnet)
+- [ ] Chapter 2 episode 3 (Mainnet)
+- [X] Smart contract - Deposit and lock 
 - [ ] Chapter 3 episode 1 (Mainnet)
 
 ## Instructions
@@ -80,11 +79,25 @@ We use .env for environment variables. Change the name of env.example to .env an
    - We use DATABASE_URL for our MongoDB database
    - We use PRIVATE KEY for interacting with the blockchain
 
-We use 2 contracts : 
-   - One for the token of the Adventure : RevolutronUSD : TSq8uXtJSX5o3wimqsQj5TDdEdTNP13kAo
-  https://shasta.tronscan.org/#/contract/TSq8uXtJSX5o3wimqsQj5TDdEdTNP13kAo/code
-   - One for the bail of the Adventure : TLFkPf5XTC5JqUH91jfNPe2k2Rvj6L9ih3
-  https://shasta.tronscan.org/#/contract/TLFkPf5XTC5JqUH91jfNPe2k2Rvj6L9ih3/code
+We use 2 contracts deployed on Shasta testnet and mainnet:
+ - One for the token of the Adventure: RevolutronUSD
+ - One for the bail of the Adventure: RevolutronBail
+
+Shasta:
+
+| Contract  | Address | Tronscan |
+| ------------- | ------------- |
+| RevolutronUSD | TSq8uXtJSX5o3wimqsQj5TDdEdTNP13kAo | [link]](https://shasta.tronscan.org/#/contract/TSq8uXtJSX5o3wimqsQj5TDdEdTNP13kAo/code) |
+| RevolutronBail | TLFkPf5XTC5JqUH91jfNPe2k2Rvj6L9ih3 | [link](https://shasta.tronscan.org/#/contract/TLFkPf5XTC5JqUH91jfNPe2k2Rvj6L9ih3/code) |
+
+
+
+Mainnet:
+
+| Contract  | Address | Tronscan |
+| ------------- | ------------- |
+| RevolutronUSD | TP2Vu2YW2mXUbBg56MMjLSTgXJhdNW1sw4 | [link]](https://tronscan.org/#/contract/TP2Vu2YW2mXUbBg56MMjLSTgXJhdNW1sw4/code) |
+| RevolutronBail | TWUSBDSyuVrYnQzX2epG3hfbWzUSqWZwzH | [link](https://tronscan.org/#/contract/TWUSBDSyuVrYnQzX2epG3hfbWzUSqWZwzH/code) |
   
 
 

@@ -83,11 +83,22 @@
     "note": "(Esencial para continuar la aventura y explorar Web3)"
   },
   "BailTransaction": {
-    "title": "Bail",
-    "text": "Pay the bail of M Doe : 4000 USDD",
-    "approve": "Approve",
-    "pay": "Pay",
-    "refuse": "Refuse to pay"
+    "title":"Deposito para el S. RUIZ: 4000 RUSD",
+    "text":"IBAN: LB70003506517513876636287",
+    "approve": "Aprobado",
+    "pay": "Pago",
+    "close":"Cerrar",
+    "waitApprove":"Wait Approve",
+    "approving":"Approving",
+    "approved":"Approved",
+    "waitPay":"Wait Pay",
+    "paying":"Paying",
+    "payment":"Payed"
+  },
+  "ModalNft": {
+    "title":"NFT not deployed",
+    "text":"The NFT is not yet deployed, please come back in next days",
+    "close":"Close"
   },
   "Chap1s1": {
     "narration": "Lurenberg, Listenbourg",
@@ -373,17 +384,17 @@
     "title": "Cambio de paradigma",
     "sentgas": "Acabo de enviarte gas: TRX, deberías recibirlo pronto.",
     "havegas": "Al parecer ya tienes gas, no necesito enviarte más.",
-    "sentusdc": "Acabo de enviarte USDD, deberías recibirlo.",
-    "haveusdc": "Ya tienes suficiente USDD, no necesito enviarte más.",
+    "sentusdc": "Acabo de enviarte RUSD, deberías recibirlo.",
+    "haveusdc": "Ya tienes suficiente RUSD, no necesito enviarte más.",
     "networkissues": "La red parece tener problemas, por favor vuelve más tarde.",
     "clickon1": "Puedes hacer clic en",
-    "clickon2": "para mostrar el saldo de USDD en tu wallet",
+    "clickon2": "para mostrar el saldo de RUSD en tu wallet",
     "narration": "The Lurenberg Post, Redacción",
     "dialogue": {
       "d1": "Hola Azad, ¿instalaste una wallet?",
-      "d2": "Muy bien, ahora te enviaré algunos fondos en USDD, una criptomoneda estable cuyo valor está indexado al dólar (1 USDD = 1 $).",
+      "d2": "Muy bien, ahora te enviaré algunos fondos en RUSD, una criptomoneda estable cuyo valor está indexado al dólar (1 RUSD = 1 $).",
       "d3": "Necesito tu dirección para enviarte los fondos ahora. Es una secuencia única de letras y números que comienza con T ......",
-      "d4": "Cuando hagas clic en la extensión, verás la dirección justo debajo ”Wallet >”",
+      "d4": "Cuando hagas clic en la extensión, verás la dirección justo debajo ”Wallet”",
       "d5": "Simplemente haz clic en ella para copiar tu dirección en el portapapeles y pégala aquí.",
       "d6": "Para realizar transacciones en esta red, también necesitarás “gas”. Es un poco como la gasolina para tu coche, si quieres que funcione, debes llenar el tanque con el combustible adecuado.",
       "d7": "Basicamente, este “gas” es una moneda específica utilizada para pagar tus propias transacciones. En esta red, esta moneda se llama TRX.",
@@ -407,7 +418,7 @@
       },
       "c3": {
         "choice1": "Recibí el dinero, gracias",
-        "choice2": "Me enviaste 10.000 USDC, ¡es enorme!"
+        "choice2": "Me enviaste 10.000 RUSD, ¡es enorme!"
       }
     }
   },
@@ -415,11 +426,10 @@
   "Chap2s2": {
     "dialogue": {
       "d1": "¿Has podido avanzar?",
-      "d2": "OK, para transferir criptomonedas a una cuenta bancaria convencional, solo necesitas utilizar un intermediario reconocido que haga la conexión entre ambos mundos. Por un lado, enviarás USDC que él conservará y, por otro lado, él acreditará dólares en la cuenta que hayas elegido. Por supuesto, hay una tarifa por este servicio.",
-      "d3": "Puedes utilizar XXXX, por ejemplo, para depositar los $4000 de la fianza.",
-      "d4": "Solo necesitas conectar tu billetera, proporcionar el monto y el IBAN de Ruiz.",
-      "d5": "Si todo está completado, puedes hacer clic en 'Aprobar' para autorizar al sitio a interactuar con tus USDC de tu billetera, y luego en 'Enviar' para confirmar la cantidad de USDC.",
-      "d6": "Puede parecer pesado al principio, pero en cada interacción con tu billetera deberás dar tu consentimiento. Esto es lo que hace que este sistema sea muy seguro. También deberás validar directamente en tu billetera las tarifas de red asociadas con la transacción, como te expliqué anteriormente."
+      "d2": "OK, para transferir criptomonedas a una cuenta bancaria convencional, solo necesitas utilizar un intermediario reconocido que haga la conexión entre ambos mundos. Por un lado, enviarás RUSD que él conservará y, por otro lado, él acreditará dólares en la cuenta que hayas elegido. Por supuesto, hay una tarifa por este servicio.",
+      "d3": "Solo necesitas conectar tu billetera, proporcionar el monto y el IBAN de Ruiz.",
+      "d4": "Si todo está completado, puedes hacer clic en 'Aprobar' para autorizar al sitio a interactuar con tus RUSD de tu billetera, y luego en 'Enviar' para confirmar la cantidad de RUSD.",
+      "d5": "Puede parecer pesado al principio, pero en cada interacción con tu billetera deberás dar tu consentimiento. Esto es lo que hace que este sistema sea muy seguro. También deberás validar directamente en tu billetera las tarifas de red asociadas con la transacción, como te expliqué anteriormente."
     },
     "choices": {
       "c1": {
@@ -447,7 +457,7 @@
       "d10": "Aún no lo conozco bien, pero las principales características de esta tecnología son la transparencia, la descentralización, por supuesto, pero sobre todo la inmutabilidad. Lo que se graba, se graba para siempre, nadie tiene la autoridad para cambiarlo.",
       "d11": "Acabo de enviarte los documentos por Telegram, aún debemos enviarlos a la cadena de bloques.",
       "d12": "Los archivos están adjuntos, puedes confirmar.",
-      "d13": "A partir de ahora, cualquiera podrá acceder a los documentos. Puedes echarles un vistazo (link)."
+      "d13": "A partir de ahora, cualquiera podrá acceder a los documentos. Puedes echarles un vistazo."
     },
     "choices": {
       "c1": {

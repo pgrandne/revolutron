@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from "react";
-import { usddContract,bailContract } from "./contract";
+import { rusdContract,bailContract } from "./contract";
 
 interface ITronLinkParams {
     ready: boolean
@@ -15,8 +15,6 @@ declare global {
     }
 }
 
-
-
 export const tronTransactionApprove = async ({setTsx, setTransactionStatus}:{
     setTsx:Dispatch<SetStateAction<string>>
     setTransactionStatus : Dispatch<SetStateAction<{
@@ -27,12 +25,11 @@ export const tronTransactionApprove = async ({setTsx, setTransactionStatus}:{
     }>>
 }) => {
     if (window.tronLink.ready) {
-        
         const amount = 4000000000
         const tronWeb = window.tronLink.tronWeb
         const address = tronWeb.defaultAddress.base58
-        tronWeb.setAddress(usddContract)
-        let instance = await tronWeb.contract().at(usddContract)
+        tronWeb.setAddress(rusdContract)
+        let instance = await tronWeb.contract().at(rusdContract)
         let transaction = await instance.approve(bailContract,amount).send()
         setTsx(transaction)
         // let info = await tronWeb.trx.getConfirmedTransaction(transaction)
@@ -63,8 +60,8 @@ export const tronUsddAllowance = async ({setTransactionStatus}:{
     if (window.tronLink.ready) {
         const tronWeb = window.tronLink.tronWeb
         const address = tronWeb.defaultAddress.base58
-        tronWeb.setAddress(usddContract)
-        let instance = await tronWeb.contract().at(usddContract)
+        tronWeb.setAddress(rusdContract)
+        let instance = await tronWeb.contract().at(rusdContract)
         let amountAllowed = await instance.allowance(address,bailContract).call()
         if (amountAllowed>=4000000000) {
             setTransactionStatus(prevState => ({

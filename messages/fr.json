@@ -83,11 +83,22 @@
     "note": "(Indispensable pour poursuivre l'aventure et explorer le Web3)"
   },
   "BailTransaction": {
-    "title": "Bail",
-    "text": "Pay the bail of M Doe : 4000 USDD",
-    "approve": "Approve",
-    "pay": "Pay",
-    "refuse": "Refuse to pay"
+    "title":"Caution pour M. RUIZ: 4000 RUSD",
+    "text":"IBAN: LB70003506517513876636287",
+    "approve": "Approuver",
+    "pay": "Payer",
+    "close": "Fermer",
+    "waitApprove":"Attente Approbation",
+    "approving":"En cours",
+    "approved":"Approuvé",
+    "waitPay":"Attente Paiement",
+    "paying":"En cours",
+    "payment":"Payé"
+  },
+  "ModalNft": {
+    "title":"NFT not deployed",
+    "text":"The NFT is not yet deployed, please come back in next days",
+    "close":"Close"
   },
   "Chap1s1": {
     "narration": "Lurenberg, Listenbourg",
@@ -373,17 +384,17 @@
     "title": "Changement de paradigme",
     "sentgas": "Je viens de t'envoyer du gas: TRX, tu devrais le recevoir sous peu.",
     "havegas": "Apparemment tu as déjà du gas, je n'ai pas besoin de t'en envoyer.",
-    "sentusdc": "Je viens de t'envoyer des USDD, tu devrais les recevoir.",
-    "haveusdc": "Tu as déjà assez d'USDD, je n'ai pas besoin de t'en envoyer.",
+    "sentusdc": "Je viens de t'envoyer des RUSD, tu devrais les recevoir.",
+    "haveusdc": "Tu as déjà assez d'RUSD, je n'ai pas besoin de t'en envoyer.",
     "networkissues": "Le réseau semble rencontrer des problèmes, reviens plus tard s'il te plaît.",
     "clickon1": "Tu peux cliquer sur",
-    "clickon2": "pour afficher le solde USDD dans ton wallet",
+    "clickon2": "pour afficher le solde RUSD dans ton wallet",
     "narration": "The Lurenberg Post, Rédaction",
     "dialogue": {
       "d1": "Hey Azad, as-tu installé un wallet ?",
-      "d2": "Très bien, je vais maintenant t'envoyer des fonds en USDD, une crypto-monnaie stable dont la valeur est indexée sur le dollar (1 USDD = 1 $).",
+      "d2": "Très bien, je vais maintenant t'envoyer des fonds en RUSD, une crypto-monnaie stable dont la valeur est indexée sur le dollar (1 RUSD = 1 $).",
       "d3": "J'ai besoin de ton adresse pour t'envoyer les fonds maintenant. C'est une séquence unique de lettres et de chiffres qui commence par T......",
-      "d4": "Lorsque tu cliques sur l'extension, tu verras l'adresse juste en dessous de ”Wallet >”",
+      "d4": "Lorsque tu cliques sur l'extension, tu verras l'adresse juste en dessous de ”Wallet”",
       "d5": "Clique simplement dessus pour copier ton adresse dans le presse-papier et colle-la ici.",
       "d6": "Pour effectuer des transactions sur ce réseau, tu auras également besoin de ”gas”. C'est un peu comme l'essence pour ta voiture, si tu veux la faire avancer, tu dois remplir le réservoir avec le carburant approprié.",
       "d7": "En gros ce ”gas” est une monnaie spécifique, utilisée pour payer tes propres transactions. Sur ce réseau, cette monnaie s'appelle TRX.",
@@ -407,7 +418,7 @@
       },
       "c3": {
         "choice1": "J’ai bien reçu l’argent, merci",
-        "choice2": "Tu m’as envoyé 10.000 USDC, c’est énorme !"
+        "choice2": "Tu m’as envoyé 10.000 RUSD, c’est énorme !"
       }
     }
   },
@@ -415,11 +426,10 @@
   "Chap2s2": {
     "dialogue": {
       "d1": "Tu as pu avancer ?",
-      "d2": "OK, pour transférer des cryptomonnaies vers un compte bancaire classique, il suffit d’utiliser un intermédiaire reconnu qui fait la liaison entre les deux mondes. D’un côté tu envoies des USDC qu’il va conserver et de l’autre il va créditer des $ sur le compte que tu auras choisi. Il y a bien sûr des frais à payer pour ce service.",
-      "d3": "Tu peux utiliser XXXX par exemple pour verser les $4000 de la caution.",
-      "d4": "Il suffit que tu connectes ton wallet, renseigne le montant, et l’IBAN de Ruiz.",
-      "d5": "Si tout est rempli tu peux cliquer sur “Approuver” afin d’autoriser le site d’intéragir avec les USDC de ton wallet, puis sur “Envoyer” pour valider le montant d’USDC.",
-      "d6": "Ca peut paraitre lourd au début, mais à chaque interaction avec ton wallet tu devras donner ton accord. C’est ce qui permet de rendre ce système très sécurisé. Tu devras aussi valider directement dans ton wallet les frais de réseau associés à la transaction comme je te l’avais expliqué précédemment."
+      "d2": "OK, pour transférer des cryptomonnaies vers un compte bancaire classique, il suffit d’utiliser un intermédiaire reconnu qui fait la liaison entre les deux mondes. D’un côté tu envoies des RUSD qu’il va conserver et de l’autre il va créditer des $ sur le compte que tu auras choisi. Il y a bien sûr des frais à payer pour ce service.",
+      "d3": "Il suffit que tu connectes ton wallet, renseigne le montant, et l’IBAN de Ruiz.",
+      "d4": "Si tout est rempli tu peux cliquer sur “Approuver” afin d’autoriser le site d’intéragir avec les RUSD de ton wallet, puis sur “Envoyer” pour valider le montant d’RUSD.",
+      "d5": "Ca peut paraitre lourd au début, mais à chaque interaction avec ton wallet tu devras donner ton accord. C’est ce qui permet de rendre ce système très sécurisé. Tu devras aussi valider directement dans ton wallet les frais de réseau associés à la transaction comme je te l’avais expliqué précédemment."
     },
     "choices": {
       "c1": {
@@ -439,7 +449,7 @@
       "d2": "J’ai des images compromettantes qui pourraient rompre toute confiance avec notre gouvernement. Posséder de telles preuves m’a rendu parano, et extrêmement stressé… d’où mon excès de vitesse sur l’autoroute...",
       "d3": "J’avais contacté ce groupe de hackers éthiques il y a 1 semaine pour trouver une manière de révéler tout ça. Cincinnatus en faisait partie, et possédait également des documents à charges.",
       "d4": "Je travaille comme superviseur, dans une entreprise sous-traitante de l’armée, sur des questions logistiques. Nous avons été mandaté pour procéder à l’incinération des nombreuses palettes de faux billets découvertes il y a 2 semaines.",
-      "d5": "J’ai repéré que le film de protection d’une des palettes s’était déchiré, pendant le transport jusqu’à l’incinérateur. Pour des raison évidente, l’armée nous avait formellement interdit tout contact physique avec les charges que nous transportions.",
+      "d5": "J’ai repéré que le film de protection d’une des palettes s’était déchiré, pendant le transport jusqu’à l’incinérateur. Pour des raisons évidentes, l’armée nous avait formellement interdit tout contact physique avec les charges que nous transportions.",
       "d6": "J’ai malgré tout voulu camoufler ça pour éviter d’être réprimandé… en m’approchant j’ai vu ce que contenait les palettes, non pas de faux billets, mais des piles de feuilles de papier.",
       "d7": "J’ai tout de suite compris qu’il y avait un problème. J’ai pris peur. Je n’ai rien dit au conducteur de l’engin, mais j’ai pris des photos puis refermé au mieux la protection.",
       "d8": "Tout a été incinéré, il ne reste que ces photos comme preuve de cette vaste mise en scène… il faut trouver un moyen pour les rendre public et que personne ne puisse les détruire.",
@@ -447,7 +457,7 @@
       "d10": "Je ne connais pas encore bien, mais les principales caractéristiques de cette technologie, sont la transparence, la décentralisation bien sûr, mais surtout l’immuabilité. Ce qui est gravé, est gravé à jamais, personne n’a autorité pour qu’il en soit autrement.",
       "d11": "Je viens de t’envoyer les documents sur Télégram, il faut encore les envoyer sur la blockchain.",
       "d12": "Les fichiers sont attachés, tu peux valider.",
-      "d13": "A patir de maintenant n’importe qui pourra accéder aux documents. Tu peux aller y jeter un oeil (lien)."
+      "d13": "A patir de maintenant n’importe qui pourra accéder aux documents. Tu peux aller y jeter un oeil."
     },
     "choices": {
       "c1": {

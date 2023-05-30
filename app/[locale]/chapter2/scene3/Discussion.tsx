@@ -26,24 +26,24 @@ const Discussion = ({ stage, setStage }: { stage: number, setStage: Dispatch<Set
                 <div className="self-center flex-1 w-full max-w-xl overflow-auto">
                     <div className="relative flex flex-col px-3 py-2 m-auto">
                         <ExternalDiscussion text={t('dialogue.d1')} name="Ruiz" delay={1} />
-                        <ExternalDiscussion text={t('dialogue.d2')} name="Ruiz" nbCharPrevDisc={t('dialogue.d1').length} nbFollowingDialogue={2} delay={1}/>
-                        <ExternalDiscussion text={t('dialogue.d3')} name="Ruiz" nbCharPrevDisc={t('dialogue.d1').length + t('dialogue.d2').length} nbFollowingDialogue={3} delay={1}/>
+                        <ExternalDiscussion text={t('dialogue.d2')} name="Ruiz" nbCharPrevDisc={t('dialogue.d1').length} nbFollowingDialogue={2} delay={1} />
+                        <ExternalDiscussion text={t('dialogue.d3')} name="Ruiz" nbCharPrevDisc={t('dialogue.d1').length + t('dialogue.d2').length} nbFollowingDialogue={3} delay={1} />
                         {stage > 0 && <>
                             <AzadDiscussion azadText={azadText[0]} />
                             <ExternalDiscussion text={t('dialogue.d4')} name="Ruiz" />
-                            <ExternalDiscussion text={t('dialogue.d5')} name="Ruiz" nbCharPrevDisc={t('dialogue.d4').length} nbFollowingDialogue={2} />                            
+                            <ExternalDiscussion text={t('dialogue.d5')} name="Ruiz" nbCharPrevDisc={t('dialogue.d4').length} nbFollowingDialogue={2} />
                         </>}
-                        {stage > 1 && <>                            
+                        {stage > 1 && <>
                             <ExternalDiscussion text={t('dialogue.d6')} name="Ruiz" />
-                            <ExternalDiscussion text={t('dialogue.d7')} name="Ruiz" nbCharPrevDisc={t('dialogue.d6').length} nbFollowingDialogue={2} />                            
+                            <ExternalDiscussion text={t('dialogue.d7')} name="Ruiz" nbCharPrevDisc={t('dialogue.d6').length} nbFollowingDialogue={2} />
                         </>}
-                        {stage > 3 && <>
+                        {stage > 2 && <>
                             <AzadDiscussion azadText={azadText[1]} />
                             <ExternalDiscussion text={t('dialogue.d8')} name="Ruiz" />
                             <ExternalDiscussion text={t('dialogue.d9')} name="Ruiz" nbCharPrevDisc={t('dialogue.d8').length} nbFollowingDialogue={2} />
                             <ExternalDiscussion text={t('dialogue.d10')} name="Ruiz" nbCharPrevDisc={t('dialogue.d8').length + t('dialogue.d9').length} nbFollowingDialogue={3} />
                         </>}
-                        {stage > 4 && <>
+                        {stage > 3 && <>
                             <AzadDiscussion azadText={azadText[2]} />
                             <ExternalDiscussion text={t('dialogue.d11')} name="Ruiz" />
                             <ExternalDiscussion text={t('dialogue.d12')} name="Ruiz" nbCharPrevDisc={t('dialogue.d11').length} nbFollowingDialogue={2} />
@@ -57,10 +57,10 @@ const Discussion = ({ stage, setStage }: { stage: number, setStage: Dispatch<Set
                     {stage === 0 &&
                         <AzadChoices stage={stage} setStage={setStage} azadText={azadText} setAzadText={setAzadText} choice1={t('choices.c1.choice1')} choice2={t('choices.c1.choice2')} delay={14} />
                     }
-                    {stage === 3 &&
+                    {stage === 2 &&
                         <AzadChoices stage={stage} setStage={setStage} azadText={azadText} setAzadText={setAzadText} choice1={t('choices.c2.choice1')} choice2={t('choices.c2.choice2')} nbCharPrevDisc={t('dialogue.d6').length + t('dialogue.d7').length} />
                     }
-                    {stage === 4 &&
+                    {stage === 3 &&
                         <AzadChoices stage={stage} setStage={setStage} azadText={azadText} setAzadText={setAzadText} choice1={t('choices.c3.choice1')} choice2={t('choices.c3.choice2')} nbCharPrevDisc={t('dialogue.d8').length + t('dialogue.d9').length + t('dialogue.d10').length} />
                     }
                 </div>

@@ -49,7 +49,6 @@
         "textChap3-3": "This chapter is on the mainnet",
         "resume": "Resume last session",
         "close": "Close",
-
         "connect": "Please connect wallet",        
         "error": "Error loading progression.",
         "wait": "Wait..."
@@ -83,11 +82,21 @@
         "note": "(Required to continue the adventure and explore Web3)"        
     },
     "BailTransaction": {
-        "title":"Bail PLEASE SELECT TRON Shasta Testnet in your TronLink before click on any button",
-        "text":"Pay the bail of M Doe : 4000 USDD",
+        "title":"Bail for M. RUIZ: 4000 RUSD",
+        "text":"IBAN: LB70003506517513876636287",
         "approve":"Approve",
         "pay":"Pay",
-        "refuse":"Refuse to pay",
+        "close":"Close",
+        "waitApprove":"Wait Approve",
+        "approving":"Approving",
+        "approved":"Approved",
+        "waitPay":"Wait Pay",
+        "paying":"Paying",
+        "payment":"Payed"
+    },
+    "ModalNft": {
+        "title":"NFT not deployed",
+        "text":"The NFT is not yet deployed, please come back in next days",
         "close":"Close"
     },
     "Chap1s1": {
@@ -374,17 +383,17 @@
         "title": "Paradigm shift",
         "sentgas": "I just sent you some gas: TRX, you should received it pretty soon",
         "havegas": "Apparently you already have some gas, I don't need to send you any",
-        "sentusdc": "I just sent you some USDD, you should received it",
-        "haveusdc": "You already have enough USDD, I don't need to send you any ",
+        "sentusdc": "I just sent you some RUSD, you should received it",
+        "haveusdc": "You already have enough RUSD, I don't need to send you any ",
         "networkissues": "The network seems to have some issues, come back later please",
         "clickon1": "You can click on",
-        "clickon2": "to display the USDD balance in your wallet",
+        "clickon2": "to display the RUSD balance in your wallet",
         "narration": "The Lurenberg Post, Newsroom",
         "dialogue": {
             "d1": "Hey Azad, did you install a wallet?",
-            "d2": "Alright, I will send you some funds now, in USDD currency. It's what we call a stablecoin, its value is pegged to dollars (1USDD = $1)",
+            "d2": "Alright, I will send you some funds now, in RUSD currency. It's what we call a stablecoin, its value is pegged to dollars (1 RUSD = $1)",
             "d3": "I need your address to send you the funds now. It is the unique sequence of letters and numbers that starts with T……",
-            "d4": "Once you clicked on the wallet extension you'll find it written just below “Wallet >“",
+            "d4": "Once you clicked on the wallet extension you'll find it written just below “Wallet“",
             "d5": "Just click on it to copy your address in the clipboard and paste it here",
             "d6": "In order to do transactions on this network, you will also need some “gas”. It's like the gasoline for your car, if you want to run it, you'll need to fill the tank with the appropriate fuel",
             "d7": "Basically this “gas” is a specific currency, used to paid your own transactions. On this network this currency is called TRX",
@@ -408,19 +417,17 @@
             },
             "c3": {
               "choice1": "I have received the money, thank you",
-              "choice2": "You sent me 10,000 USDC, that's huge!"
+              "choice2": "You sent me 10,000 RUSD, that's huge!"
             }
         }
     },
-
     "Chap2s2": {
         "dialogue": {
             "d1": "Did you make any progress?",
-            "d2": "OK, to transfer cryptocurrencies to a traditional bank account, you just need to use a recognized intermediary that bridges the two worlds. On one side, you send USDC that he will keep, and on the other side, he will credit dollars to the account you have chosen. There are, of course, fees to pay for this service.",
-            "d3": "You can use XXXX, for example, to transfer $4,000 for the bail.",
-            "d4": "You just need to connect your wallet, enter the amount, and Ruiz's IBAN.",
-            "d5": "If everything is filled out, you can click on 'Approve' to authorize the site to interact with your wallet's USDC and then click 'Send' to validate the USDC amount.",
-            "d6": "It may seem heavy at first, but for each interaction with your wallet, you will need to give your approval. This is what makes this system very secure. You will also need to directly approve in your wallet the network fees associated with the transaction, as I explained to you before."            
+            "d2": "OK, to transfer cryptocurrencies to a traditional bank account, you just need to use a recognized intermediary that bridges the two worlds. On one side, you send RUSD that he will keep, and on the other side, he will credit dollars to the account you have chosen. There are, of course, fees to pay for this service.",
+            "d3": "You just need to connect your wallet, enter the amount, and Ruiz's IBAN.",
+            "d4": "If everything is filled out, you can click on 'Approve' to authorize the site to interact with your wallet's RUSD and then click 'Send' to validate the RUSD amount.",
+            "d5": "It may seem heavy at first, but for each interaction with your wallet, you will need to give your approval. This is what makes this system very secure. You will also need to directly approve in your wallet the network fees associated with the transaction, as I explained to you before."            
         },
         "choices": {
             "c1": {
@@ -433,7 +440,6 @@
             }
         }
     },
-
     "Chap2s3": {
         "dialogue": {
             "d1": "Thank you, Azad! I was able to gather information about you, and with everything you told me about Cincinnatus and the documents he provided you, I believe I can trust you.",
@@ -448,7 +454,7 @@
             "d10": "I'm not very familiar with it yet, but the main features of this technology are transparency, decentralization, and most importantly, immutability. What's engraved is engraved forever, and no one has the authority to change that.",
             "d11": "I just sent you the documents on Telegram. We still need to send them to the blockchain.",
             "d12": "The files are attached. You can proceed.",
-            "d13": "From now on, anyone will be able to access the documents. You can take a look (link)."
+            "d13": "From now on, anyone will be able to access the documents. You can take a look."
         },
         "choices": {
             "c1": {

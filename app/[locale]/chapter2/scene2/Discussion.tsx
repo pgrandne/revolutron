@@ -31,17 +31,11 @@ const Discussion = ({ stage, setStage }: { stage: number, setStage: Dispatch<Set
                             <ExternalDiscussion text={t('dialogue.d2')} />
                             <ExternalDiscussion text={t('dialogue.d3')} nbCharPrevDisc={t('dialogue.d2').length} nbFollowingDialogue={2} />
                             <ExternalDiscussion text={t('dialogue.d4')} nbCharPrevDisc={t('dialogue.d2').length + t('dialogue.d3').length} nbFollowingDialogue={3} />
-                            <ExternalDiscussion text={t('dialogue.d5')} nbCharPrevDisc={t('dialogue.d2').length + t('dialogue.d3').length + t('dialogue.d4').length} nbFollowingDialogue={4} />
-
-                        </>}
-                        {stage > 1 && <>
-                            <AzadDiscussion azadText={azadText[1]} />
-
-
                         </>}
                         {stage > 2 && <>
-                            <AzadDiscussion azadText={azadText[2]} />
+                            <AzadDiscussion azadText={azadText[1]} />
                         </>}
+
                         <div id="end" />
                     </div>
                 </div>
@@ -51,10 +45,7 @@ const Discussion = ({ stage, setStage }: { stage: number, setStage: Dispatch<Set
                         <AzadChoices stage={stage} setStage={setStage} azadText={azadText} setAzadText={setAzadText} choice1={t('choices.c1.choice1')} choice2={t('choices.c1.choice2')} delay={2} />
                     }
                     {stage === 2 &&
-                        <AzadChoices stage={stage} setStage={setStage} azadText={azadText} setAzadText={setAzadText} choice1={t('choices.c2.choice1')} choice2={t('choices.c2.choice2')} nbCharPrevDisc={t('dialogue.d2').length} />
-                    }
-                    {stage === 3 &&
-                        <AzadChoices stage={stage} setStage={setStage} azadText={azadText} setAzadText={setAzadText} choice1={t('choices.c3.choice1')} choice2={t('choices.c3.choice2')} nbCharPrevDisc={t('dialogue.d3').length} />
+                        <AzadChoices stage={stage} setStage={setStage} azadText={azadText} setAzadText={setAzadText} choice1={t('choices.c2.choice1')} choice2={t('choices.c2.choice2')} />
                     }
                 </div>
             </div>

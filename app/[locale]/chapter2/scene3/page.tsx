@@ -6,30 +6,28 @@ import Sequence from "./Sequence";
 import {
   ArrowButton,
   LinkLocale,
-  ModalTransaction,
+  ModalNft,
   MotionOp,
   ProgressionBar,
 } from "@/app/components";
 import {
-  azadRuizPic,
   backgroundPic,
   boxDamagedPic,
   paperPic,
   forkliftPic,
   ruizPic,
 } from "@/public/img";
-import { AnimatedText, MotionSlideX, MotionSlideY } from "@/app/components";
+import { MotionSlideX, MotionSlideY } from "@/app/components";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 const Chap2s3 = () => {
   const [stage, setStage] = useState(0);
-  const [transactionModal, setTransactionModal] = useState(false);
+  const [modalNft, setModalNft] = useState(false);
 
   useEffect(() => {
-    if (stage === 2) {
-      setTransactionModal(true);
-      setStage(3);
+    if (stage === 4) {
+      setModalNft(true);
     }
   }, [stage]);
 
@@ -42,49 +40,36 @@ const Chap2s3 = () => {
       <div className="basis-1/3 p-6 h-screen flex-grow-0">
         <Discussion stage={stage} setStage={setStage} />
       </div>
-
-      {/* { stage > 1 && stage < 4 && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 2  }}
-        >
-          <div className="bg-[#0f1216] bg-opacity-100  flex justify-center items-center absolute top-0 bottom-0 left-0 w-2/3 z-30">
-          </div>
-        </motion.div>
-      )} */}
-
-      {stage === 1 && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 2 }}
-        >
-          <div className="bg-[#0f1216] bg-opacity-100 overflow-hidden flex justify-center items-center absolute top-0 bottom-0 left-0 w-2/3 z-30">
-            <MotionSlideX delay={2.5} className="flex pr-[30%]  ">
-              <Image className="object-contain" src={forkliftPic} alt="" />
-            </MotionSlideX>
-
-            <MotionSlideY delay={2.5}>
-              <div className="flex justify-end pl-[35%] pt-[5%] ">
-                <Image className="object-contain" src={ruizPic} alt="" />
-              </div>
-            </MotionSlideY>
-          </div>
-        </motion.div>
-      )}
-      {stage === 1 && (
-        <MotionOp delay={9}>
-          <button
-            className="absolute bottom-8 right-[33%] animate-pulse z-40"
-            onClick={() => setStage(2)}
+      {stage === 1 &&
+        <>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 2 }}
           >
-            <ArrowButton />
-          </button>
-        </MotionOp>
-      )}
+            <div className="bg-[#0f1216] bg-opacity-100 overflow-hidden flex justify-center items-center absolute top-0 bottom-0 left-0 w-2/3 z-30">
+              <MotionSlideX delay={2.5} className="flex pr-[30%]  ">
+                <Image className="object-contain" src={forkliftPic} alt="" />
+              </MotionSlideX>
 
-      {stage === 3 && (
+              <MotionSlideY delay={2.5}>
+                <div className="flex justify-end pl-[35%] pt-[5%] ">
+                  <Image className="object-contain" src={ruizPic} alt="" />
+                </div>
+              </MotionSlideY>
+            </div>
+          </motion.div>
+          <MotionOp delay={9}>
+            <button
+              className="absolute bottom-8 right-[33%] animate-pulse z-40"
+              onClick={() => setStage(2)}
+            >
+              <ArrowButton />
+            </button>
+          </MotionOp>
+        </>
+      }
+      {stage === 2 &&
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -131,15 +116,13 @@ const Chap2s3 = () => {
             </MotionSlideY>
           </div>
         </motion.div>
-      )}
-
-      {stage === 5 && (
-        <MotionOp delay={1}>
-          <ModalTransaction setTransactionModal={setTransactionModal} />
+      }
+      {modalNft &&
+        <MotionOp>
+          <ModalNft setModalNft={setModalNft} />
         </MotionOp>
-      )}
-
-      {stage === 6 && (
+      }
+      {stage === 4 && (
         <MotionOp delay={5}>
           <LinkLocale
             href="/construction"

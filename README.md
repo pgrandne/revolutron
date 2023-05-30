@@ -87,6 +87,11 @@ Shasta:
 
 | Contract  | Address | Tronscan |
 | ------------- | ------------- |
+
+[link]](https://shasta.tronscan.org/#/contract/TSq8uXtJSX5o3wimqsQj5TDdEdTNP13kAo/code)
+[link](https://shasta.tronscan.org/#/contract/TLFkPf5XTC5JqUH91jfNPe2k2Rvj6L9ih3/code) 
+
+
 | RevolutronUSD | TSq8uXtJSX5o3wimqsQj5TDdEdTNP13kAo | [link]](https://shasta.tronscan.org/#/contract/TSq8uXtJSX5o3wimqsQj5TDdEdTNP13kAo/code) |
 | RevolutronBail | TLFkPf5XTC5JqUH91jfNPe2k2Rvj6L9ih3 | [link](https://shasta.tronscan.org/#/contract/TLFkPf5XTC5JqUH91jfNPe2k2Rvj6L9ih3/code) |
 
